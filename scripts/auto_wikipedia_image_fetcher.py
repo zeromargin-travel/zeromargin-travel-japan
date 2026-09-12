@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Zero-Margin Travel App - Universal City-Modular Wikipedia Image Pipeline (v8.0.0)
-Supports Japanese Wikipedia (ja.wikipedia.org) and Wikimedia Commons ImageInfo resolution.
-Includes City-Qualified Disambiguation & High-Risk/Sensitive Keyword Blacklist Filter.
+Zero-Margin Travel App - Universal Smart Wikipedia Image Pipeline (v9.2.0)
+Architecture Rules:
+1. STRICT MATCHING ONLY: Never substitute a spot with its parent municipality (prevents fake castle/city photos).
+2. LOGO & SVG FILTER: Reject icons, logos, flags, maps, coat-of-arms, and diagrams automatically.
+3. ARTICLE PHOTO HARVEST: If the top Wikipedia image is a logo/SVG or missing, inspect images contained inside the article and resolve real photo thumbs from Wikimedia Commons.
+4. COMMONS SEARCH FALLBACK: Search Wikimedia Commons for "{Spot} {City/Region}" photos with photo filters.
+5. HONEST FALLBACK: If no authentic photo exists on Wikimedia, leave image empty so the app renders
+   a clean, themed category SVG banner rather than a misleading photo.
 """
 
 import urllib.request
@@ -16,36 +21,15 @@ import re
 
 ctx = ssl._create_unverified_context()
 HEADERS = {
-    'User-Agent': 'ZeroMarginTravelApp/24.0 (https://github.com/zeromargin-travel/zeromargin-travel-japan; contact@zeromargin-travel.com)'
+    'User-Agent': 'ZeroMarginTravelApp/25.0 (https://github.com/zeromargin-travel/zeromargin-travel-japan; contact@zeromargin-travel.com)'
 }
 
-# Sensitive/High-Risk keywords that MUST NOT match unless category is explicitly Memorial/Cemetery
-SENSITIVE_KEYWORD_BLACKLIST = [
-    'konzentrationslager', 'concentration_camp', 'kz_sachsenhausen', 'kz_dachau',
-    'holocaust_memorial', 'gedenkstaette', 'holocaust-denkmal', 'cemetery_grave_marker'
+BAD_IMAGE_KEYWORDS = [
+    '.svg', 'logo', 'icon', 'symbol', 'flag', 'seal', 'emblem', 'coat_of_arms',
+    'map', 'locator', 'diagram', 'chart', 'drawing', 'stub', 'question', 'banner',
+    'fossil', 'skull', 'painting', 'battle', 'cemetery_grave_marker', 'konzentrationslager',
+    'yodore' # Specific to prevent Urasoe Yodore cemetery matching
 ]
-
-# Manual high-quality candidate terms for specific Japanese spots
-SPOT_OVERRIDE_TERMS = {
-    'oki_p_3': ['瀬長島', 'ウミカジテラス'],
-    'oki_p_5': ['玉泉洞', 'おきなわワールド'],
-    'oki_p_8': ['ひめゆりの塔', '沖縄平和祈念堂', '平和祈念公園'],
-    'oki_p_13': ['真栄田岬', '青の洞窟 (恩納村)'],
-    'oki_p_14': ['浦添市', '港川'],
-    'oki_p_16': ['フクギ', '備瀬'],
-    'oki_p_17': ['古宇利大橋', '古宇利島'],
-    'oki_p_18': ['古宇利島', '古宇利大橋'],
-    'oki_p_20': ['名護市', 'パイナップル'],
-    'oki_p_23': ['読谷村', '壺屋焼', 'やちむん'],
-    'oki_p_24': ['波の上ビーチ', '波上宮']
-}
-
-# Direct Wikimedia Commons photo files for 100% photo fidelity
-COMMONS_DIRECT_FILES = {
-    'oki_p_16': 'File:Fukugi trees at Bise Village, Okinawa.jpg',
-    'oki_p_23': 'File:Yomitan Yachimun no Sato.jpg',
-    'oki_p_18': 'File:JP 沖繩 Okinawa Nago Kouri island Ocean Tower outdoor carpark January 2026 N13P 02.jpg'
-}
 
 def clean_title(raw_title):
     if not raw_title:
@@ -55,115 +39,187 @@ def clean_title(raw_title):
         cleaned = re.sub(r'[\(\（][^\(\）\（\）]*[\)\）]', '', cleaned).strip()
     return cleaned.strip()
 
-def fetch_wiki_summary(lang, slug, category=""):
+def is_valid_photo_filename(title):
+    if not title:
+        return False
+    t = title.lower()
+    for bad in BAD_IMAGE_KEYWORDS:
+        if bad in t:
+            return False
+    # Must have typical photo extensions
+    return any(t.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.webp'])
+
+def is_valid_photo_url(url, title=""):
+    if not url:
+        return False
+    u = url.lower()
+    t = (title or "").lower()
+    for bad in BAD_IMAGE_KEYWORDS:
+        if bad in u or bad in t:
+            return False
+    return ('wikimedia.org' in u or 'http' in u)
+
+def fetch_wiki_summary_image(slug, lang='ja'):
     if not slug:
         return ""
     encoded_slug = urllib.parse.quote(slug.replace(' ', '_'))
     url = f'https://{lang}.wikipedia.org/api/rest_v1/page/summary/{encoded_slug}'
-    
-    for attempt in range(3):
-        try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, context=ctx, timeout=4) as res:
-                if res.status == 200:
-                    data = json.loads(res.read().decode('utf-8'))
-                    src = data.get('thumbnail', {}).get('source', '')
-                    title_res = data.get('title', '').lower()
-                    extract_res = data.get('extract', '').lower()
-
-                    # Blacklist Filter
-                    if not any(cat in category.lower() for cat in ['memorial', 'cemetery', '追悼', '墓', '平和']):
-                        for kw in SENSITIVE_KEYWORD_BLACKLIST:
-                            if kw in src.lower() or kw in title_res or kw in extract_res:
-                                print(f"  ⚠️ BLACKLIST REJECTED: '{slug}' matched sensitive keyword '{kw}'")
-                                return ""
-
-                    if src and ('wikimedia.org' in src or 'http' in src):
-                        return src
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                time.sleep(0.8 * (attempt + 1))
-            else:
-                break
-        except Exception:
-            break
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, context=ctx, timeout=3) as res:
+            if res.status == 200:
+                data = json.loads(res.read().decode('utf-8'))
+                src = data.get('thumbnail', {}).get('source', '')
+                title = data.get('title', '')
+                if src and is_valid_photo_url(src, title):
+                    return src
+    except Exception:
+        pass
     return ""
 
-def fetch_commons_thumb(filename, width=640):
-    if not filename:
+def fetch_wiki_article_photos(slug, lang='ja', width=800):
+    """Harvest real photos listed inside a Wikipedia article if top image is a logo or missing."""
+    if not slug:
         return ""
-    enc = urllib.parse.quote(filename)
-    url = f'https://commons.wikimedia.org/w/api.php?action=query&titles={enc}&prop=imageinfo&iiprop=url&iiurlwidth={width}&format=json'
+    encoded_slug = urllib.parse.quote(slug.replace(' ', '_'))
+    url = f'https://{lang}.wikipedia.org/w/api.php?action=query&titles={encoded_slug}&prop=images&imlimit=50&format=json'
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, context=ctx, timeout=3) as res:
+            d = json.loads(res.read().decode('utf-8'))
+            pages = d.get('query', {}).get('pages', {})
+            candidate_files = []
+            for p in pages.values():
+                for img in p.get('images', []):
+                    title = img.get('title', '')
+                    clean_t = re.sub(r'^(ファイル|File):', '', title).strip()
+                    if is_valid_photo_filename(clean_t):
+                        candidate_files.append(clean_t)
+            
+            # Prioritize files containing spot keywords or scenic keywords
+            candidate_files.sort(key=lambda x: (
+                0 if any(k in x.lower() for k in ['aquarium', 'tank', 'main', 'hall', 'park', 'gate', 'beach', 'cliff']) else 1
+            ))
+
+            for cfile in candidate_files[:8]:
+                enc_f = urllib.parse.quote('File:' + cfile)
+                url_f = f'https://commons.wikimedia.org/w/api.php?action=query&titles={enc_f}&prop=imageinfo&iiprop=url&iiurlwidth={width}&format=json'
+                req_f = urllib.request.Request(url_f, headers=HEADERS)
+                with urllib.request.urlopen(req_f, context=ctx, timeout=3) as res_f:
+                    df = json.loads(res_f.read().decode('utf-8'))
+                    for pg in df.get('query', {}).get('pages', {}).values():
+                        for info in pg.get('imageinfo', []):
+                            thumb = info.get('thumburl')
+                            if thumb and is_valid_photo_url(thumb, cfile):
+                                return thumb
+    except Exception:
+        pass
+    return ""
+
+def search_wikimedia_commons_photos(query, width=800):
+    """Search Wikimedia Commons directly for authentic spot photos."""
+    if not query:
+        return ""
+    enc = urllib.parse.quote(query)
+    url = f'https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch={enc}&srnamespace=6&format=json'
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, context=ctx, timeout=4) as res:
-            d = json.loads(res.read().decode('utf-8'))
-            pages = d.get('query', {}).get('pages', {})
-            for p in pages.values():
-                for info in p.get('imageinfo', []):
-                    return info.get('thumburl', '')
+            if res.status == 200:
+                d = json.loads(res.read().decode('utf-8'))
+                results = d.get('query', {}).get('search', [])
+                for r in results[:10]:
+                    t = r.get('title', '')
+                    clean_t = re.sub(r'^(ファイル|File):', '', t).strip()
+                    if not is_valid_photo_filename(clean_t):
+                        continue
+                    enc_t = urllib.parse.quote(t)
+                    url_t = f'https://commons.wikimedia.org/w/api.php?action=query&titles={enc_t}&prop=imageinfo&iiprop=url&iiurlwidth={width}&format=json'
+                    req_t = urllib.request.Request(url_t, headers=HEADERS)
+                    with urllib.request.urlopen(req_t, context=ctx, timeout=4) as res_t:
+                        if res_t.status == 200:
+                            d_t = json.loads(res_t.read().decode('utf-8'))
+                            pages = d_t.get('query', {}).get('pages', {})
+                            for p in pages.values():
+                                for info in p.get('imageinfo', []):
+                                    thumb = info.get('thumburl')
+                                    if thumb and is_valid_photo_url(thumb, t):
+                                        return thumb
     except Exception:
         pass
     return ""
 
 def resolve_spot_image(spot, city_name=""):
-    sid = spot.get('id', '')
-    category = spot.get('category', '')
-    
-    # Check direct commons file first
-    if sid in COMMONS_DIRECT_FILES:
-        thumb = fetch_commons_thumb(COMMONS_DIRECT_FILES[sid])
-        if thumb:
-            return thumb
-
-    candidates = []
-    
-    # 0. Japanese Spot Overrides
-    if sid in SPOT_OVERRIDE_TERMS:
-        for t in SPOT_OVERRIDE_TERMS[sid]:
-            candidates.append(('ja', t))
-
-    # 1. Japanese Name Candidates
+    """
+    Universal 4-Layer Smart Photo Resolution:
+    1. Exact Wikipedia summary (validated photo)
+    2. Article internal photo harvest (when summary is logo/diagram like Churaumi)
+    3. English / Multilingual Wikipedia article
+    4. Commons targeted search
+    5. Clean Honest Fallback (leave empty for category SVG)
+    """
     raw_name_ja = spot.get('name_ja', spot.get('name', ''))
     clean_ja = clean_title(raw_name_ja)
-    if clean_ja:
-        candidates.append(('ja', clean_ja))
-        parts = [p.strip() for p in re.split(r'[・/]', clean_ja) if p.strip()]
-        for p in parts:
-            if p != clean_ja:
-                candidates.append(('ja', p))
-        no_koen = clean_ja.replace('公園', '').strip()
-        if no_koen != clean_ja:
-            candidates.append(('ja', no_koen))
-        no_ato = clean_ja.replace('跡', '').strip()
-        if no_ato != clean_ja:
-            candidates.append(('ja', no_ato))
-
-    # 2. English / Western Candidates
     raw_name_en = spot.get('name_en', '')
     clean_en = clean_title(raw_name_en)
-    city_pure = city_name.split(',')[0].strip() if city_name else ""
-    
-    if clean_en and city_pure:
-        candidates.append(('en', f"{clean_en}, {city_pure}"))
-        candidates.append(('en', f"{clean_en} ({city_pure})"))
+
+    spot_queries = []
+    if clean_ja:
+        spot_queries.append(clean_ja)
+        parts = [p.strip() for p in re.split(r'[・/]', clean_ja) if p.strip()]
+        for p in parts:
+            if len(p) >= 3 and p != clean_ja:
+                spot_queries.append(p)
+        no_koen = clean_ja.replace('公園', '').strip()
+        if len(no_koen) >= 3 and no_koen != clean_ja:
+            spot_queries.append(no_koen)
+        no_ato = clean_ja.replace('跡', '').strip()
+        if len(no_ato) >= 3 and no_ato != clean_ja:
+            spot_queries.append(no_ato)
+
+    # 1. Try Japanese Wikipedia article summary
+    for q in spot_queries:
+        img = fetch_wiki_summary_image(q, lang='ja')
+        if img:
+            return img, f"ja.wiki_summary:{q}"
+
+    # 2. Try Japanese Wikipedia article internal photos (harvest real photo if top is logo)
+    for q in spot_queries:
+        img = fetch_wiki_article_photos(q, lang='ja')
+        if img:
+            return img, f"ja.wiki_article_photo:{q}"
+
+    # 3. Try English Wikipedia article summary & internal photos
     if clean_en:
-        candidates.append(('en', clean_en))
+        img = fetch_wiki_summary_image(clean_en, lang='en')
+        if img:
+            return img, f"en.wiki_summary:{clean_en}"
+        img = fetch_wiki_article_photos(clean_en, lang='en')
+        if img:
+            return img, f"en.wiki_article_photo:{clean_en}"
 
-    raw_name_de = spot.get('name_de', '')
-    clean_de = clean_title(raw_name_de)
-    if clean_de:
-        candidates.append(('de', clean_de))
+    # 4. Try targeted Wikimedia Commons photo search
+    city_pure = city_name.split(',')[0].strip() if city_name else ""
+    commons_queries = []
+    if clean_en and city_pure:
+        commons_queries.append(f"{clean_en} {city_pure}")
+    if clean_en:
+        commons_queries.append(f"{clean_en} Okinawa")
+    if clean_ja and city_pure:
+        commons_queries.append(f"{clean_ja} {city_pure}")
+    for q in spot_queries:
+        commons_queries.append(q)
 
-    for lang, title in candidates:
-        img_url = fetch_wiki_summary(lang, title, category)
-        if img_url:
-            return img_url
+    for cq in commons_queries:
+        img = search_wikimedia_commons_photos(cq)
+        if img:
+            return img, f"commons:{cq}"
 
-    return ""
+    # 5. Honest fallback: return empty to let app render elegant SVG fallback
+    return "", "no_authentic_photo"
 
-def process_all_city_modules(data_cities_dir, js_file_path):
-    print("🚀 Running Universal Direct Wikipedia REST API Resolver (v8.0.0 with Japan/ja support)...")
+def process_all_city_modules(data_cities_dir):
+    print("🚀 Running Universal Smart Wikipedia Image Pipeline (v9.2.0)...")
     json_files = sorted(glob.glob(os.path.join(data_cities_dir, '*.json')))
     
     if not json_files:
@@ -175,7 +231,6 @@ def process_all_city_modules(data_cities_dir, js_file_path):
 
     for fpath in json_files:
         fname = os.path.basename(fpath)
-        # Only resolve okinawa.json for now to keep run fast
         if fname != 'okinawa.json':
             continue
 
@@ -198,24 +253,19 @@ def process_all_city_modules(data_cities_dir, js_file_path):
         print(f"\n📂 Processing {fname} ({len(spots)} spots)...")
 
         for s in spots:
-            current_img = s.get('image', '')
-            # If image contains 400-broken link without query params or empty, resolve it
-            needs_resolution = not current_img or ('?' not in current_img and 'upload.wikimedia.org' in current_img)
-
-            if needs_resolution:
-                resolved_url = resolve_spot_image(s, cityName)
-                if resolved_url:
-                    s['image'] = resolved_url
-                    s['wikiImage'] = resolved_url
-                    s['hasWiki'] = True
-                    verified_in_city += 1
-                    print(f"  ✅ [{s['id']}] {s['name']}: {resolved_url[:75]}...")
-                else:
-                    s['hasWiki'] = False
-                    fallbacks_in_city += 1
-                    print(f"  ⚠️ [{s['id']}] {s['name']}: No image found (fallback)")
-            else:
+            resolved_url, reason = resolve_spot_image(s, cityName)
+            if resolved_url:
+                s['image'] = resolved_url
+                s['wikiImage'] = resolved_url
+                s['hasWiki'] = True
                 verified_in_city += 1
+                print(f"  📸 [{s['id']}] {s['name']}: {reason} -> {resolved_url.split('/')[-1][:45]}")
+            else:
+                s['image'] = ""
+                s['wikiImage'] = ""
+                s['hasWiki'] = False
+                fallbacks_in_city += 1
+                print(f"  🏷️ [{s['id']}] {s['name']}: Honest Themed Fallback ({reason})")
 
         total_photos += verified_in_city
         total_fallbacks += fallbacks_in_city
@@ -224,14 +274,13 @@ def process_all_city_modules(data_cities_dir, js_file_path):
             json.dump(data, f, indent=2, ensure_ascii=False)
 
     print("\n=======================================================")
-    print("🎉 WIKIPEDIA DIRECT RESOLUTION (v8.0.0) COMPLETE!")
-    print(f"   - Total Verified Live Photos: {total_photos} spots")
-    print(f"   - Total Fallbacks: {total_fallbacks} spots")
-    print(f"   - Total System Spots: {total_photos + total_fallbacks}")
+    print("🎉 UNIVERSAL IMAGE RESOLUTION COMPLETE!")
+    print(f"   - Verified Authentic Photos: {total_photos} spots")
+    print(f"   - Clean Themed Fallbacks: {total_fallbacks} spots")
+    print(f"   - Total Spots Processed: {total_photos + total_fallbacks}")
     print("=======================================================")
 
 if __name__ == '__main__':
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_cities_dir = os.path.join(base_dir, '..', 'data', 'cities')
-    js_file_path = os.path.join(base_dir, '..', 'js', 'ai-travel-engine.js')
-    process_all_city_modules(data_cities_dir, js_file_path)
+    process_all_city_modules(data_cities_dir)
