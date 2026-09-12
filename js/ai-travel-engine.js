@@ -1,10 +1,10 @@
 /* ==========================================================================
-   0 Margin EU Travel — 100% English Interactive AI Route Planner
-   Rich Multi-City Candidate Spots Database (30+ Real Verified ★4.5+ Spots per City)
-   100% Geographically Accurate Images + Native Lazy Loading + SVG Fallback
+   0 Margin Japan Travel — Interactive AI Route Planner
+   Rich Multi-City Candidate Spots Database (★4.5+ Verified Places)
+   Geographically Accurate Images + Native Lazy Loading + SVG Fallback
    ========================================================================== */
 
-const SVG_FALLBACK_IMAGE = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340"><rect width="600" height="340" fill="%23FAF7F2"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="22" fill="%2378350F">🗺️ European Landmark</text></svg>`;
+const SVG_FALLBACK_IMAGE = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340"><rect width="600" height="340" fill="%23FAF7F2"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="22" fill="%2378350F">🌺 沖縄 観光スポット</text></svg>`;
 
 let candidateSpotsDatabase = {};
 
@@ -48,7 +48,7 @@ const AITravelEngine = {
       if (grid) {
         grid.innerHTML = `<div style="text-align:center; padding:3rem; grid-column:1/-1;">
           <div style="display:inline-block; animation:spin 1s linear infinite; font-size:2rem;">⚡️</div>
-          <div style="margin-top:1rem; color:var(--text-secondary); font-weight:bold;" data-i18n="loading.database">Loading Database...</div>
+          <div style="margin-top:1rem; color:var(--text-secondary); font-weight:bold;" data-i18n="loading.database">沖縄の厳選スポットを読み込み中...</div>
         </div>`;
       }
       
@@ -62,12 +62,12 @@ const AITravelEngine = {
       spots.forEach(spot => {
         const c = String(spot.category || '').toLowerCase();
         spot.tags = {
-          isLandmark: c.includes('landmark') || c.includes('史跡') || c.includes('名所'),
-          isMuseum: c.includes('museum') || c.includes('art') || c.includes('ギャラリー') || c.includes('美術館') || c.includes('博物館'),
-          isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン'),
-          isScenery: c.includes('scenery') || c.includes('walk') || c.includes('park') || c.includes('プロムナード') || c.includes('散策'),
-          isKids: spot.kids === true || c.includes('kids'),
-          isShopping: spot.shopping === true || c.includes('shopping') || c.includes('market')
+          isLandmark: c.includes('landmark') || c.includes('史跡') || c.includes('名所') || c.includes('城') || c.includes('寺') || c.includes('神社'),
+          isMuseum: c.includes('museum') || c.includes('art') || c.includes('ギャラリー') || c.includes('美術館') || c.includes('博物館') || c.includes('水族館') || c.includes('テーマパーク'),
+          isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン') || c.includes('グルメ') || c.includes('沖縄そば'),
+          isScenery: c.includes('scenery') || c.includes('walk') || c.includes('park') || c.includes('プロムナード') || c.includes('散策') || c.includes('ビーチ') || c.includes('岬') || c.includes('海') || c.includes('自然') || c.includes('景観'),
+          isKids: spot.kids === true || c.includes('kids') || c.includes('ファミリー'),
+          isShopping: spot.shopping === true || c.includes('shopping') || c.includes('market') || c.includes('市場') || c.includes('通り')
         };
         // Sync boolean flags for consistent UI rendering elsewhere
         spot.kids = spot.tags.isKids;
@@ -77,7 +77,6 @@ const AITravelEngine = {
       candidateSpotsDatabase[cityId] = spots;
     } catch (error) {
       console.error(`Failed to load city database for ${cityId}:`, error);
-      alert(`Debug Error fetching ${cityId}: ` + error.message);
       candidateSpotsDatabase[cityId] = [];
     }
   },
@@ -88,7 +87,7 @@ const AITravelEngine = {
     const urlCity = params.get('city');
     const urlSpots = params.get('spots');
     
-    let targetCity = 'Paris, France';
+    let targetCity = 'Okinawa, Japan';
 
     if (urlCountry) {
       const countryElem = document.getElementById('aiPlanCountry');
@@ -101,7 +100,7 @@ const AITravelEngine = {
         }
       }
       // Populate city dropdown manually based on country
-      const cities = this.countryCityMap[urlCountry] || this.countryCityMap['France'];
+      const cities = this.countryCityMap[urlCountry] || this.countryCityMap['沖縄'];
       const destElem = document.getElementById('aiPlanDestination');
       if (destElem) {
          destElem.innerHTML = cities.map(c => `<option value="${c.value}">${this.getLocalizedCityLabel(c)}</option>`).join('');
@@ -125,7 +124,7 @@ const AITravelEngine = {
       }
     } else {
       const destElem = document.getElementById('aiPlanDestination');
-      if (destElem) targetCity = destElem.value || 'Paris, France';
+      if (destElem) targetCity = destElem.value || 'Okinawa, Japan';
     }
 
     if (urlCity && urlSpots) {
@@ -447,146 +446,18 @@ const AITravelEngine = {
   },
 
   countryCityMap: {
-    "France": [
-        {
-            "value": "Paris, France",
-            "label": "🇫🇷 Paris"
-        },
-        {
-            "value": "Bordeaux, France",
-            "label": "🇫🇷 Bordeaux"
-        },
-        {
-            "value": "Lyon, France",
-            "label": "🇫🇷 Lyon"
-        },
-        {
-            "value": "Marseille, France",
-            "label": "🇫🇷 Marseille"
-        },
-        {
-            "value": "Nice, France",
-            "label": "🇫🇷 Nice & Côte d'Azur"
-        },
-        {
-            "value": "Strasbourg, France",
-            "label": "🇫🇷 Strasbourg"
-        },
-        {
-            "value": "Toulouse, France",
-            "label": "🇫🇷 Toulouse"
-        }
-    ],
-    "Germany": [
-        {
-            "value": "Berlin, Germany",
-            "label": "🇩🇪 Berlin"
-        },
-        {
-            "value": "Cologne, Germany",
-            "label": "🇩🇪 Cologne"
-        },
-        {
-            "value": "Dresden, Germany",
-            "label": "🇩🇪 Dresden"
-        },
-        {
-            "value": "Frankfurt, Germany",
-            "label": "🇩🇪 Frankfurt"
-        },
-        {
-            "value": "Hamburg, Germany",
-            "label": "🇩🇪 Hamburg"
-        },
-        {
-            "value": "Heidelberg, Germany",
-            "label": "🇩🇪 Heidelberg"
-        },
-        {
-            "value": "Munich, Germany",
-            "label": "🇩🇪 Munich"
-        },
-        {
-            "value": "Nuremberg, Germany",
-            "label": "🇩🇪 Nuremberg"
-        }
-    ],
-    "Netherlands": [
-        {
-            "value": "Amsterdam, Netherlands",
-            "label": "🇳🇱 Amsterdam"
-        },
-        {
-            "value": "Rotterdam, Netherlands",
-            "label": "🇳🇱 Rotterdam"
-        },
-        {
-            "value": "The Hague, Netherlands",
-            "label": "🇳🇱 The Hague"
-        },
-        {
-            "value": "Utrecht, Netherlands",
-            "label": "🇳🇱 Utrecht"
-        },
-        {
-            "value": "Maastricht, Netherlands",
-            "label": "🇳🇱 Maastricht"
-        }
-    ],
-    "Belgium": [
-        {
-            "value": "Brussels, Belgium",
-            "label": "🇧🇪 Brussels"
-        },
-        {
-            "value": "Bruges, Belgium",
-            "label": "🇧🇪 Bruges"
-        },
-        {
-            "value": "Antwerp, Belgium",
-            "label": "🇧🇪 Antwerp"
-        },
-        {
-            "value": "Ghent, Belgium",
-            "label": "🇧🇪 Ghent"
-        }
-    ],
-    "Luxembourg": [
-        {
-            "value": "Luxembourg City, Luxembourg",
-            "label": "🇱🇺 Luxembourg"
-        }
+    "沖縄": [
+      {
+        "value": "Okinawa, Japan",
+        "label": "🏝️ 沖縄本島（全域）"
+      }
     ]
-},
+  },
 
   getLocalizedCityLabel(c) {
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
     const cityMap = {
-      "Paris, France": { ja: "🇫🇷 パリ", zh: "🇫🇷 巴黎 (Paris)" },
-      "Bordeaux, France": { ja: "🇫🇷 ボルドー", zh: "🇫🇷 波尔多 (Bordeaux)" },
-      "Lyon, France": { ja: "🇫🇷 リヨン", zh: "🇫🇷 里昂 (Lyon)" },
-      "Marseille, France": { ja: "🇫🇷 マルセイユ", zh: "🇫🇷 马赛 (Marseille)" },
-      "Nice, France": { ja: "🇫🇷 ニース", zh: "🇫🇷 尼斯 (Nice)" },
-      "Strasbourg, France": { ja: "🇫🇷 ストラスブール", zh: "🇫🇷 斯特拉斯堡 (Strasbourg)" },
-      "Toulouse, France": { ja: "🇫🇷 トゥールーズ", zh: "🇫🇷 图卢兹 (Toulouse)" },
-      "Berlin, Germany": { ja: "🇩🇪 ベルリン", zh: "🇩🇪 柏林 (Berlin)" },
-      "Cologne, Germany": { ja: "🇩🇪 ケルン", zh: "🇩🇪 科隆 (Cologne)" },
-      "Dresden, Germany": { ja: "🇩🇪 ドレスデン", zh: "🇩🇪 德累斯顿 (Dresden)" },
-      "Frankfurt, Germany": { ja: "🇩🇪 フランクフルト", zh: "🇩🇪 法兰克福 (Frankfurt)" },
-      "Hamburg, Germany": { ja: "🇩🇪 ハンブルク", zh: "🇩🇪 汉堡 (Hamburg)" },
-      "Heidelberg, Germany": { ja: "🇩🇪 ハイデルベルク", zh: "🇩🇪 海德堡 (Heidelberg)" },
-      "Munich, Germany": { ja: "🇩🇪 ミュンヘン", zh: "🇩🇪 慕尼黑 (Munich)" },
-      "Nuremberg, Germany": { ja: "🇩🇪 ニュルンベルク", zh: "🇩🇪 纽伦堡 (Nuremberg)" },
-      "Amsterdam, Netherlands": { ja: "🇳🇱 アムステルダム", zh: "🇳🇱 阿姆斯特丹 (Amsterdam)" },
-      "Rotterdam, Netherlands": { ja: "🇳🇱 ロッテルダム", zh: "🇳🇱 鹿特丹 (Rotterdam)" },
-      "The Hague, Netherlands": { ja: "🇳🇱 ハーグ", zh: "🇳🇱 海牙 (The Hague)" },
-      "Utrecht, Netherlands": { ja: "🇳🇱 ユトレヒト", zh: "🇳🇱 乌得勒支 (Utrecht)" },
-      "Maastricht, Netherlands": { ja: "🇳🇱 マーストリヒト", zh: "🇳🇱 马斯特里赫特 (Maastricht)" },
-      "Brussels, Belgium": { ja: "🇧🇪 ブリュッセル", zh: "🇧🇪 布鲁塞尔 (Brussels)" },
-      "Bruges, Belgium": { ja: "🇧🇪 ブルージュ", zh: "🇧🇪 布鲁日 (Bruges)" },
-      "Antwerp, Belgium": { ja: "🇧🇪 アントワープ", zh: "🇧🇪 安特卫普 (Antwerp)" },
-      "Ghent, Belgium": { ja: "🇧🇪 ゲント", zh: "🇧🇪 根特 (Ghent)" },
-      "Luxembourg City, Luxembourg": { ja: "🇱🇺 ルクセンブルク", zh: "🇱🇺 卢森堡 (Luxembourg)" }
+      "Okinawa, Japan": { ja: "🏝️ 沖縄本島（全域）", en: "🏝️ Okinawa Main Island", zh: "🏝️ 冲绳本岛 (全域)" }
     };
     if (cityMap[c.value] && cityMap[c.value][lang]) {
       return cityMap[c.value][lang];
@@ -599,8 +470,8 @@ const AITravelEngine = {
     const destElem = document.getElementById('aiPlanDestination');
     if (!countryElem || !destElem) return;
 
-    const country = countryElem.value || 'France';
-    const cities = this.countryCityMap[country] || this.countryCityMap['France'];
+    const country = countryElem.value || '沖縄';
+    const cities = this.countryCityMap[country] || this.countryCityMap['沖縄'];
     const currentVal = destElem.value;
     const hasCurrent = cities.some(c => c.value === currentVal);
     const targetVal = hasCurrent ? currentVal : (cities[0] ? cities[0].value : '');
@@ -638,7 +509,7 @@ const AITravelEngine = {
 
   getLocalizedSpotName(spot) {
     if (!spot) return '';
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
     if (lang === 'ja') {
       return spot.name_ja || spot.name || spot.name_local || '';
     }
@@ -649,21 +520,21 @@ const AITravelEngine = {
   },
   getLocalizedDesc(spot) {
     if (!spot) return '';
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
-    return spot['desc_' + lang] || spot.desc_en || spot.desc_ja || spot.desc || '';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
+    return spot['desc_' + lang] || spot.desc_ja || spot.desc || spot.desc_en || '';
   },
   getLocalizedTip(spot) {
     if (!spot) return '';
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
-    return spot['insiderTip_' + lang] || spot.insiderTip_en || '';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
+    return spot['tip_' + lang] || spot['insiderTip_' + lang] || spot.tip_ja || spot.tip || spot.insiderTip_en || spot.tip_en || '';
   },
   getLocalizedPrice(spot) {
     if (!spot) return '';
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
-    return spot['price_' + lang] || spot.price_en || spot.price || '';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
+    return spot['price_' + lang] || spot.price_ja || spot.price || spot.price_en || '';
   },
   getLocalizedCategory(spot) {
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
     
     // Fallback if spot or tags missing
     if (!spot || !spot.tags) {
@@ -673,14 +544,14 @@ const AITravelEngine = {
     }
     
     let tags = [];
-    if (spot.tags.isLandmark) tags.push(lang === 'ja' ? '🏛️ 名所' : lang === 'es' ? '🏛️ Monumento' : lang === 'zh' ? '🏛️ 地标' : lang === 'fr' ? '🏛️ Monument' : lang === 'de' ? '🏛️ Highlight' : '🏛️ Landmark');
-    if (spot.tags.isMuseum) tags.push(lang === 'ja' ? '🎨 美術館' : lang === 'es' ? '🎨 Museo' : lang === 'zh' ? '🎨 博物馆' : lang === 'fr' ? '🎨 Musée' : lang === 'de' ? '🎨 Museum' : '🎨 Museum');
-    if (spot.tags.isCafe) tags.push(lang === 'ja' ? '☕ カフェ' : lang === 'es' ? '☕ Café' : lang === 'zh' ? '☕ 咖啡美食' : lang === 'fr' ? '☕ Café' : lang === 'de' ? '☕ Café' : '☕ Café');
-    if (spot.tags.isScenery) tags.push(lang === 'ja' ? '🌆 景観・散策' : lang === 'es' ? '🌆 Paseo' : lang === 'zh' ? '🌆 散步风光' : lang === 'fr' ? '🌆 Promenade' : lang === 'de' ? '🌆 Aussicht' : '🌆 Scenery & Walk');
-    if (spot.tags.isKids) tags.push(lang === 'ja' ? '🧸 キッズ' : lang === 'es' ? '🧸 Niños' : lang === 'zh' ? '🧸 亲子' : lang === 'fr' ? '🧸 Enfants' : lang === 'de' ? '🧸 Kinder' : '🧸 Kids');
-    if (spot.tags.isShopping) tags.push(lang === 'ja' ? '🛍️ 買物' : lang === 'es' ? '🛍️ Compras' : lang === 'zh' ? '🛍️ 购物' : lang === 'fr' ? '🛍️ Achats' : lang === 'de' ? '🛍️ Shopping' : '🛍️ Shopping');
+    if (spot.tags.isLandmark) tags.push(lang === 'ja' ? '🏛️ 史跡・名所' : '🏛️ Landmark');
+    if (spot.tags.isMuseum) tags.push(lang === 'ja' ? '🎨 文化・体験' : '🎨 Culture');
+    if (spot.tags.isCafe) tags.push(lang === 'ja' ? '☕ カフェ・グルメ' : '☕ Dining');
+    if (spot.tags.isScenery) tags.push(lang === 'ja' ? '🌊 絶景・ビーチ' : '🌊 Scenery');
+    if (spot.tags.isKids) tags.push(lang === 'ja' ? '🧸 ファミリー' : '🧸 Kids');
+    if (spot.tags.isShopping) tags.push(lang === 'ja' ? '🛍️ 買物・市場' : '🛍️ Shopping');
     
-    if (tags.length === 0) return lang === 'ja' ? '📍 名所' : lang === 'es' ? '📍 Lugar' : lang === 'zh' ? '📍 景点' : lang === 'fr' ? '📍 Lieu' : lang === 'de' ? '📍 Ort' : '📍 Spot';
+    if (tags.length === 0) return lang === 'ja' ? '📍 名所' : '📍 Spot';
 
     // Prioritize the active genre if the user is filtering
     const activeGenre = this.activeGenre;
@@ -689,7 +560,7 @@ const AITravelEngine = {
         if (activeGenre === 'Landmark') return t.includes('🏛️');
         if (activeGenre === 'Museum') return t.includes('🎨');
         if (activeGenre === 'Café') return t.includes('☕');
-        if (activeGenre === 'Scenery') return t.includes('🌆');
+        if (activeGenre === 'Scenery') return t.includes('🌊');
         if (activeGenre === 'Kids') return t.includes('🧸');
         if (activeGenre === 'Shopping') return t.includes('🛍️');
         return false;
@@ -699,15 +570,14 @@ const AITravelEngine = {
         tags.unshift(activeTag);
       }
     }
-    
-    return tags[0];
+    return tags.join(' ');
   },
   getLocalizedZone(zone) {
-    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
+    const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'ja';
     if (zone === 'suburban') {
-      return lang === 'ja' ? '🏞️ 郊外' : lang === 'es' ? '🏞️ Suburbano' : lang === 'zh' ? '🏞️ 郊区日游' : lang === 'fr' ? '🏞️ Banlieue' : lang === 'de' ? '🏞️ Umgebung' : '🏞️ Suburban';
+      return lang === 'ja' ? '🏞️ 中部・北部' : '🏞️ Central/North';
     }
-    return lang === 'ja' ? '📍 市内' : lang === 'es' ? '📍 Centro' : lang === 'zh' ? '📍 市中心' : lang === 'fr' ? '📍 Centre-ville' : lang === 'de' ? '📍 Innenstadt' : '📍 City Center';
+    return lang === 'ja' ? '🏙️ 那覇・南部' : '🏙️ Naha/South';
   },
 
   handleImageError(imgElem, category, rating, cardCatText) {
@@ -873,7 +743,7 @@ const AITravelEngine = {
     console.log('🚀 [0MT ENGINE v130] Rendering 3-Row Filter System...');
     try {
       const selectElem = document.getElementById('aiPlanDestination');
-      const city = selectElem ? selectElem.value : 'Paris, France';
+      const city = selectElem ? selectElem.value : 'Okinawa, Japan';
       const areaElem = document.getElementById('aiPlanAreaZone');
       const targetArea = areaElem ? areaElem.value : 'ALL';
 
@@ -1379,7 +1249,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
     if (event) event.preventDefault();
 
     const destElem = document.getElementById('aiPlanDestination');
-    const destination = destElem ? destElem.value.trim() : 'Paris, France';
+    const destination = destElem ? destElem.value.trim() : 'Okinawa, Japan';
     const areaElem = document.getElementById('aiPlanAreaZone');
     const areaZone = areaElem ? areaElem.value : 'ALL';
     const transportMode = 'transit';
