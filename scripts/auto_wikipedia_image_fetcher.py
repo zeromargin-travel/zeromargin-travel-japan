@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Zero-Margin Travel App - Universal Smart Wikipedia Image Pipeline (v9.2.0)
+Zero-Margin Travel App - Universal Smart Wikipedia Image Pipeline (v9.3.0)
 Architecture Rules:
 1. STRICT MATCHING ONLY: Never substitute a spot with its parent municipality (prevents fake castle/city photos).
-2. LOGO & SVG FILTER: Reject icons, logos, flags, maps, coat-of-arms, and diagrams automatically.
+2. LOGO & SVG FILTER: Reject icons, logos, flags, maps, coat-of-arms, diagrams, films, and stamps automatically.
 3. ARTICLE PHOTO HARVEST: If the top Wikipedia image is a logo/SVG or missing, inspect images contained inside the article and resolve real photo thumbs from Wikimedia Commons.
-4. COMMONS SEARCH FALLBACK: Search Wikimedia Commons for "{Spot} {City/Region}" photos with photo filters.
+4. COMMONS SEARCH FALLBACK: Search Wikimedia Commons for "{Spot} {City/Region}" with location qualification.
 5. HONEST FALLBACK: If no authentic photo exists on Wikimedia, leave image empty so the app renders
    a clean, themed category SVG banner rather than a misleading photo.
 """
@@ -28,7 +28,7 @@ BAD_IMAGE_KEYWORDS = [
     '.svg', 'logo', 'icon', 'symbol', 'flag', 'seal', 'emblem', 'coat_of_arms',
     'map', 'locator', 'diagram', 'chart', 'drawing', 'stub', 'question', 'banner',
     'fossil', 'skull', 'painting', 'battle', 'cemetery_grave_marker', 'konzentrationslager',
-    'yodore' # Specific to prevent Urasoe Yodore cemetery matching
+    'yodore', 'film_still', 'movie_still'
 ]
 
 def clean_title(raw_title):
@@ -155,7 +155,7 @@ def resolve_spot_image(spot, city_name=""):
     1. Exact Wikipedia summary (validated photo)
     2. Article internal photo harvest (when summary is logo/diagram like Churaumi)
     3. English / Multilingual Wikipedia article
-    4. Commons targeted search
+    4. Commons targeted search (requires spot name + regional context to avoid generic homonyms)
     5. Clean Honest Fallback (leave empty for category SVG)
     """
     raw_name_ja = spot.get('name_ja', spot.get('name', ''))
@@ -198,17 +198,15 @@ def resolve_spot_image(spot, city_name=""):
         if img:
             return img, f"en.wiki_article_photo:{clean_en}"
 
-    # 4. Try targeted Wikimedia Commons photo search
-    city_pure = city_name.split(',')[0].strip() if city_name else ""
+    # 4. Try targeted Wikimedia Commons photo search (Must include Okinawa/City to avoid random cafes worldwide!)
+    city_pure = city_name.split(',')[0].strip() if city_name else "Okinawa"
     commons_queries = []
-    if clean_en and city_pure:
-        commons_queries.append(f"{clean_en} {city_pure}")
     if clean_en:
+        commons_queries.append(f"{clean_en} {city_pure}")
         commons_queries.append(f"{clean_en} Okinawa")
-    if clean_ja and city_pure:
+    if clean_ja:
         commons_queries.append(f"{clean_ja} {city_pure}")
-    for q in spot_queries:
-        commons_queries.append(q)
+        commons_queries.append(f"{clean_ja} 沖縄")
 
     for cq in commons_queries:
         img = search_wikimedia_commons_photos(cq)
@@ -219,7 +217,7 @@ def resolve_spot_image(spot, city_name=""):
     return "", "no_authentic_photo"
 
 def process_all_city_modules(data_cities_dir):
-    print("🚀 Running Universal Smart Wikipedia Image Pipeline (v9.2.0)...")
+    print("🚀 Running Universal Smart Wikipedia Image Pipeline (v9.3.0)...")
     json_files = sorted(glob.glob(os.path.join(data_cities_dir, '*.json')))
     
     if not json_files:
