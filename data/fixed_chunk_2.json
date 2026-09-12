@@ -1,0 +1,614 @@
+[
+  {
+    "city": "Cologne, Germany",
+    "spot": {
+      "id": "cgn_c_28",
+      "name": "DuMont Carré",
+      "locationZone": "city",
+      "lat": 50.9386,
+      "lng": 6.9514,
+      "desc_en": "DuMont Carré is a distinct location in Cologne, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting DuMont Carré."
+    }
+  },
+  {
+    "city": "Cologne, Germany",
+    "spot": {
+      "id": "cgn_c_28-2",
+      "name": "Opern Passagen",
+      "locationZone": "city",
+      "lat": 50.9386,
+      "lng": 6.9514,
+      "desc_en": "Opern Passagen is a distinct location in Cologne, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Opern Passagen."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_32",
+      "name": "Standseilbahn Dresden",
+      "locationZone": "city",
+      "lat": 51.0545,
+      "lng": 13.8122,
+      "desc_en": "Standseilbahn Dresden is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Standseilbahn Dresden."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_32-2",
+      "name": "Schwebebahn Dresden",
+      "locationZone": "city",
+      "lat": 51.0545,
+      "lng": 13.8122,
+      "desc_en": "Schwebebahn Dresden is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schwebebahn Dresden."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_33",
+      "name": "Schloss Albrechtsberg",
+      "locationZone": "city",
+      "lat": 51.0602,
+      "lng": 13.7975,
+      "desc_en": "Schloss Albrechtsberg is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schloss Albrechtsberg."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_33-2",
+      "name": "Lingnerschloss",
+      "locationZone": "city",
+      "lat": 51.0602,
+      "lng": 13.7975,
+      "desc_en": "Lingnerschloss is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Lingnerschloss."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_33-3",
+      "name": "Schloss Eckberg",
+      "locationZone": "city",
+      "lat": 51.0602,
+      "lng": 13.7975,
+      "desc_en": "Schloss Eckberg is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schloss Eckberg."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_36",
+      "name": "Kutscherschänke",
+      "locationZone": "city",
+      "lat": 51.0518,
+      "lng": 13.7428,
+      "desc_en": "Kutscherschänke is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Kutscherschänke."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_36-2",
+      "name": "Pulverturm an der Frauenkirche",
+      "locationZone": "city",
+      "lat": 51.0518,
+      "lng": 13.7428,
+      "desc_en": "Pulverturm an der Frauenkirche is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Pulverturm an der Frauenkirche."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_38",
+      "name": "Café Kreutzkamm",
+      "locationZone": "city",
+      "lat": 51.0519,
+      "lng": 13.7422,
+      "desc_en": "Café Kreutzkamm is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Café Kreutzkamm."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_38-2",
+      "name": "Coselpalais",
+      "locationZone": "city",
+      "lat": 51.0519,
+      "lng": 13.7422,
+      "desc_en": "Coselpalais is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Coselpalais."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_40",
+      "name": "Lingnerstadt",
+      "locationZone": "city",
+      "lat": 51.0438,
+      "lng": 13.7485,
+      "desc_en": "Lingnerstadt is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Lingnerstadt."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_40-2",
+      "name": "Blüherpark",
+      "locationZone": "city",
+      "lat": 51.0438,
+      "lng": 13.7485,
+      "desc_en": "Blüherpark is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Blüherpark."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_41",
+      "name": "Nationalpark Sächsische Schweiz",
+      "locationZone": "suburban",
+      "lat": 50.9618,
+      "lng": 14.0725,
+      "desc_en": "Nationalpark Sächsische Schweiz is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Nationalpark Sächsische Schweiz."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_41-2",
+      "name": "Basteibrücke",
+      "locationZone": "suburban",
+      "lat": 50.9618,
+      "lng": 14.0725,
+      "desc_en": "Basteibrücke is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Basteibrücke."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_43",
+      "name": "Schloss Moritzburg",
+      "locationZone": "suburban",
+      "lat": 51.1638,
+      "lng": 13.6795,
+      "desc_en": "Schloss Moritzburg is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schloss Moritzburg."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_43-2",
+      "name": "Fasanenschlösschen",
+      "locationZone": "suburban",
+      "lat": 51.1638,
+      "lng": 13.6795,
+      "desc_en": "Fasanenschlösschen is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Fasanenschlösschen."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_20",
+      "name": "Zur Sonne",
+      "locationZone": "city",
+      "lat": 50.1033,
+      "lng": 8.6914,
+      "desc_en": "Zur Sonne is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Zur Sonne."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_20-2",
+      "name": "Zum Gemalten Haus",
+      "locationZone": "city",
+      "lat": 50.1033,
+      "lng": 8.6914,
+      "desc_en": "Zum Gemalten Haus is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Zum Gemalten Haus."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_20-3",
+      "name": "Atschel",
+      "locationZone": "city",
+      "lat": 50.1033,
+      "lng": 8.6914,
+      "desc_en": "Atschel is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Atschel."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_30",
+      "name": "Europaviertel",
+      "locationZone": "city",
+      "lat": 50.1108,
+      "lng": 8.6522,
+      "desc_en": "Europaviertel is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Europaviertel."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_30-2",
+      "name": "Skyline Plaza",
+      "locationZone": "city",
+      "lat": 50.1108,
+      "lng": 8.6522,
+      "desc_en": "Skyline Plaza is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Skyline Plaza."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_32",
+      "name": "Hafenpark",
+      "locationZone": "city",
+      "lat": 50.1103,
+      "lng": 8.7019,
+      "desc_en": "Hafenpark is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Hafenpark."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_32-2",
+      "name": "Ostpark",
+      "locationZone": "city",
+      "lat": 50.1103,
+      "lng": 8.7019,
+      "desc_en": "Ostpark is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Ostpark."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_46",
+      "name": "Rüdesheim am Rhein",
+      "locationZone": "suburban",
+      "lat": 49.9786,
+      "lng": 7.9222,
+      "desc_en": "Rüdesheim am Rhein is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Rüdesheim am Rhein."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_46-2",
+      "name": "Drosselgasse",
+      "locationZone": "suburban",
+      "lat": 49.9786,
+      "lng": 7.9222,
+      "desc_en": "Drosselgasse is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Drosselgasse."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_48",
+      "name": "Dom St. Martin",
+      "locationZone": "suburban",
+      "lat": 49.9989,
+      "lng": 8.2739,
+      "desc_en": "Dom St. Martin is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Dom St. Martin."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_48-2",
+      "name": "Gutenberg-Museum",
+      "locationZone": "suburban",
+      "lat": 49.9989,
+      "lng": 8.2739,
+      "desc_en": "Gutenberg-Museum is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Gutenberg-Museum."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_49",
+      "name": "Kurhaus",
+      "locationZone": "suburban",
+      "lat": 50.0847,
+      "lng": 8.2436,
+      "desc_en": "Kurhaus is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Kurhaus."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_49-2",
+      "name": "Nerobergbahn",
+      "locationZone": "suburban",
+      "lat": 50.0847,
+      "lng": 8.2436,
+      "desc_en": "Nerobergbahn is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Nerobergbahn."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_5",
+      "name": "Graslei",
+      "locationZone": "city",
+      "lat": 51.0547,
+      "lng": 3.7208,
+      "desc_en": "Graslei is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Graslei."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_5-2",
+      "name": "Korenlei",
+      "locationZone": "city",
+      "lat": 51.0547,
+      "lng": 3.7208,
+      "desc_en": "Korenlei is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Korenlei."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_18",
+      "name": "Vrijdagmarkt",
+      "locationZone": "city",
+      "lat": 51.0567,
+      "lng": 3.7267,
+      "desc_en": "Vrijdagmarkt is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Vrijdagmarkt."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_18-2",
+      "name": "Dulle Griet",
+      "locationZone": "city",
+      "lat": 51.0567,
+      "lng": 3.7267,
+      "desc_en": "Dulle Griet is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Dulle Griet."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_21",
+      "name": "Gentse Neuzenvetes",
+      "locationZone": "city",
+      "lat": 51.055,
+      "lng": 3.7219,
+      "desc_en": "Gentse Neuzenvetes is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Gentse Neuzenvetes."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_21-2",
+      "name": "Cuberdons",
+      "locationZone": "city",
+      "lat": 51.055,
+      "lng": 3.7219,
+      "desc_en": "Cuberdons is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Cuberdons."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_29",
+      "name": "De Kuip van Gent",
+      "locationZone": "city",
+      "lat": 51.0544,
+      "lng": 3.7222,
+      "desc_en": "De Kuip van Gent is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting De Kuip van Gent."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_29-2",
+      "name": "Lichtplan",
+      "locationZone": "city",
+      "lat": 51.0544,
+      "lng": 3.7222,
+      "desc_en": "Lichtplan is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Lichtplan."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_4",
+      "name": "Kontorhausviertel",
+      "locationZone": "city",
+      "lat": 53.5483,
+      "lng": 10.0019,
+      "desc_en": "Kontorhausviertel is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Kontorhausviertel."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_4-2",
+      "name": "Chilehaus",
+      "locationZone": "city",
+      "lat": 53.5483,
+      "lng": 10.0019,
+      "desc_en": "Chilehaus is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Chilehaus."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_10",
+      "name": "Binnenalster",
+      "locationZone": "city",
+      "lat": 53.5539,
+      "lng": 9.9961,
+      "desc_en": "Binnenalster is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Binnenalster."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_10-2",
+      "name": "Außenalster",
+      "locationZone": "city",
+      "lat": 53.5539,
+      "lng": 9.9961,
+      "desc_en": "Außenalster is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Außenalster."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_22",
+      "name": "Reeperbahn",
+      "locationZone": "city",
+      "lat": 53.5497,
+      "lng": 9.9625,
+      "desc_en": "Reeperbahn is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Reeperbahn."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_22-2",
+      "name": "St. Pauli",
+      "locationZone": "city",
+      "lat": 53.5497,
+      "lng": 9.9625,
+      "desc_en": "St. Pauli is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting St. Pauli."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_23",
+      "name": "Beatles-Platz",
+      "locationZone": "city",
+      "lat": 53.5503,
+      "lng": 9.9575,
+      "desc_en": "Beatles-Platz is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Beatles-Platz."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_23-2",
+      "name": "Indra Club",
+      "locationZone": "city",
+      "lat": 53.5503,
+      "lng": 9.9575,
+      "desc_en": "Indra Club is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Indra Club."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_23-3",
+      "name": "Kaiserkeller",
+      "locationZone": "city",
+      "lat": 53.5503,
+      "lng": 9.9575,
+      "desc_en": "Kaiserkeller is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Kaiserkeller."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_26",
+      "name": "Mönckebergstraße",
+      "locationZone": "city",
+      "lat": 53.5508,
+      "lng": 10.0008,
+      "desc_en": "Mönckebergstraße is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Mönckebergstraße."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_26-2",
+      "name": "Spitalerstraße",
+      "locationZone": "city",
+      "lat": 53.5508,
+      "lng": 10.0008,
+      "desc_en": "Spitalerstraße is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Spitalerstraße."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_27",
+      "name": "Neuer Wall",
+      "locationZone": "city",
+      "lat": 53.5514,
+      "lng": 9.9889,
+      "desc_en": "Neuer Wall is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Neuer Wall."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_27-2",
+      "name": "Große Bleichen",
+      "locationZone": "city",
+      "lat": 53.5514,
+      "lng": 9.9889,
+      "desc_en": "Große Bleichen is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Große Bleichen."
+    }
+  }
+]

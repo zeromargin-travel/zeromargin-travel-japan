@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ber_b_17",
+    "city": "Berlin, Germany",
+    "name": "Alexanderplatz & Weltzeituhr"
+  },
+  {
+    "id": "ber_b_19",
+    "city": "Berlin, Germany",
+    "name": "Kaiser-Wilhelm-Gedächtniskirche"
+  },
+  {
+    "id": "ber_b_23",
+    "city": "Berlin, Germany",
+    "name": "Hamburger Bahnhof"
+  },
+  {
+    "id": "ber_b_66",
+    "city": "Berlin, Germany",
+    "name": "Glienicker Brücke"
+  },
+  {
+    "id": "ber_b_68",
+    "city": "Berlin, Germany",
+    "name": "KZ-Gedenkstätte Sachsenhausen"
+  },
+  {
+    "id": "fra_f_2",
+    "city": "Frankfurt, Germany",
+    "name": "Kaiserdom St. Bartholomäus"
+  },
+  {
+    "id": "fra_f_11",
+    "city": "Frankfurt, Germany",
+    "name": "Liebieghaus Skulpturensammlung"
+  },
+  {
+    "id": "fra_f_13",
+    "city": "Frankfurt, Germany",
+    "name": "Deutsches Filminstitut & Filmmuseum"
+  },
+  {
+    "id": "fra_f_14",
+    "city": "Frankfurt, Germany",
+    "name": "Museum für Moderne Kunst"
+  },
+  {
+    "id": "fra_f_17",
+    "city": "Frankfurt, Germany",
+    "name": "Kleinmarkthalle"
+  },
+  {
+    "id": "fra_f_19",
+    "city": "Frankfurt, Germany",
+    "name": "Sachsenhausen"
+  }
+]

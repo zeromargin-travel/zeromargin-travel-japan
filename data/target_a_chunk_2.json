@@ -1,0 +1,537 @@
+[
+  {
+    "city": "Brussels, Belgium",
+    "spot": {
+      "id": "bru_c_b_53",
+      "name": "Sint-Gillis",
+      "category": "Scenery & Walk",
+      "rating": "★4.7",
+      "locationZone": "city",
+      "lat": 50.8258,
+      "lng": 4.3589,
+      "kids": false,
+      "rain": false,
+      "shopping": false,
+      "free": true,
+      "family": true,
+      "adult": true,
+      "image": "",
+      "wikiImage": "",
+      "hasWiki": false,
+      "name_en": "Sint-Gillis",
+      "name_ja": "Sint-Gillis",
+      "name_es": "Sint-Gillis",
+      "name_zh": "Sint-Gillis",
+      "name_fr": "Sint-Gillis",
+      "name_de": "Sint-Gillis",
+      "desc_en": "Sint-Gillis: Residential quarters of Saint-Gilles and Ixelles celebrated for having Europe's highest concentration of preserved Art Nouveau townhouses.",
+      "desc_ja": "Sint-Gillis: アール・ヌーヴォー様式の邸宅が欧州で最も美しく保存されたサン＝ジレ地区。鉄細工のバルコニーやステンドグラスの装飾が美しい。",
+      "desc_es": "Sint-Gillis: Residential quarters of Saint-Gilles and Ixelles celebrated for having Europe's highest concentration of preserved Art Nouveau townhouses.",
+      "desc_zh": "Sint-Gillis: Residential quarters of Saint-Gilles and Ixelles celebrated for having Europe's highest concentration of preserved Art Nouveau townhouses.",
+      "desc_fr": "Sint-Gillis: Residential quarters of Saint-Gilles and Ixelles celebrated for having Europe's highest concentration of preserved Art Nouveau townhouses.",
+      "desc_de": "Sint-Gillis: Residential quarters of Saint-Gilles and Ixelles celebrated for having Europe's highest concentration of preserved Art Nouveau townhouses.",
+      "tip_en": "Sint-Gillis: 🚶 Pick up an Art Nouveau walking itinerary to spot decorative sgraffito wall murals and curved ironwork along Rue Defacqz.",
+      "tip_ja": "Sint-Gillis: 🚶 ブルグマン通りやデファクス通りを歩き、ファサードに施されたグラフィティ装飾や洗練されたドアノブの造形美を観察。",
+      "tip_es": "Sint-Gillis: 🚶 Pick up an Art Nouveau walking itinerary to spot decorative sgraffito wall murals and curved ironwork along Rue Defacqz.",
+      "tip_zh": "Sint-Gillis: 🚶 Pick up an Art Nouveau walking itinerary to spot decorative sgraffito wall murals and curved ironwork along Rue Defacqz.",
+      "tip_fr": "Sint-Gillis: 🚶 Pick up an Art Nouveau walking itinerary to spot decorative sgraffito wall murals and curved ironwork along Rue Defacqz.",
+      "tip_de": "Sint-Gillis: 🚶 Pick up an Art Nouveau walking itinerary to spot decorative sgraffito wall murals and curved ironwork along Rue Defacqz.",
+      "price_ja": "散策無料",
+      "price_en": "Free Walk",
+      "price_es": "Free Walk",
+      "price_zh": "Free Walk",
+      "price_fr": "Free Walk",
+      "price_de": "Free Walk",
+      "name_nl": "Sint-Gillis",
+      "desc_nl": "Sint-Gillis: Residential quarters of Saint-Gilles and Ixelles celebrated for having Europe's highest concentration of preserved Art Nouveau townhouses.",
+      "tip_nl": "Sint-Gillis: 🚶 Pick up an Art Nouveau walking itinerary to spot decorative sgraffito wall murals and curved ironwork along Rue Defacqz.",
+      "price_nl": "Free Walk",
+      "categories": [
+        "Scenery"
+      ],
+      "is_night_spot": false,
+      "name_local": "Sint-Gillis",
+      "top7": false,
+      "hiddenGem": false
+    }
+  },
+  {
+    "city": "Cologne, Germany",
+    "spot": {
+      "id": "cgn_c_3",
+      "name": "Altstadt Köln",
+      "category": "Landmark",
+      "rating": "★4.7",
+      "locationZone": "city",
+      "lat": 50.9383,
+      "lng": 6.9603,
+      "kids": false,
+      "rain": true,
+      "shopping": false,
+      "free": true,
+      "desc_en": "Altstadt Köln: Cologne Old Town & Alter Markt in City district.",
+      "desc_ja": "Altstadt Köln: ケルンの旧市街のカラフルな木組みの家々の後ろにそびえる、重厚なロマネスク様式の大教会。",
+      "desc_es": "Altstadt Köln: Cologne Old Town & Alter Markt destacado en Colonia.",
+      "desc_zh": "Altstadt Köln: 旧市街＆。",
+      "desc_fr": "Altstadt Köln: Église romanesque majestueuse dominant les maisons colorées de la vieille ville de Cologne.",
+      "de": "Altstadt Köln & Alter Markt im Kölner Stadtgebiet.",
+      "tip_en": "Altstadt Köln: 💡 Great spot to visit for memorable photos and local atmosphere.",
+      "tip_ja": "Altstadt Köln: 教会前のカラフルな歴史的家々が立ち並ぶアマルフィ通りの広場からの外観撮影が最高のフォトロケーションです。",
+      "tip_es": "Altstadt Köln: 💡 Gran lugar para visitar y tomar fotos memorables con ambiente local.",
+      "tip_zh": "Altstadt Köln: 💡 非常值得打卡游览的最佳地点，适合合影留念与感受在地氛围。",
+      "tip_fr": "Altstadt Köln: La meilleure vue s'admire depuis la place de la vieille ville avec les maisons colorées en arrière-plan.",
+      "tip_de": "Altstadt Köln: Der schönste Fotospot befindet sich auf dem Fischmarkt mit den bunten Stapelhäusern im Vordergrund.",
+      "price_en": "散策無料",
+      "price_ja": "散策無料",
+      "price_es": "散策無料",
+      "price_zh": "散策無料",
+      "price_fr": "散策無料",
+      "price_de": "散策無料",
+      "name_en": "Altstadt Köln",
+      "name_ja": "Altstadt Köln",
+      "name_es": "Altstadt Köln",
+      "name_zh": "Altstadt Köln",
+      "name_fr": "Altstadt Köln",
+      "name_de": "Altstadt Köln",
+      "desc_de": "Altstadt Köln: Imposante romanische Stiftskirche, die die bunten Altstadthäuser von Köln überragt.",
+      "image": "",
+      "hasWiki": false,
+      "name_nl": "Altstadt Köln",
+      "desc_nl": "Altstadt Köln: Cologne Old Town & Alter Markt in City district.",
+      "tip_nl": "Altstadt Köln: 💡 Great spot to visit for memorable photos and local atmosphere.",
+      "price_nl": "散策無料",
+      "categories": [
+        "Landmark"
+      ],
+      "is_night_spot": false,
+      "name_local": "Altstadt Köln",
+      "top7": true,
+      "hiddenGem": false
+    }
+  },
+  {
+    "city": "Cologne, Germany",
+    "spot": {
+      "id": "cgn_c_25",
+      "name": "Schildergasse",
+      "category": "Shopping",
+      "rating": "★4.5",
+      "locationZone": "city",
+      "lat": 50.9361,
+      "lng": 6.9536,
+      "kids": false,
+      "rain": true,
+      "shopping": true,
+      "free": true,
+      "desc_en": "Schildergasse: Schildergasse & Hohe Straße in City district.",
+      "desc_ja": "Schildergasse: ドイツ屈指の歩行者交通量を誇る二大歩行者天国ショッピング街。デパートやファッション。",
+      "desc_es": "Schildergasse: Schildergasse & Hohe Straße destacado en Colonia.",
+      "desc_zh": "Schildergasse: Schildergasse & Hohe Straße 是当地著名的代表性景点，吸引着众多游客前来参观与感受独特氛围。",
+      "desc_fr": "Schildergasse: Schildergasse & Hohe Straße remarquable à visiter à Cologne.",
+      "de": "Schildergasse & Hohe Straße im Kölner Stadtgebiet.",
+      "tip_en": "Schildergasse: 💡 Great spot to visit for memorable photos and local atmosphere.",
+      "tip_ja": "Schildergasse: 💡 Schildergasseのガラス建築Peek & Cloppenburg（レンゾ・ピアノ設計）の曲面ガラス壁を観賞。",
+      "tip_es": "Schildergasse: 💡 Gran lugar para visitar y tomar fotos memorables con ambiente local.",
+      "tip_zh": "Schildergasse: 💡 非常值得打卡游览的最佳地点，适合合影留念与感受在地氛围。",
+      "tip_fr": "Schildergasse: 💡 Superbe endroit à visiter pour des photos mémorables et une ambiance locale.",
+      "tip_de": "Schildergasse: 💡 Empfehlenswerter Ort für schöne Fotos und authentische Atmosphäre.",
+      "price_en": "散策無料",
+      "price_ja": "散策無料",
+      "price_es": "散策無料",
+      "price_zh": "散策無料",
+      "price_fr": "散策無料",
+      "price_de": "散策無料",
+      "name_en": "Schildergasse",
+      "name_ja": "Schildergasse",
+      "name_es": "Schildergasse",
+      "name_zh": "Schildergasse",
+      "name_fr": "Schildergasse",
+      "name_de": "Schildergasse",
+      "image": "",
+      "hasWiki": false,
+      "desc_de": "Schildergasse: Schildergasse & Hohe Straße in City district.",
+      "name_nl": "Schildergasse",
+      "desc_nl": "Schildergasse: Schildergasse & Hohe Straße in City district.",
+      "tip_nl": "Schildergasse: 💡 Great spot to visit for memorable photos and local atmosphere.",
+      "price_nl": "散策無料",
+      "categories": [
+        "Scenery",
+        "Shopping"
+      ],
+      "is_night_spot": false,
+      "name_local": "Schildergasse",
+      "top7": false,
+      "hiddenGem": false
+    }
+  },
+  {
+    "city": "Cologne, Germany",
+    "spot": {
+      "id": "cgn_c_26",
+      "name": "Ehrenstraße",
+      "category": "Shopping",
+      "rating": "★4.7",
+      "locationZone": "city",
+      "lat": 50.9389,
+      "lng": 6.9428,
+      "kids": false,
+      "rain": true,
+      "shopping": true,
+      "free": true,
+      "desc_en": "Ehrenstraße: Ehrenstraße & Belgian Quarter in City district.",
+      "desc_ja": "Ehrenstraße: 若者に大人気のトレンド街区。独立系デザイナーブティック、ヴィンテージ古着、カフェ。",
+      "desc_es": "Ehrenstraße: Ehrenstraße & Belgian Quarter destacado en Colonia.",
+      "desc_zh": "Ehrenstraße: 通＆地区。",
+      "desc_fr": "Ehrenstraße: Ehrenstraße & Belgian Quarter remarquable à visiter à Cologne.",
+      "de": "Ehrenstraße & Belgisches Viertel im Kölner Stadtgebiet.",
+      "tip_en": "Ehrenstraße: 💡 Great spot to visit for memorable photos and local atmosphere.",
+      "tip_ja": "Ehrenstraße: 💡 Belgisches Viertelの中心ブリュッセル広場（Brüsseler Platz）周りのカフェで地元若者と過ごす。",
+      "tip_es": "Ehrenstraße: 💡 Gran lugar para visitar y tomar fotos memorables con ambiente local.",
+      "tip_zh": "Ehrenstraße: 💡 非常值得打卡游览的最佳地点，适合合影留念与感受在地氛围。",
+      "tip_fr": "Ehrenstraße: 💡 Superbe endroit à visiter pour des photos mémorables et une ambiance locale.",
+      "tip_de": "Ehrenstraße: 💡 Empfehlenswerter Ort für schöne Fotos und authentische Atmosphäre.",
+      "price_en": "散策無料",
+      "price_ja": "散策無料",
+      "price_es": "散策無料",
+      "price_zh": "散策無料",
+      "price_fr": "散策無料",
+      "price_de": "散策無料",
+      "name_en": "Ehrenstraße",
+      "name_ja": "Ehrenstraße",
+      "name_es": "Ehrenstraße",
+      "name_zh": "Ehrenstraße",
+      "name_fr": "Ehrenstraße",
+      "name_de": "Ehrenstraße",
+      "image": "",
+      "hasWiki": false,
+      "desc_de": "Ehrenstraße: Ehrenstraße & Belgian Quarter in City district.",
+      "name_nl": "Ehrenstraße",
+      "desc_nl": "Ehrenstraße: Ehrenstraße & Belgian Quarter in City district.",
+      "tip_nl": "Ehrenstraße: 💡 Great spot to visit for memorable photos and local atmosphere.",
+      "price_nl": "散策無料",
+      "categories": [
+        "Café",
+        "Scenery",
+        "Shopping"
+      ],
+      "is_night_spot": false,
+      "name_local": "Ehrenstraße",
+      "top7": true,
+      "hiddenGem": false
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_32",
+      "name": "Standseilbahn Dresden",
+      "locationZone": "city",
+      "lat": 51.0545,
+      "lng": 13.8122,
+      "desc_en": "Standseilbahn Dresden is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Standseilbahn Dresden."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_32-2",
+      "name": "Schwebebahn Dresden",
+      "locationZone": "city",
+      "lat": 51.0545,
+      "lng": 13.8122,
+      "desc_en": "Schwebebahn Dresden is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schwebebahn Dresden."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_33",
+      "name": "Schloss Albrechtsberg",
+      "locationZone": "city",
+      "lat": 51.0602,
+      "lng": 13.7975,
+      "desc_en": "Schloss Albrechtsberg is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schloss Albrechtsberg."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_33-2",
+      "name": "Lingnerschloss",
+      "locationZone": "city",
+      "lat": 51.0602,
+      "lng": 13.7975,
+      "desc_en": "Lingnerschloss is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Lingnerschloss."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_41",
+      "name": "Nationalpark Sächsische Schweiz",
+      "locationZone": "suburban",
+      "lat": 50.9618,
+      "lng": 14.0725,
+      "desc_en": "Nationalpark Sächsische Schweiz is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Nationalpark Sächsische Schweiz."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_41-2",
+      "name": "Basteibrücke",
+      "locationZone": "suburban",
+      "lat": 50.9618,
+      "lng": 14.0725,
+      "desc_en": "Basteibrücke is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Basteibrücke."
+    }
+  },
+  {
+    "city": "Dresden, Germany",
+    "spot": {
+      "id": "drs_dr_43",
+      "name": "Schloss Moritzburg",
+      "locationZone": "suburban",
+      "lat": 51.1638,
+      "lng": 13.6795,
+      "desc_en": "Schloss Moritzburg is a distinct location in Dresden, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Schloss Moritzburg."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_18",
+      "name": "Neue Altstadt",
+      "category": "Landmark",
+      "rating": "★4.7",
+      "locationZone": "city",
+      "lat": 50.1108,
+      "lng": 8.6836,
+      "kids": false,
+      "rain": true,
+      "shopping": false,
+      "free": true,
+      "desc_en": "New Old Town in City district.",
+      "desc_ja": "戦災で失われた中世・ルネサンスの木骨造り街並みを精密再建したエリア。",
+      "desc_es": "New Old Town destacado en la ciudad.",
+      "desc_zh": "位于当地的知名景点 新旧市街。",
+      "desc_fr": "New Old Town remarquable à visiter.",
+      "de": "Neue Altstadt im Stadtgebiet.",
+      "tip_en": "💡 Great spot to visit for memorable photos and local atmosphere.",
+      "tip_ja": "💡 小路Hühnermarkt中央へ！黄金の秤の館Goldene Waageの張り出し彫刻が見事。",
+      "tip_es": "💡 Gran lugar para visitar y tomar fotos memorables con ambiente local.",
+      "tip_zh": "💡 非常值得打卡游览的最佳地点，适合合影留念与感受在地氛围。",
+      "tip_fr": "💡 Superbe endroit à visiter pour des photos mémorables et une ambiance locale.",
+      "tip_de": "💡 Empfehlenswerter Ort für schöne Fotos und authentische Atmosphäre.",
+      "price_en": "散策無料",
+      "price_ja": "散策無料",
+      "price_es": "散策無料",
+      "price_zh": "散策無料",
+      "price_fr": "散策無料",
+      "price_de": "散策無料",
+      "name_en": "Neue Altstadt (New Old Town)",
+      "name_ja": "Neue Altstadt（新旧市街）",
+      "name_es": "Neue Altstadt (New Old Town)",
+      "name_zh": "Neue Altstadt (新旧市街)",
+      "name_fr": "Neue Altstadt (New Old Town)",
+      "name_de": "Neue Altstadt",
+      "image": "",
+      "hasWiki": false,
+      "desc_de": "New Old Town in City district.",
+      "name_nl": "Neue Altstadt",
+      "desc_nl": "New Old Town in City district.",
+      "tip_nl": "💡 Great spot to visit for memorable photos and local atmosphere.",
+      "price_nl": "散策無料",
+      "categories": [
+        "Landmark"
+      ],
+      "is_night_spot": false,
+      "name_local": "Neue Altstadt",
+      "top7": false,
+      "hiddenGem": true
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_39",
+      "name": "Lohrberg",
+      "category": "Scenery & Walk",
+      "rating": "★4.8",
+      "locationZone": "city",
+      "lat": 50.1472,
+      "lng": 8.7236,
+      "kids": false,
+      "rain": false,
+      "shopping": false,
+      "free": true,
+      "desc_en": "Lohrberg Park in City district.",
+      "desc_ja": "市内北東部の丘にあるぶどう畑と展望公園。フランクフルト全景を見渡せる。",
+      "desc_es": "Lohrberg Park destacado en la ciudad.",
+      "desc_zh": "展望公園。",
+      "desc_fr": "Lohrberg Park remarquable à visiter.",
+      "de": "Lohrberg (Lohrpark) im Stadtgebiet.",
+      "tip_en": "💡 Great spot to visit for memorable photos and local atmosphere.",
+      "tip_ja": "💡 レストハウスLohrbärg-Schänkeのテラスから自家製自家栽培ワインと摩天楼夕景を楽しむ！",
+      "tip_es": "💡 Gran lugar para visitar y tomar fotos memorables con ambiente local.",
+      "tip_zh": "💡 非常值得打卡游览的最佳地点，适合合影留念与感受在地氛围。",
+      "tip_fr": "💡 Superbe endroit à visiter pour des photos mémorables et une ambiance locale.",
+      "tip_de": "💡 Empfehlenswerter Ort für schöne Fotos und authentische Atmosphäre.",
+      "price_en": "入園無料",
+      "price_ja": "入園無料",
+      "price_es": "入園無料",
+      "price_zh": "入園無料",
+      "price_fr": "入園無料",
+      "price_de": "入園無料",
+      "name_en": "Lohrberg",
+      "name_ja": "Lohrberg",
+      "name_es": "Lohrberg",
+      "name_zh": "Lohrberg",
+      "name_fr": "Lohrberg",
+      "name_de": "Lohrberg (Lohrpark)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lohrberg_3.jpg/330px-Lohrberg_3.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "hasWiki": true,
+      "desc_de": "Lohrberg Park in City district.",
+      "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lohrberg_3.jpg/330px-Lohrberg_3.jpg?utm_source=de.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "name_nl": "Lohrberg",
+      "desc_nl": "Lohrberg Park in City district.",
+      "tip_nl": "💡 Great spot to visit for memorable photos and local atmosphere.",
+      "price_nl": "入園無料",
+      "categories": [
+        "Kids",
+        "Scenery"
+      ],
+      "is_night_spot": false,
+      "name_local": "Lohrberg",
+      "top7": false,
+      "hiddenGem": false
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_46",
+      "name": "Rüdesheim am Rhein",
+      "locationZone": "suburban",
+      "lat": 49.9786,
+      "lng": 7.9222,
+      "desc_en": "Rüdesheim am Rhein is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Rüdesheim am Rhein."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_48",
+      "name": "Dom St. Martin",
+      "locationZone": "suburban",
+      "lat": 49.9989,
+      "lng": 8.2739,
+      "desc_en": "Dom St. Martin is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Dom St. Martin."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_48-2",
+      "name": "Gutenberg-Museum",
+      "locationZone": "suburban",
+      "lat": 49.9989,
+      "lng": 8.2739,
+      "desc_en": "Gutenberg-Museum is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Gutenberg-Museum."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_49",
+      "name": "Kurhaus",
+      "locationZone": "suburban",
+      "lat": 50.0847,
+      "lng": 8.2436,
+      "desc_en": "Kurhaus is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Kurhaus."
+    }
+  },
+  {
+    "city": "Frankfurt, Germany",
+    "spot": {
+      "id": "fra_f_49-2",
+      "name": "Nerobergbahn",
+      "locationZone": "suburban",
+      "lat": 50.0847,
+      "lng": 8.2436,
+      "desc_en": "Nerobergbahn is a distinct location in Frankfurt, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Nerobergbahn."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_5",
+      "name": "Graslei",
+      "locationZone": "city",
+      "lat": 51.0547,
+      "lng": 3.7208,
+      "desc_en": "Graslei is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Graslei."
+    }
+  },
+  {
+    "city": "Ghent, Belgium",
+    "spot": {
+      "id": "gnt_gh_18",
+      "name": "Vrijdagmarkt",
+      "locationZone": "city",
+      "lat": 51.0567,
+      "lng": 3.7267,
+      "desc_en": "Vrijdagmarkt is a distinct location in Ghent, Belgium. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Vrijdagmarkt."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_4",
+      "name": "Kontorhausviertel",
+      "locationZone": "city",
+      "lat": 53.5483,
+      "lng": 10.0019,
+      "desc_en": "Kontorhausviertel is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Kontorhausviertel."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_10",
+      "name": "Binnenalster",
+      "locationZone": "city",
+      "lat": 53.5539,
+      "lng": 9.9961,
+      "desc_en": "Binnenalster is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Binnenalster."
+    }
+  },
+  {
+    "city": "Hamburg, Germany",
+    "spot": {
+      "id": "ham_h_22",
+      "name": "Reeperbahn",
+      "locationZone": "city",
+      "lat": 53.5497,
+      "lng": 9.9625,
+      "desc_en": "Reeperbahn is a distinct location in Hamburg, Germany. Enjoy the unique atmosphere.",
+      "tip_en": "💡 A great tip for visiting Reeperbahn."
+    }
+  }
+]

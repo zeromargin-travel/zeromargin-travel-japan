@@ -1,0 +1,247 @@
+[
+  {
+    "id": "ams_a_6",
+    "city": "Utrecht, Netherlands",
+    "name": "Heineken Experience",
+    "desc_en": "Delve into the rich history of one of the world's most famous beers at the Heineken Experience. Set inside the original 19th-century brick brewery in the vibrant De Pijp district, this interactive, self-guided journey offers a fascinating glimpse into the brewing heritage.",
+    "insiderTip_en": "🍺 Your admission includes two freshly poured beers. For an unforgettable tasting experience, be sure to join the bartender-led 'Perfect Pour' masterclass in the underground cellar."
+  },
+  {
+    "id": "ams_a_10",
+    "city": "Utrecht, Netherlands",
+    "name": "Vondelpark",
+    "desc_en": "Escape the city hustle at Vondelpark, Amsterdam's iconic 47-hectare English landscape park sprawling just west of Museumplein. This lush sanctuary features winding waterways, vibrant rose gardens, and open-air theatrical performances.",
+    "insiderTip_en": "🚲 Pay attention to the strictly separated lanes for cyclists and pedestrians. Local bike traffic moves incredibly fast, so be careful to avoid stepping onto the reddish cycle paths while walking."
+  },
+  {
+    "id": "ams_a_18",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum Het Rembrandthuis",
+    "desc_en": "Step back into the Dutch Golden Age at Museum Het Rembrandthuis, the meticulously restored 17th-century townhouse where the legendary master Rembrandt van Rijn lived, painted, and operated his bustling studio during the height of his career.",
+    "insiderTip_en": "🎨 Head up to the authentic 3rd-floor studio to watch daily live demonstrations that vividly illustrate how Rembrandt ground mineral pigments and mixed his world-famous oil paints."
+  },
+  {
+    "id": "ams_a_24",
+    "city": "Utrecht, Netherlands",
+    "name": "Magere Brug",
+    "desc_en": "Marvel at the Magere Brug (Skinny Bridge), an iconic white-painted traditional Dutch wooden double-drawbridge that elegantly spans the Amstel River, perfectly embodying the romantic charm of Amsterdam.",
+    "insiderTip_en": "📸 Time your visit for just after nightfall, when the entire timber structure is beautifully illuminated by roughly 1,200 small lights, creating a spectacular reflection on the water perfect for photography."
+  },
+  {
+    "id": "ams_a_38",
+    "city": "Utrecht, Netherlands",
+    "name": "De Bijenkorf",
+    "desc_en": "Indulge in a world-class shopping experience at De Bijenkorf. Founded in 1870, the Netherlands' premier luxury department store occupies a grand historic building that majestically dominates the eastern edge of Dam Square.",
+    "insiderTip_en": "🛍️ Head up to the 5th-floor dining lounge to enjoy fantastic elevated glass views directly overlooking Dam Square. Non-EU visitors can also take advantage of the convenient on-site Tax-Free Lounge."
+  },
+  {
+    "id": "ams_a_44",
+    "city": "Utrecht, Netherlands",
+    "name": "Hortus Botanicus Amsterdam",
+    "desc_en": "Find tranquility at Hortus Botanicus Amsterdam, one of the world's oldest and most enchanting botanical gardens. Established in 1638, it is home to rare, centuries-old cycads, exotic greenhouses, and a captivating Butterfly House.",
+    "insiderTip_en": "🦋 Be sure to step inside the spectacular climate-controlled Butterfly House, a magical environment where hundreds of vibrant tropical butterflies flutter freely around visitors."
+  },
+  {
+    "id": "ams_a_50",
+    "city": "Utrecht, Netherlands",
+    "name": "Kaasmarkt Alkmaar",
+    "desc_en": "Experience a vivid Dutch tradition at Kaasmarkt Alkmaar. Dating back to 1365, this dramatic and historical cheese trading spectacle brings the historic Waagplein to life every Friday morning from April through September.",
+    "insiderTip_en": "🧀 While the official ceremony and bell ringing commence at 10:00 AM, you should absolutely arrive by 9:30 AM to secure a coveted front-row viewing spot against the square barriers."
+  },
+  {
+    "id": "ams_a_57",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum Van Loon",
+    "desc_en": "Step into aristocratic luxury at Museum Van Loon, a beautifully preserved historic canal house that once belonged to the influential Van Loon merchant family, co-founders of the Dutch East India Company.",
+    "insiderTip_en": "🏛️ This is one of the very few locations in Amsterdam where the lavish residence, manicured geometric courtyard garden, and classical coach house have been perfectly preserved together as a complete 17th-century estate."
+  },
+  {
+    "id": "ber_b_1",
+    "city": "Utrecht, Netherlands",
+    "name": "Brandenburger Tor",
+    "desc_en": "A profound symbol of both the Cold War's division and Germany's ultimate unification, the Brandenburger Tor is a striking neoclassical monument built in 1791, famously crowned by a triumphant quadriga statue.",
+    "insiderTip_en": "💡 For the most magical photos, visit during the evening blue hour and shoot westward from the east side of Pariser Platz to capture the colonnade bathed in fantastic golden illumination."
+  },
+  {
+    "id": "ber_b_2",
+    "city": "Utrecht, Netherlands",
+    "name": "Reichstagsgebäude",
+    "desc_en": "The Reichstagsgebäude serves as the seat of the German parliament, distinguished by its magnificent glass dome designed by Norman Foster. From inside the dome, visitors can peer directly down into the plenary chamber.",
+    "insiderTip_en": "💡 Admission is free, but booking several weeks in advance via bundestag.de is absolutely essential. Don't forget to bring your original passport on the day of your visit."
+  },
+  {
+    "id": "ber_b_3",
+    "city": "Utrecht, Netherlands",
+    "name": "Museumsinsel",
+    "desc_en": "Designated as a UNESCO World Heritage Site, Museumsinsel is a remarkable cultural ensemble situated on a sandbank in the Spree River, bringing together five world-class museums in one majestic location.",
+    "insiderTip_en": "💡 Maximize your visit by purchasing the Museumsinsel-Pass (around €19), which allows you to seamlessly explore multiple museums across the island in a single day."
+  },
+  {
+    "id": "ber_b_4",
+    "city": "Utrecht, Netherlands",
+    "name": "Pergamonmuseum",
+    "desc_en": "The Pergamonmuseum is world-renowned for its monumental reconstructions of massive ancient architectural structures, most notably the dazzling Babylonian Ishtar Gate and the impressive Market Gate of Miletus.",
+    "insiderTip_en": "⚠️ The main museum building is closed for a major renovation until at least 2027. However, you can still visit the immersive 360-degree 'Pergamonmuseum. Das Panorama' exhibition hall, provided you book your tickets online in advance."
+  },
+  {
+    "id": "ber_b_6",
+    "city": "Utrecht, Netherlands",
+    "name": "Alte Nationalgalerie",
+    "desc_en": "A magnificent temple to 19th-century art, the Alte Nationalgalerie boasts an exquisite collection of masterpieces, featuring sublime works by Friedrich, Manet, and Monet, alongside striking sculptures by Rodin.",
+    "insiderTip_en": "💡 Take a moment to immerse yourself in the profound tranquility of Romanticism by standing before Caspar David Friedrich's breathtaking masterpiece, 'The Monk by the Sea'."
+  },
+  {
+    "id": "ber_b_7",
+    "city": "Utrecht, Netherlands",
+    "name": "Bode-Museum",
+    "desc_en": "Rising majestically like a palace at the northern tip of Museum Island on the Spree River, the Bode-Museum houses a world-class collection of Byzantine art and exquisite medieval sculptures.",
+    "insiderTip_en": "💡 For a stunning photo, stand on the nearby bridge to capture the grand front dome of the Great Hall jutting out over the Spree River from a picturesque over-water angle."
+  },
+  {
+    "id": "ber_b_9",
+    "city": "Utrecht, Netherlands",
+    "name": "Berliner Dom",
+    "desc_en": "Crowned by its magnificent green dome, the Berliner Dom is a spectacular cathedral completed in 1905. It houses the royal Hohenzollern crypt and features a stunning observation gallery offering sweeping city views.",
+    "insiderTip_en": "💡 Challenge yourself to climb the 270 steps to the outer viewing gallery (Domkuppel) for breathtaking, 360-degree panoramic photos of Berlin's skyline."
+  },
+  {
+    "id": "ber_b_11",
+    "city": "Utrecht, Netherlands",
+    "name": "East Side Gallery",
+    "desc_en": "The East Side Gallery preserves the longest surviving continuous stretch of the Berlin Wall, spanning 1.3 kilometers. It now serves as an international open-air gallery showcasing 105 powerful murals by artists from around the world.",
+    "insiderTip_en": "💡 Make your way toward Mühlenstraße 60 to snap a photo in front of the gallery's most iconic and deeply symbolic mural, 'The Brother Kiss'."
+  },
+  {
+    "id": "ber_b_12",
+    "city": "Utrecht, Netherlands",
+    "name": "Gedenkstätte Berliner Mauer",
+    "desc_en": "Located along Bernauer Straße, the Gedenkstätte Berliner Mauer is a poignant open-air memorial where the original watchtowers and the chilling 'no-man's land' border strip have been preserved exactly as they were during the Cold War.",
+    "insiderTip_en": "🧱 Head across the street and visit the free rooftop observation deck of the Documentation Center for a sobering, bird's-eye view of the intact 'death strip' and border fortifications."
+  },
+  {
+    "id": "ber_b_13",
+    "city": "Utrecht, Netherlands",
+    "name": "Checkpoint Charlie & Mauermuseum",
+    "desc_en": "Step into Cold War history at Checkpoint Charlie, the legendary former East-West border crossing between the American and Soviet sectors, marked by a replica US Army guardhouse and iconic photo signposts.",
+    "insiderTip_en": "📸 Since fake soldier actors were banned in 2019, the best experience here is exploring the cobblestone border line on the ground, admiring Frank Thiel's towering soldier portraits, and visiting the adjacent Mauermuseum."
+  },
+  {
+    "id": "ber_b_14",
+    "city": "Utrecht, Netherlands",
+    "name": "Topographie des Terrors",
+    "desc_en": "Built on the exact site of the former Gestapo and SS headquarters, the Topography of Terror is a chilling but essential historical documentation center detailing the devastating crimes of the Nazi regime.",
+    "insiderTip_en": "💡 Walk along the exposed, preserved segment of the Berlin Wall on the grounds to view the powerful outdoor photo panel exhibition tracing this dark chapter of history."
+  },
+  {
+    "id": "ber_b_16",
+    "city": "Utrecht, Netherlands",
+    "name": "Berliner Fernsehturm",
+    "desc_en": "Piercing the skyline at 368 meters, the Berliner Fernsehturm is Germany's tallest structure. Visitors can soar to the 203-meter-high panoramic observation deck or dine in the spectacular revolving restaurant.",
+    "insiderTip_en": "💡 To avoid the massive afternoon queues, be sure to purchase a Fast Track priority entry ticket via the official website well in advance of your visit."
+  },
+  {
+    "id": "ber_b_18",
+    "city": "Utrecht, Netherlands",
+    "name": "Gendarmenmarkt",
+    "desc_en": "Often considered Berlin's most beautiful public square, the Gendarmenmarkt is an architectural triumph gracefully framed by three magnificent landmarks: the French Cathedral, the German Cathedral, and the majestic Konzerthaus.",
+    "insiderTip_en": "💡 For the perfect photograph, stand in front of the Schiller statue in the center of the square to capture a flawlessly symmetrical view of both striking domed cathedrals."
+  },
+  {
+    "id": "ber_b_20",
+    "city": "Utrecht, Netherlands",
+    "name": "Schloss Charlottenburg",
+    "desc_en": "As the largest Hohenzollern palace in Berlin, Schloss Charlottenburg is a breathtaking royal estate brimming with history, featuring lavishly decorated rooms in exquisite Baroque and Rococo styles.",
+    "insiderTip_en": "💡 After exploring the lavish interiors, stroll through the expansive palace gardens and enjoy a relaxing café break at the charming lakeside Belvedere teahouse."
+  },
+  {
+    "id": "ber_b_21",
+    "city": "Utrecht, Netherlands",
+    "name": "Kulturforum & Gemäldegalerie",
+    "desc_en": "Representing the pinnacle of European classical painting, the Gemäldegalerie houses an extraordinary collection that includes two masterworks by Vermeer, sixteen pieces by Rembrandt, and stunning works by Raphael.",
+    "insiderTip_en": "💡 Make sure to find the specific exhibition room where Vermeer's exquisite 'Woman with a Pearl Necklace' and 'The Glass of Wine' are displayed side by side."
+  },
+  {
+    "id": "ber_b_22",
+    "city": "Utrecht, Netherlands",
+    "name": "Neue Nationalgalerie",
+    "desc_en": "An iconic masterpiece of modernism designed by legendary architect Mies van der Rohe, this striking glass and steel pavilion is dedicated to showcasing world-class 20th-century art.",
+    "insiderTip_en": "💡 For a fantastic photo opportunity, shoot from the outside looking into the expansive glass-walled atrium to capture the colossal modern sculptures."
+  },
+  {
+    "id": "ber_b_24",
+    "city": "Utrecht, Netherlands",
+    "name": "Jüdisches Museum Berlin",
+    "desc_en": "Designed by architect Daniel Libeskind, this striking zigzag-shaped museum features powerful architectural spaces like the Holocaust Tower and the Memory Voids to tell the profound history of Jewish life in Germany.",
+    "insiderTip_en": "💡 Walk through the tilted labyrinth of 49 concrete pillars in the \"Garden of Exile\" to physically experience the intended sense of disorientation and displacement."
+  },
+  {
+    "id": "ber_b_25",
+    "city": "Utrecht, Netherlands",
+    "name": "Deutsches Historisches Museum",
+    "desc_en": "This museum perfectly blends the historical Baroque architecture of the former Zeughaus arsenal with a striking modern annex, famous for its magnificent glass spiral staircase designed by I.M. Pei.",
+    "insiderTip_en": "💡 Head to the Exhibition Hall in the I.M. Pei-designed annex to capture stunning, artistic photos of the light playing across the glass spiral staircase."
+  },
+  {
+    "id": "ber_b_26",
+    "city": "Utrecht, Netherlands",
+    "name": "Deutsches Technikmuseum",
+    "desc_en": "Explore a vast collection of real steam locomotives, aircraft, and large ships, all housed in a museum famously crowned by a historic \"Candy Bomber\" airplane perched right on its roof.",
+    "insiderTip_en": "💡 Head to the outdoor roundhouse (Rundlokschuppen) where you can actually step aboard an authentic, classic black steam locomotive."
+  },
+  {
+    "id": "ber_b_27",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum für Naturkunde",
+    "desc_en": "Home to remarkable paleontology treasures, this natural history museum features the world's largest mounted dinosaur skeleton—the 13.27-meter Giraffatitan—as well as the famous Archaeopteryx fossil.",
+    "insiderTip_en": "💡 Head straight to the main atrium and stand directly beneath the towering 13.27-meter Giraffatitan for a truly awe-inspiring view of this massive dinosaur skeleton."
+  },
+  {
+    "id": "ber_b_28",
+    "city": "Utrecht, Netherlands",
+    "name": "Futurium",
+    "desc_en": "Dive into tomorrow at this cutting-edge, interactive museum dedicated to the future, where you can explore fascinating exhibits on biotechnology, robotics, and upcoming societal innovations.",
+    "insiderTip_en": "💡 Use the provided interactive wristband to cast your votes on various future life scenarios, shaping potential outcomes for cities, energy, and food."
+  },
+  {
+    "id": "ber_b_29",
+    "city": "Utrecht, Netherlands",
+    "name": "Computerspielemuseum",
+    "desc_en": "This interactive museum chronicles the evolution of gaming, allowing you to experience everything from classic 1970s retro arcade cabinets to cutting-edge modern virtual reality.",
+    "insiderTip_en": "🎮 Enjoy 1970s retro arcades on free-play and make sure to brave the legendary 'PainStation', a custom arcade machine that delivers heat, air blasts, and mild electric shocks during gameplay!"
+  },
+  {
+    "id": "ber_b_30",
+    "city": "Utrecht, Netherlands",
+    "name": "Spionagemuseum",
+    "desc_en": "Uncover the thrilling world of espionage through interactive exhibits that feature real Cold War Enigma cipher machines alongside iconic secret gadgets from the '007' movie franchise.",
+    "insiderTip_en": "💡 Channel your inner secret agent in the Laser Maze obstacle course, dodging the glowing beams as fast as you can to beat the clock!"
+  },
+  {
+    "id": "ber_b_32",
+    "city": "Utrecht, Netherlands",
+    "name": "Berliner Unterwelten",
+    "desc_en": "Descend into the city's hidden history on guided tours that explore eerie World War II air raid shelters, the ruins of massive flak towers, and dramatic Cold War escape tunnels.",
+    "insiderTip_en": "🧥 The subterranean tunnels stay at a chilly 10°C (50°F) year-round, so be sure to bring a warm jacket even if you are visiting in the middle of summer."
+  },
+  {
+    "id": "ber_b_33",
+    "city": "Utrecht, Netherlands",
+    "name": "Siegessäule & Großer Tiergarten",
+    "desc_en": "Crowned by the gleaming golden statue of the goddess of victory—affectionately known as \"Golden Else\"—this magnificent 67-meter-tall column stands proudly as a historic symbol of triumph.",
+    "insiderTip_en": "💡 Climb the 285 steps of the spiral staircase to the observation deck for a spectacular, perfectly straight view down the grand avenue leading to the Brandenburg Gate."
+  },
+  {
+    "id": "ber_b_34",
+    "city": "Utrecht, Netherlands",
+    "name": "Potsdamer Platz & Sony Center",
+    "desc_en": "This bustling modern skyscraper plaza is dominated by striking contemporary architecture, highlighted by the Sony Center's spectacular, giant glass tent roof designed to evoke the shape of Mount Fuji.",
+    "insiderTip_en": "💡 Visit the central plaza of the Sony Center after dark and look up to capture breathtaking photos of the Mount Fuji-shaped glass roof glowing with colorful nighttime illuminations."
+  },
+  {
+    "id": "ber_b_36",
+    "city": "Utrecht, Netherlands",
+    "name": "KaDeWe",
+    "desc_en": "Founded in 1907, this historic establishment is one of Europe's largest department stores, globally renowned for the extraordinary luxury gourmet food hall spanning its massive sixth floor.",
+    "insiderTip_en": "💡 Head straight up to the legendary 6th-floor \"Feinschmeckeretage\" to indulge in premium treats, from fresh oysters at the Oyster Bar to sizzling, freshly grilled local sausages."
+  }
+]

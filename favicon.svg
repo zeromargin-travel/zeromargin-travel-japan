@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="stampGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <!-- Organic Outer Stamp Rectangle -->
+  <rect x="4" y="4" width="56" height="56" rx="18" ry="18" fill="url(#stampGrad)" stroke="#292524" stroke-width="2" />
+  <!-- Inner Parchment Ring -->
+  <rect x="7" y="7" width="50" height="50" rx="15" ry="15" fill="none" stroke="#FEF3C7" stroke-width="2" stroke-dasharray="4 2" />
+  <!-- Travel Compass / Wing Icon -->
+  <path d="M32 16 L37 28 L48 32 L37 36 L32 48 L27 36 L16 32 L27 28 Z" fill="#FFFDF9" stroke="#292524" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="4" fill="#F59E0B" />
+</svg>

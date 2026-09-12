@@ -1,0 +1,247 @@
+[
+  {
+    "id": "cgn_c_11",
+    "city": "Utrecht, Netherlands",
+    "name": "Wallraf-Richartz-Museum & Fondation Corboud",
+    "desc_en": "This art museum showcases a magnificent 700-year collection of masterpieces, spanning from the medieval Cologne school to Impressionist and Pointillist works by Monet, Renoir, and Van Gogh.",
+    "insiderTip_en": "💡 Head to the second floor to admire the dynamic brushstrokes of Impressionism right in front of Monet's \"Rough Sea at Étretat.\""
+  },
+  {
+    "id": "cgn_c_12",
+    "city": "Utrecht, Netherlands",
+    "name": "Römisch-Germanisches Museum",
+    "desc_en": "Built over the ruins of the ancient Roman city of Colonia, this museum houses an enormous Dionysus mosaic and a remarkable collection of ancient glass.",
+    "insiderTip_en": "💡 Look through the glass on the first floor to take in the sheer scale of the massive Dionysus Mosaic covering the floor below!"
+  },
+  {
+    "id": "cgn_c_13",
+    "city": "Utrecht, Netherlands",
+    "name": "Farina Duftmuseum",
+    "desc_en": "Founded in 1709, this is the world's oldest fragrance factory and the undisputed birthplace of Eau de Cologne (\"Water of Cologne\").",
+    "insiderTip_en": "💡 Join a guided tour (web reservation required) to explore the underground blending room and experience original bergamot scents with a guide in Rococo costume."
+  },
+  {
+    "id": "cgn_c_14",
+    "city": "Utrecht, Netherlands",
+    "name": "4711 Stammhaus",
+    "desc_en": "The historic Neo-Gothic flagship store of the world-famous \"4711\" Eau de Cologne brand.",
+    "insiderTip_en": "💡 Step up to the \"Perfume Fountain\" (Parfümbrunnen) at the entrance to lavishly sample real Eau de Cologne welling up from the spring."
+  },
+  {
+    "id": "cgn_c_15",
+    "city": "Utrecht, Netherlands",
+    "name": "Kolumba",
+    "desc_en": "Designed by Peter Zumthor, this architectural masterpiece beautifully envelops the ruins of St. Kolumba Church, which was destroyed during World War II.",
+    "insiderTip_en": "💡 Visit the vast ruin exhibition room on the first floor to experience Zumthor's serene space, where particles of light stream through holes pierced in the brickwork."
+  },
+  {
+    "id": "cgn_c_16",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum für Angewandte Kunst Köln",
+    "desc_en": "A true hall of fame for applied crafts, featuring everything from furniture, jewelry, and glass to Bauhaus designs and contemporary products.",
+    "insiderTip_en": "💡 Don't miss the Bauhaus exhibition corner to admire the product design of Rietveld's iconic \"Red and Blue Chair.\""
+  },
+  {
+    "id": "cgn_c_17",
+    "city": "Utrecht, Netherlands",
+    "name": "NS-Dokumentationszentrum",
+    "desc_en": "Housed in the former Gestapo headquarters, this center features historical exhibits and a poignant underground prison where the heartbreaking graffiti of former inmates remains on the walls.",
+    "insiderTip_en": "💡 Descend into the narrow underground cells to witness the scratch marks and foreign-language messages etched into the dark walls by former prisoners."
+  },
+  {
+    "id": "cgn_c_18",
+    "city": "Utrecht, Netherlands",
+    "name": "Rautenstrauch-Joest-Museum",
+    "desc_en": "One of Europe's premier ethnological museums, dedicated to the cultures, religions, and lifestyles of indigenous peoples from around the globe.",
+    "insiderTip_en": "💡 Capture a photo of the massive wooden rice barn from Sulawesi, Indonesia, standing in the entrance atrium!"
+  },
+  {
+    "id": "cgn_c_19",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum Schnütgen",
+    "desc_en": "This museum presents a stunning collection of medieval Christian art, uniquely exhibited within the 11th-century Romanesque St. Cäcilien Church.",
+    "insiderTip_en": "💡 Quietly admire the wooden crucifixes and intricate ivory carvings displayed within the sacred space of the Romanesque church."
+  },
+  {
+    "id": "cgn_c_20",
+    "city": "Utrecht, Netherlands",
+    "name": "Deutsches Sport & Olympia Museum",
+    "desc_en": "Located in the Rheinauhafen district, this museum traces the history of sports from the ancient Olympics to Formula 1 cars and pole vaulting equipment.",
+    "insiderTip_en": "💡 Head to the rooftop terrace to play on the mini soccer and basketball courts overlooking the Rhine River and the city skyline."
+  },
+  {
+    "id": "cgn_c_21",
+    "city": "Utrecht, Netherlands",
+    "name": "Kölner Seilbahn",
+    "desc_en": "Opened in 1957, this panoramic cable car offers a stunning ride across the Rhine River, with sweeping views of the Cathedral and the lush Rheinpark.",
+    "insiderTip_en": "💡 Operating only from April to November! Look straight down at the Rhine River from the central gondola and snap a photo with the Cathedral's twin towers in the background."
+  },
+  {
+    "id": "cgn_c_22",
+    "city": "Utrecht, Netherlands",
+    "name": "Kölner Zoo",
+    "desc_en": "Founded in 1860, this historic zoo is famous for its massive 2-hectare Asian Elephant Park and the highly popular baboon rock.",
+    "insiderTip_en": "💡 Head to the Elephant Park deck at 14:30 daily to catch the Asian elephant herd's bathing and feeding time!"
+  },
+  {
+    "id": "cgn_c_23",
+    "city": "Utrecht, Netherlands",
+    "name": "Aquarium Köln",
+    "desc_en": "Adjacent to the zoo, this aquarium features everything from local Rhine River fish to coral reef tropicals, reptiles, and fascinating terrariums.",
+    "insiderTip_en": "💡 Visit the large underground tank to watch giant manatees and colorful tropical fish gracefully swimming in the coral reef display."
+  },
+  {
+    "id": "cgn_c_24",
+    "city": "Utrecht, Netherlands",
+    "name": "Flora Köln & Botanischer Garten",
+    "desc_en": "Spanning 11 hectares, this historic botanical garden features over 10,000 plant species and is crowned by \"Flora,\" a magnificent glass palace built in 1864.",
+    "insiderTip_en": "💡 Take an elegant photo looking up at the Flora glass palace from the large fountain in the French formal garden!"
+  },
+  {
+    "id": "cgn_c_29",
+    "city": "Utrecht, Netherlands",
+    "name": "Brauhaus Früh am Dom",
+    "desc_en": "Established in 1904 right across from the Cathedral, this iconic historic beer hall is famous for its Kölsch beer, traditionally poured by waiters known as \"Köbes.\"",
+    "insiderTip_en": "💡 The \"Köbes\" waiters will automatically bring you fresh, slender glasses of Kölsch—they'll keep pouring until you place your coaster on top of your glass!"
+  },
+  {
+    "id": "cgn_c_30",
+    "city": "Utrecht, Netherlands",
+    "name": "Brauhaus Sion",
+    "desc_en": "With roots dating back to 1318, this historic tavern serves up traditional cuisine alongside fresh Kölsch poured straight from wooden barrels.",
+    "insiderTip_en": "💡 Be sure to order the famous local dish \"Himmel un Ääd\" (Heaven and Earth), a savory mix of blood sausage, mashed potatoes, and stewed apples!"
+  },
+  {
+    "id": "cgn_c_32",
+    "city": "Utrecht, Netherlands",
+    "name": "Brauerei Päffgen",
+    "desc_en": "Immensely popular with the locals on Friesenstraße, this traditional brewery is a premier destination for unfiltered Kölsch served on tap.",
+    "insiderTip_en": "💡 Enjoy an oversized pork schnitzel alongside fresh Päffgen Kölsch poured directly from traditional wooden barrels!"
+  },
+  {
+    "id": "cgn_c_33",
+    "city": "Utrecht, Netherlands",
+    "name": "Peters Brauhaus",
+    "desc_en": "Located in the Old Town, this popular and cozy brauhaus is distinguished by its beautiful stained-glass ceiling and homey atmosphere.",
+    "insiderTip_en": "💡 Grab a seat at a long wooden table beneath the vibrant stained-glass skylight and dig into a crispy roasted pork knuckle (Schweinshaxe)!"
+  },
+  {
+    "id": "cgn_c_34",
+    "city": "Utrecht, Netherlands",
+    "name": "Lommerzheim",
+    "desc_en": "Experience the unpretentious, working-class charm of Deutz at Lommerzheim, a legendary historic pub located just across the river. This beloved local institution invites guests to savor a truly authentic Cologne atmosphere alongside its signature massive pork chops.",
+    "insiderTip_en": "💡 Order the famous 'Kotelett'—an enormous pork chop bigger than your face—and pair it with fresh Päffgen beer poured straight from the wooden barrel."
+  },
+  {
+    "id": "cgn_c_35",
+    "city": "Utrecht, Netherlands",
+    "name": "Café Reichard",
+    "desc_en": "Founded in 1855, Café Reichard offers a quintessential coffeehouse experience elevated by a spectacular glass-enclosed terrace salon. Guests can relax in elegant surroundings while enjoying direct, breathtaking views looking straight up at the magnificent twin towers of Cologne Cathedral.",
+    "insiderTip_en": "💡 Secure a seat in the conservatory's glass terrace facing the Cathedral, and treat yourself to a teatime featuring their famous Baumkuchen or a slice of luxurious torte."
+  },
+  {
+    "id": "cgn_c_36",
+    "city": "Utrecht, Netherlands",
+    "name": "Odonien",
+    "desc_en": "Step into a surreal world at Odonien, a unique outdoor sculpture park and club space created by sculptor Odo Rumpf. This immersive venue features striking kinetic art and otherworldly installations crafted entirely from scrap metal and salvaged industrial materials.",
+    "insiderTip_en": "💡 Capture incredible punk-style photos against the backdrop of bizarre, giant fire-breathing sculptures made of iron scraps and massive machine parts."
+  },
+  {
+    "id": "cgn_c_37",
+    "city": "Utrecht, Netherlands",
+    "name": "Claudius Therme",
+    "desc_en": "Nestled within the Rheinpark, Claudius Therme is a natural hot spring spa resort offering ultimate relaxation. This soothing oasis features saunas, a Dead Sea pool, and beautifully landscaped open-air baths that provide serene views of the Cathedral.",
+    "insiderTip_en": "💡 Float weightlessly in the outdoor heated pool while admiring the beautifully illuminated Cologne Cathedral at night for a truly relaxing experience."
+  },
+  {
+    "id": "cgn_c_38",
+    "city": "Utrecht, Netherlands",
+    "name": "Rheinpark & Kleinbahn",
+    "desc_en": "Sprawling across 50 hectares on the eastern banks of the Rhine, Rheinpark is a lush recreational haven. It boasts expansive lawns, a vast and beautifully manicured rose garden, and a charming miniature steam railway designed especially for children.",
+    "insiderTip_en": "💡 Take a ride on the 'Kleinbahn' miniature railway that circles the park to enjoy moving scenic views of the Cathedral floating above the Rhine River."
+  },
+  {
+    "id": "cgn_c_39",
+    "city": "Utrecht, Netherlands",
+    "name": "Stadtwald Köln & Lindenthaler Tierpark",
+    "desc_en": "Beloved by locals, Stadtwald Köln is an expansive woodland park featuring the Lindenthaler Tierpark. This free, interactive animal park offers visitors the delightful opportunity to hand-feed friendly deer, goats, and other roaming wildlife.",
+    "insiderTip_en": "💡 Purchase special animal feed for €1 from the vending machines and enjoy hand-feeding the friendly fallow deer and goats roaming the enclosures."
+  },
+  {
+    "id": "cgn_c_40",
+    "city": "Utrecht, Netherlands",
+    "name": "Melaten-Friedhof",
+    "desc_en": "With a rich history spanning over 400 years, Melaten-Friedhof is a park-like cemetery renowned for its grand baroque sculptures. It serves as the tranquil resting place for many of Cologne's prominent figures amidst a beautifully landscaped environment.",
+    "insiderTip_en": "💡 Stroll down the 'Hauptallee' (Main Avenue) lined with massive chestnut trees, and embark on a search for the famous and striking Sensenmann (Grim Reaper) sculpture."
+  },
+  {
+    "id": "cgn_c_41",
+    "city": "Utrecht, Netherlands",
+    "name": "Odysseum Science Center",
+    "desc_en": "Odysseum is an engaging, hands-on science entertainment center tailored for children and teens. It features immersive 3D experiences, an exciting space exploration area, and a variety of interactive exhibits designed to make learning fun.",
+    "insiderTip_en": "💡 Visit the 'Museum mit der Maus' (Museum with the Mouse) to participate in and experience interactive science experiments inspired by the beloved German TV show."
+  },
+  {
+    "id": "cgn_c_42",
+    "city": "Utrecht, Netherlands",
+    "name": "RheinSchiffahrt",
+    "desc_en": "Departing from the KD pier right in front of the Cathedral, the RheinSchiffahrt is a scenic one-hour sightseeing cruise. It offers passengers sweeping panoramic views of the Rhine River and Cologne's iconic waterfront landmarks.",
+    "insiderTip_en": "💡 Head to the bow seats on the second-floor open deck to capture powerful, dynamic angles as the ship passes directly under the iconic Hohenzollern Bridge."
+  },
+  {
+    "id": "cgn_c_43",
+    "city": "Utrecht, Netherlands",
+    "name": "St. Gereon",
+    "desc_en": "St. Gereon is an extraordinary Romanesque basilica built upon the foundations of a 4th-century ancient Roman structure. It is celebrated for its unique decagonal (ten-sided) grand dome, which stands as a masterpiece of architectural evolution.",
+    "insiderTip_en": "💡 Stand directly beneath the massive decagonal dome and look up to marvel at the beautiful medieval frescoes and stunning stained glass illuminating the ceiling."
+  },
+  {
+    "id": "cgn_c_44",
+    "city": "Utrecht, Netherlands",
+    "name": "St. Ursula",
+    "desc_en": "Dedicated to the legend of the martyred St. Ursula, this basilica houses one of the most unusual religious sites in Germany. Its highlight is the 'Golden Chamber', an awe-inspiring room where the walls are intricately decorated with elaborate bone mosaics.",
+    "insiderTip_en": "💡 Visit the 'Goldene Kammer' (Golden Chamber, €2 entry) to observe an extraordinary piece of religious art where the walls are entirely adorned with intricate human bone mosaics."
+  },
+  {
+    "id": "cgn_c_45",
+    "city": "Utrecht, Netherlands",
+    "name": "St. Aposteln",
+    "desc_en": "Facing the bustling Neumarkt square, St. Aposteln is a stunning 12th-century Romanesque church. Its most distinguishing architectural feature is the magnificent 'Triconchos'—a beautiful cloverleaf-shaped eastern apse that highlights the grandeur of the era.",
+    "insiderTip_en": "💡 Look up at the exterior of the eastern apse (cloverleaf design) from the square side to capture the monumental and heavy Romanesque architectural style."
+  },
+  {
+    "id": "cgn_c_46",
+    "city": "Utrecht, Netherlands",
+    "name": "Schlösser Augustusburg und Falkenlust",
+    "desc_en": "Recognized as a UNESCO World Heritage site, the Augustusburg and Falkenlust Palaces served as the opulent summer residences of the Archbishop-Electors of Cologne. The estate features a magnificent rococo garden and a spectacular grand staircase masterfully designed by Balthasar Neumann.",
+    "insiderTip_en": "💡 Head straight to the 'Treppenhaus' (Grand Staircase) designed by Balthasar Neumann for the ultimate angle of the exquisite marble ceiling sculptures and frescoes."
+  },
+  {
+    "id": "cgn_c_47",
+    "city": "Utrecht, Netherlands",
+    "name": "Phantasialand",
+    "desc_en": "Phantasialand is a wildly popular, world-class theme park celebrated for its exceptionally detailed thematic environments and thrilling roller coasters. The park's undisputed crown jewel is 'F.L.Y.', a highly acclaimed, cutting-edge flying coaster.",
+    "insiderTip_en": "💡 Tickets must be purchased online in advance at phantasialand.de. Once inside, head straight to the immersive steampunk area 'Rookburgh' to ride the famous F.L.Y. coaster."
+  },
+  {
+    "id": "cgn_c_48",
+    "city": "Utrecht, Netherlands",
+    "name": "Aachener Dom & Domschatzkammer",
+    "desc_en": "Germany's first UNESCO World Heritage site, the Aachen Cathedral features a stunning octagonal Palatine Chapel founded by Charlemagne in 796. This monumental historic structure also houses the original imperial throne of the great emperor.",
+    "insiderTip_en": "💡 Join a guided tour (reservation required) to access the second-floor gallery and view the authentic marble throne where Charlemagne actually sat."
+  },
+  {
+    "id": "cgn_c_49",
+    "city": "Utrecht, Netherlands",
+    "name": "Königswinter",
+    "desc_en": "Located in Königswinter along the legendary mountain of the Siegfried saga, Drachenfels offers enchanting historical romance. The area features the picturesque Drachenburg Castle, built in 1883, accessible via a charming vintage cog railway.",
+    "insiderTip_en": "💡 Ride the Drachenfelsbahn, Germany's oldest cog railway, halfway up the mountain to Drachenburg Castle and enjoy sweeping views looking down over the Rhine River."
+  },
+  {
+    "id": "cgn_c_50",
+    "city": "Utrecht, Netherlands",
+    "name": "Schloss Benrath",
+    "desc_en": "Situated in the southern part of Düsseldorf, Schloss Benrath is a picturesque 18th-century 'maison de plaisance' (summer palace). This brilliant rococo masterpiece is renowned for its vibrant pink exterior, elegant interiors, and tranquil surrounding lake.",
+    "insiderTip_en": "💡 Capture a stunning photograph of the pink main palace (Corps de Logis) perfectly reflected on the mirror-like surface of the large pond."
+  }
+]

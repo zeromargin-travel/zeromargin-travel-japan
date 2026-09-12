@@ -1,0 +1,247 @@
+[
+  {
+    "id": "ber_b_37",
+    "city": "Utrecht, Netherlands",
+    "name": "Mall of Berlin",
+    "desc_en": "Located just a stone's throw from Potsdamer Platz, this massive, state-of-the-art shopping destination houses over 300 diverse stores for a premier retail experience.",
+    "insiderTip_en": "💡 For a fantastic and casual lunch, visit the 3rd floor to explore one of Europe's largest food courts, offering an endless variety of international cuisines."
+  },
+  {
+    "id": "ber_b_38",
+    "city": "Utrecht, Netherlands",
+    "name": "Bikini Berlin",
+    "desc_en": "This innovative concept mall perfectly blends retail with nature, uniquely designed to offer shoppers direct, glass-walled views directly into the adjacent Berlin Zoo's monkey enclosure.",
+    "insiderTip_en": "💡 Make your way to the 2nd floor \"Zoo Window\" to enjoy a relaxing cup of coffee while looking right down into the lively monkey hill of the neighboring zoo."
+  },
+  {
+    "id": "ber_b_40",
+    "city": "Utrecht, Netherlands",
+    "name": "Mauerpark & Flohmarkt",
+    "desc_en": "Situated along the former path of the Berlin Wall, this vibrant park comes alive on Sundays with a sprawling flea market and its famously energetic outdoor \"Bearpit\" karaoke sessions.",
+    "insiderTip_en": "💡 Be at the park's stone amphitheater on a Sunday by 3:00 PM to catch the legendary outdoor karaoke, where massive crowds enthusiastically cheer on brave performers."
+  },
+  {
+    "id": "ber_b_41",
+    "city": "Utrecht, Netherlands",
+    "name": "Markthalle Neun",
+    "desc_en": "This historic indoor market, operating since 1891, is a bustling culinary hub that achieves explosive popularity during its beloved \"Street Food Thursday\" evening events.",
+    "insiderTip_en": "💡 Time your visit for a Thursday between 5:00 PM and 10:00 PM to experience \"Street Food Thursday\" and eat your way through incredible international culinary stands."
+  },
+  {
+    "id": "ber_b_44",
+    "city": "Utrecht, Netherlands",
+    "name": "RAW-Gelände",
+    "desc_en": "Once a railway repair complex, this sprawling site has been transformed into a gritty, alternative cultural hub brimming with underground clubs, markets, and spectacular street art graffiti.",
+    "insiderTip_en": "💡 Make use of the incredibly dynamic, wall-to-wall street art graffiti to capture edgy, punk-inspired photographs that capture the neighborhood's alternative spirit."
+  },
+  {
+    "id": "ber_b_45",
+    "city": "Utrecht, Netherlands",
+    "name": "Holzmarkt 25",
+    "desc_en": "This imaginative eco-creative village along the banks of the Spree River features sustainable wooden architecture and hosts a vibrant array of open-air cafes and bars.",
+    "insiderTip_en": "💡 Grab a local craft beer and find a spot by the fire pit on the riverside wooden deck to enjoy a magical, laid-back view of the sunset."
+  },
+  {
+    "id": "ber_b_46",
+    "city": "Utrecht, Netherlands",
+    "name": "Zoologischer Garten Berlin & Aquarium Berlin",
+    "desc_en": "Opened in 1844, Germany's oldest zoo is a remarkable conservation sanctuary that houses an astonishing 20,000 animals representing around 1,400 species—the most of any zoo in the world.",
+    "insiderTip_en": "💡 Don't miss the Panda Garden, where you can peacefully observe the beloved Giant Pandas happily munching on their daily bamboo."
+  },
+  {
+    "id": "ber_b_48",
+    "city": "Utrecht, Netherlands",
+    "name": "Tempelhofer Feld",
+    "desc_en": "Repurposed from a historic airport, this immense 380-hectare public park allows visitors the unique freedom to explore massive, fully intact aviation runways.",
+    "insiderTip_en": "💡 Rent a bike, grab inline skates, or simply walk right down the center of the vast runways where commercial airplanes once took off and landed."
+  },
+  {
+    "id": "ber_b_49",
+    "city": "Utrecht, Netherlands",
+    "name": "Gärten der Welt",
+    "desc_en": "Situated in Marzahn, this expansive park beautifully showcases stunning international landscaping—including exquisite Japanese and Chinese gardens and a fun maze—all accessible via a scenic cable car.",
+    "insiderTip_en": "💡 Hop on the 'Seilbahn' cable car for a scenic aerial ride up to the Wolkenhain observation deck, which offers sweeping panoramic views over the gardens."
+  },
+  {
+    "id": "ber_b_50",
+    "city": "Utrecht, Netherlands",
+    "name": "Spree-Schifffahrt",
+    "desc_en": "Embark on a classic one-hour sightseeing cruise along the Spree River, taking in spectacular water-level views of iconic Berlin landmarks including the Reichstag, Museum Island, and the soaring TV Tower.",
+    "insiderTip_en": "Board a covered sightseeing boat from the Friedrichstraße pier, and be sure to have your camera ready to capture the unique perspective as you glide directly beneath the city's historic bridges."
+  },
+  {
+    "id": "ber_b_51",
+    "city": "Utrecht, Netherlands",
+    "name": "Badeschiff",
+    "desc_en": "Experience Berlin's vibrant summer scene at this unique outdoor floating pool and beach bar, ingeniously converted from a former cargo barge moored right on the Spree River.",
+    "insiderTip_en": "Visit during the summer months to soak in the refreshing floating pool while admiring stunning views of the historic Oberbaumbrücke across the water."
+  },
+  {
+    "id": "ber_b_53",
+    "city": "Utrecht, Netherlands",
+    "name": "Mustafa's Gemüsedöner",
+    "desc_en": "Join the massive lines at this world-famous street food staple, renowned for its legendary doner kebabs packed with savory roasted chicken, deeply flavorful fried vegetables, and crumbly feta cheese.",
+    "insiderTip_en": "Expect wait times of up to 45 minutes around the clock; to beat the crowds, try visiting during off-peak hours right after opening before 11:00 AM or late at night past 11:00 PM."
+  },
+  {
+    "id": "ber_b_54",
+    "city": "Utrecht, Netherlands",
+    "name": "Café Einstein Stammhaus",
+    "desc_en": "Step into this elegant 19th-century villa to experience authentic Viennese coffeehouse culture, making it the perfect setting to indulge in a slice of traditional baking history.",
+    "insiderTip_en": "Settle into one of the classic wooden chairs and treat yourself to their famous homemade, warm Apfelstrudel (apple pie), generously drizzled with rich vanilla sauce."
+  },
+  {
+    "id": "ber_b_55",
+    "city": "Utrecht, Netherlands",
+    "name": "Prater Biergarten",
+    "desc_en": "Established in 1837, Berlin's oldest outdoor beer garden offers a timeless atmosphere where guests gather at long wooden tables nestled beneath the cool shade of massive, leafy trees.",
+    "insiderTip_en": "Grab a seat on a classic wooden bench under the canopy of large trees, and pair a freshly baked local pretzel with a cold, house-brewed Prater Pils draft beer."
+  },
+  {
+    "id": "ber_b_57",
+    "city": "Utrecht, Netherlands",
+    "name": "ANOHA - Die Kinderwelt des Jüdischen Museums",
+    "desc_en": "Let your little ones explore this imaginative children's world, anchored by a magnificent giant wooden play structure themed after Noah's Ark and surrounded by 150 beautifully crafted animal sculptures.",
+    "insiderTip_en": "Climb inside the massive 11-meter-tall wooden Noah's Ark to discover fun net mechanisms and slides perfect for playing with your children; entry is free, but advance reservations are required."
+  },
+  {
+    "id": "ber_b_60",
+    "city": "Utrecht, Netherlands",
+    "name": "Liquidrom",
+    "desc_en": "Unwind in this striking Nordic-style sauna complex, where the centerpiece is a fantastic saltwater heated dome pool that creates a mesmerizing, multi-sensory relaxation experience with underwater acoustics.",
+    "insiderTip_en": "Float effortlessly in the high-salinity dome pool while enjoying ambient and electronic DJ sets broadcast directly through underwater speakers on weekend evenings, creating an unforgettable aquatic auditory experience."
+  },
+  {
+    "id": "ber_b_61",
+    "city": "Utrecht, Netherlands",
+    "name": "Schloss Sanssouci & Park Sanssouci",
+    "desc_en": "Marvel at this exquisite yellow Rococo palace perched majestically atop terraced vineyards, a UNESCO World Heritage site completed in 1747 as the beloved summer retreat of Frederick the Great.",
+    "insiderTip_en": "For the perfect photograph, pause while climbing the grand staircase from the fountain plaza to look up and capture the stunning yellow palace framed by lush grape trellises."
+  },
+  {
+    "id": "ber_b_62",
+    "city": "Utrecht, Netherlands",
+    "name": "Neues Palais",
+    "desc_en": "Discover Prussia's premier architectural masterpiece at the western end of Sanssouci Park, a colossal Baroque palace boasting over 200 lavishly decorated rooms that showcase extraordinary royal extravagance.",
+    "insiderTip_en": "Don't miss the breathtaking \"Grottensaal\" (Grotto Hall), an astoundingly luxurious and eccentric room meticulously covered from floor to ceiling in sparkling shells and precious minerals."
+  },
+  {
+    "id": "ber_b_63",
+    "city": "Utrecht, Netherlands",
+    "name": "Schloss Cecilienhof",
+    "desc_en": "Explore this striking Tudor-style palace built in 1917 to resemble an English country manor, famously known as the historic stage where world leaders gathered for the pivotal 1945 Potsdam Conference.",
+    "insiderTip_en": "Step inside the Great Hall to view the very room where history was made, featuring the famous custom-made red wooden round table where the Potsdam Agreement was officially signed."
+  },
+  {
+    "id": "ber_b_64",
+    "city": "Utrecht, Netherlands",
+    "name": "Holländisches Viertel",
+    "desc_en": "Stroll through this charming 18th-century neighborhood, featuring an idyllic enclave of 134 distinctive red-brick homes originally constructed to accommodate skilled Dutch craftsmen.",
+    "insiderTip_en": "Wander down Mittelstraße amidst the picturesque red-brick houses and stop at one of the cozy cafes to try Potsdam's famous, delicious pancakes."
+  },
+  {
+    "id": "ber_b_65",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum Barberini",
+    "desc_en": "Immerse yourself in a world-class collection of Impressionist masterpieces at this exquisite art museum, which proudly displays celebrated works including Monet's iconic \"Water Lilies\" and \"Haystacks.\"",
+    "insiderTip_en": "Make a beeline for the dedicated Monet exhibition room to marvel at an extraordinary gathering of 39 original Claude Monet paintings sourced from the prestigious Hasso Plattner Foundation."
+  },
+  {
+    "id": "ber_b_67",
+    "city": "Utrecht, Netherlands",
+    "name": "Filmpark Babelsberg",
+    "desc_en": "Step behind the scenes at this dynamic theme park situated adjacent to the world's oldest large-scale film studio, offering an exciting array of authentic movie sets and thrilling live performances.",
+    "insiderTip_en": "Be sure to catch the spectacular, high-octane live action stunt show held at the Vulkan Arena for a true Hollywood-style adrenaline rush."
+  },
+  {
+    "id": "ber_b_69",
+    "city": "Utrecht, Netherlands",
+    "name": "Spreewald",
+    "desc_en": "Glide through a serene UNESCO Biosphere Reserve featuring an enchanting network of over 1,500 kilometers of intertwined waterways, best explored via traditional wooden \"Kahn\" punts poled by local boatmen.",
+    "insiderTip_en": "Board a classic wooden Kahn from the Lübbenau port and keep an eye out for floating water stalls, where you can purchase the region's famous, freshly bottled pickles directly from your boat."
+  },
+  {
+    "id": "ber_b_70",
+    "city": "Utrecht, Netherlands",
+    "name": "Tropical Islands Resort",
+    "desc_en": "Escape to a constant 26°C paradise at this extraordinary all-weather indoor rainforest resort, ingeniously housed within a massive former airship hangar and featuring a pristine white sand beach.",
+    "insiderTip_en": "Take advantage of the 24-hour opening times by booking a highly popular and unique overnight stay in a safari tent pitched right on the dome's indoor sandy beach."
+  },
+  {
+    "id": "ber_b_71",
+    "city": "Utrecht, Netherlands",
+    "name": "Pfaueninsel",
+    "desc_en": "Discover this enchanting, uninhabited UNESCO World Heritage island floating in the Havel River, distinguished by its striking white palace and a resident population of majestic, free-roaming peacocks.",
+    "insiderTip_en": "Ride the small ferry across the water to the island and have your camera ready to capture the brilliant moment when one of the beautiful, free-roaming peacocks unfurls its colorful feathers."
+  },
+  {
+    "id": "ber_b_73",
+    "city": "Utrecht, Netherlands",
+    "name": "Teufelsberg",
+    "desc_en": "Venture to this fascinating Cold War relic that once served as a US military radar spy base, now transformed into a sprawling canvas of vibrant street art crowned by massive, iconic radar domes.",
+    "insiderTip_en": "Step inside the dilapidated white radar domes to experience their astonishing acoustic echo reverberations, and head to the roof for sweeping, panoramic views across the entire city of Berlin."
+  },
+  {
+    "id": "ber_b_74",
+    "city": "Utrecht, Netherlands",
+    "name": "Zitadelle Spandau",
+    "desc_en": "Explore one of Europe's best-preserved 16th-century Renaissance water fortresses, a remarkable architectural feat that features the imposing, historic Juliusturm watchtower as its centerpiece.",
+    "insiderTip_en": "Ascend the ancient spiral staircase of the Juliusturm—the oldest structure in the fortress—to capture stunning photographs of the scenic confluence where the Havel River meets its tributaries."
+  },
+  {
+    "id": "ber_b_75",
+    "city": "Utrecht, Netherlands",
+    "name": "Designer Outlet Berlin",
+    "desc_en": "Enjoy a premier shopping experience just outside the city at this expansive outlet destination in Wustermark, offering discounted luxury and fashion goods from over 90 popular global brands.",
+    "insiderTip_en": "For a seamless shopping trip, book a seat on the VIP shuttle bus departing from Potsdamer Platz, or take the convenient public route using the RE4 train connecting to the 663 bus."
+  },
+  {
+    "id": "cgn_c_1",
+    "city": "Utrecht, Netherlands",
+    "name": "Kölner Dom",
+    "desc_en": "Gaze in awe at the soaring 157-meter twin towers of this UNESCO World Heritage site, a crowning masterpiece of Gothic architecture that famously houses the magnificent golden reliquary of the Three Wise Men.",
+    "insiderTip_en": "While prayer areas remain free, note that a €12 tourist ticket for the inner choir is introduced in July 2026; don't miss the spectacular €8 climb up 533 steps for breathtaking views from the 157-meter towers."
+  },
+  {
+    "id": "cgn_c_2",
+    "city": "Utrecht, Netherlands",
+    "name": "Hohenzollernbrücke",
+    "desc_en": "Spanning the Rhine River, this historic iron bridge constructed in 1911 has become a beloved symbol of romance, its fences famously laden with hundreds of thousands of colorful \"love padlocks\" left by couples.",
+    "insiderTip_en": "Walk across to the eastern bank at dusk to capture a spectacular photograph where the glowing train lights, shimmering water reflections, and the brilliantly illuminated cathedral seamlessly overlap."
+  },
+  {
+    "id": "cgn_c_4",
+    "city": "Utrecht, Netherlands",
+    "name": "Heumarkt",
+    "desc_en": "Gather at this lively, expansive public square anchored by the grand equestrian statue of King Frederick William III, which serves as a vibrant focal point for seasonal carnivals and festive winter ice skating.",
+    "insiderTip_en": "Visit between late November and early January to experience the magical Heinzels Wintermärchen Christmas market, complete with a spectacular ice skating rink beautifully wrapped around the historic equestrian statue."
+  },
+  {
+    "id": "cgn_c_5",
+    "city": "Utrecht, Netherlands",
+    "name": "Kölner Rathaus & Historische Ratslaube",
+    "desc_en": "Originating in 1330, Germany's oldest city hall features an impressive 61-meter Gothic tower adorned with 130 sculptures of historical figures and a historic corridor.",
+    "insiderTip_en": "💡 Look out for the wooden face \"Platzjabbek\" under the clock—it sticks out its tongue at the top of every hour!"
+  },
+  {
+    "id": "cgn_c_8",
+    "city": "Utrecht, Netherlands",
+    "name": "KölnTriangle",
+    "desc_en": "Standing 103 meters tall on the opposite bank in the Deutz district, this skyscraper boasts an open-air rooftop observation deck completely enclosed by safety glass.",
+    "insiderTip_en": "💡 The golden rule is to enter 45 minutes before sunset, just in time to watch the setting sun bathe Cologne Cathedral in gold and the iron bridge light up."
+  },
+  {
+    "id": "cgn_c_9",
+    "city": "Utrecht, Netherlands",
+    "name": "Schokoladenmuseum Köln",
+    "desc_en": "Sponsored by Lindt, this interactive museum features a tropical cacao greenhouse, a moving automated production line, and a stunning 3-meter-tall golden chocolate fountain.",
+    "insiderTip_en": "💡 Head straight to the 3-meter chocolate fountain in the center, where staff hand out free wafers dipped in warm, fresh chocolate!"
+  },
+  {
+    "id": "cgn_c_10",
+    "city": "Utrecht, Netherlands",
+    "name": "Museum Ludwig",
+    "desc_en": "Located next to the cathedral, this pinnacle of contemporary art boasts the world's third-largest Picasso collection alongside iconic pop art by Warhol and others.",
+    "insiderTip_en": "💡 Make your way directly to Room 4 to see Warhol's \"Brillo Boxes\" and Lichtenstein's \"M-Maybe\" up close."
+  }
+]

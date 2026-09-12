@@ -1,0 +1,57 @@
+[
+  {
+    "id": "fra_f_24",
+    "city": "Frankfurt, Germany",
+    "name": "Hauptwache & Katharinenkirche"
+  },
+  {
+    "id": "fra_f_27",
+    "city": "Frankfurt, Germany",
+    "name": "Senckenberg Naturmuseum"
+  },
+  {
+    "id": "fra_f_31",
+    "city": "Frankfurt, Germany",
+    "name": "Grüneburgpark"
+  },
+  {
+    "id": "fra_f_33",
+    "city": "Frankfurt, Germany",
+    "name": "Europäische Zentralbank"
+  },
+  {
+    "id": "fra_f_43",
+    "city": "Frankfurt, Germany",
+    "name": "Bibelhaus Erlebnis Museum"
+  },
+  {
+    "id": "fra_f_50",
+    "city": "Frankfurt, Germany",
+    "name": "Kaiserpfalz Ingelheim"
+  },
+  {
+    "id": "ham_h_3",
+    "city": "Hamburg, Germany",
+    "name": "Speicherstadt"
+  },
+  {
+    "id": "ham_h_7",
+    "city": "Hamburg, Germany",
+    "name": "Hamburger Hafen & Landungsbrücken"
+  },
+  {
+    "id": "ham_h_31",
+    "city": "Hamburg, Germany",
+    "name": "Museum der Natur - Hamburg"
+  },
+  {
+    "id": "ham_h_38",
+    "city": "Hamburg, Germany",
+    "name": "Fischbrötchen-Buden an den Landungsbrücken"
+  },
+  {
+    "id": "ham_h_51",
+    "city": "Hamburg, Germany",
+    "name": "Lüneburg: Historische Altstadt"
+  }
+]
