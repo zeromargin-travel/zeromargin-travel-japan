@@ -12,11 +12,11 @@
     "price": "無料（有料区域：大人400円）",
     "price_ja": "無料（有料区域：大人400円）",
     "price_en": "Free entry (Restoration area: ¥400)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shuri_Castle_Naha_Okinawa_Japan03bs3s.jpg/640px-Shuri_Castle_Naha_Okinawa_Japan03bs3s.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shuri_Castle_Naha_Okinawa_Japan03bs3s.jpg/640px-Shuri_Castle_Naha_Okinawa_Japan03bs3s.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Naha_Okinawa_Japan_Shuri-Castle-01.jpg/330px-Naha_Okinawa_Japan_Shuri-Castle-01.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Naha_Okinawa_Japan_Shuri-Castle-01.jpg/330px-Naha_Okinawa_Japan_Shuri-Castle-01.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
-    "lat": 26.2170,
+    "lat": 26.217,
     "lng": 127.7195,
     "rain": true,
     "kids": true,
@@ -28,7 +28,10 @@
     "tip": "💡 ゆいレール首里駅から徒歩15分、または首里城前バス停すぐ。日没後は城郭が幻想的にライトアップ（24時まで）され、那覇市街の夜景も見渡せます。復元作業を間近で見学できる専用デッキは必見。",
     "tip_ja": "💡 ゆいレール首里駅から徒歩15分、または首里城前バス停すぐ。日没後は城郭が幻想的にライトアップ（24時まで）され、那覇市街の夜景も見渡せます。復元作業を間近で見学できる専用デッキは必見。",
     "tip_en": "Take the Yui Rail to Shuri Station or a bus to Shurijo-mae. Castle walls are beautifully illuminated after sunset until midnight, offering panoramic night views of Naha.",
-    "categories": ["Landmark", "Night"]
+    "categories": [
+      "Landmark",
+      "Night"
+    ]
   },
   {
     "id": "oki_p_2",
@@ -43,8 +46,8 @@
     "price": "散策自由",
     "price_ja": "散策自由",
     "price_en": "Free to stroll",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Kokusai-dori_Naha_Okinawa_Japan.jpg/640px-Kokusai-dori_Naha_Okinawa_Japan.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Kokusai-dori_Naha_Okinawa_Japan.jpg/640px-Kokusai-dori_Naha_Okinawa_Japan.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kokusai-dori08s3s4440.jpg/330px-Kokusai-dori08s3s4440.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kokusai-dori08s3s4440.jpg/330px-Kokusai-dori08s3s4440.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.2162,
@@ -59,7 +62,11 @@
     "tip": "💡 毎週日曜の12:00〜18:00は歩行者天国（トランジットモール）になり、大道芸やイベントが楽しめます。横道（平和通り・むつみ橋通り）に入るとレトロなディープ沖縄に出会えます。",
     "tip_ja": "💡 毎週日曜の12:00〜18:00は歩行者天国（トランジットモール）になり、大道芸やイベントが楽しめます。横道（平和通り・むつみ橋通り）に入るとレトロなディープ沖縄に出会えます。",
     "tip_en": "On Sundays from 12:00 to 18:00, the street turns into a pedestrian paradise with street performances. Duck into the arcade side-streets (Heiwa Dori) for retro vintage market vibes.",
-    "categories": ["Shopping", "Café", "Night"]
+    "categories": [
+      "Shopping",
+      "Café",
+      "Night"
+    ]
   },
   {
     "id": "oki_p_3",
@@ -74,8 +81,8 @@
     "price": "入場無料",
     "price_ja": "入場無料",
     "price_en": "Free entry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Umikaji_Terrace_Senagajima_2019.jpg/640px-Umikaji_Terrace_Senagajima_2019.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Umikaji_Terrace_Senagajima_2019.jpg/640px-Umikaji_Terrace_Senagajima_2019.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Senaga_Island_20091027-gsi.jpg/330px-Senaga_Island_20091027-gsi.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Senaga_Island_20091027-gsi.jpg/330px-Senaga_Island_20091027-gsi.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.1755,
@@ -90,7 +97,11 @@
     "tip": "💡 レンタカー返却前や空港到着直後の立ち寄りにベスト（空港から車で約15分）。日没前のサンセットタイムが最も美しく、テラス席でのパンケーキや沖縄クラフトビールが格別です。",
     "tip_ja": "💡 レンタカー返却前や空港到着直後の立ち寄りにベスト（空港から車で約15分）。日没前のサンセットタイムが最も美しく、テラス席でのパンケーキや沖縄クラフトビールが格別です。",
     "tip_en": "Perfect first or last stop due to its 15-minute drive from Naha Airport. Arrive an hour before sunset to grab a terrace table with local craft beer while watching planes land.",
-    "categories": ["Scenery", "Café", "Night"]
+    "categories": [
+      "Scenery",
+      "Café",
+      "Night"
+    ]
   },
   {
     "id": "oki_p_4",
@@ -105,8 +116,8 @@
     "price": "参拝無料",
     "price_ja": "参拝無料",
     "price_en": "Free entry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Naminoue-gu_in_Naha_Okinawa_pref_Japan01bs4.jpg/640px-Naminoue-gu_in_Naha_Okinawa_pref_Japan01bs4.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Naminoue-gu_in_Naha_Okinawa_pref_Japan01bs4.jpg/640px-Naminoue-gu_in_Naha_Okinawa_pref_Japan01bs4.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_distant_view_of_Naminoueg%C5%AB_Honden.jpg/330px-The_distant_view_of_Naminoueg%C5%AB_Honden.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_distant_view_of_Naminoueg%C5%AB_Honden.jpg/330px-The_distant_view_of_Naminoueg%C5%AB_Honden.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.2206,
@@ -121,7 +132,10 @@
     "tip": "💡 崖の上に立つ社殿の全景を撮影するなら、隣接する波の上うみそら公園の歩道橋や泊大橋側からのアングルがベスト。すぐ隣には那覇唯一の遊泳ビーチ「波の上ビーチ」もあります。",
     "tip_ja": "💡 崖の上に立つ社殿の全景を撮影するなら、隣接する波の上うみそら公園の歩道橋や泊大橋側からのアングルがベスト。すぐ隣には那覇唯一の遊泳ビーチ「波の上ビーチ」もあります。",
     "tip_en": "For the iconic postcard photo of the shrine perched on the cliff, walk along the pedestrian bridge at adjacent Naminoue Umisora Park. Naminoue Beach is right next door.",
-    "categories": ["Landmark", "Scenery"]
+    "categories": [
+      "Landmark",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_5",
@@ -136,8 +150,8 @@
     "price": "大人2,000円 / 小人1,000円",
     "price_ja": "大人2,000円 / 小人1,000円",
     "price_en": "Adult: ¥2,000 / Child: ¥1,000",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Gyokusendo_cave_Okinawa_World_Nanjo_Japan01bs.jpg/640px-Gyokusendo_cave_Okinawa_World_Nanjo_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Gyokusendo_cave_Okinawa_World_Nanjo_Japan01bs.jpg/640px-Gyokusendo_cave_Okinawa_World_Nanjo_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Gyokusendo_Nanjo_Okinawa_Japan02s3104.jpg/330px-Gyokusendo_Nanjo_Okinawa_Japan02s3104.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Gyokusendo_Nanjo_Okinawa_Japan02s3104.jpg/330px-Gyokusendo_Nanjo_Okinawa_Japan02s3104.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.1397,
@@ -152,7 +166,10 @@
     "tip": "💡 玉泉洞内は年間を通して気温約21度で夏は涼しく、雨天時でも100%楽しめます。毎日開催される「スーパーエイサーショー」（観覧無料・1日複数回）は迫力満点で必見です。",
     "tip_ja": "💡 玉泉洞内は年間を通して気温約21度で夏は涼しく、雨天時でも100%楽しめます。毎日開催される「スーパーエイサーショー」（観覧無料・1日複数回）は迫力満点で必見です。",
     "tip_en": "The cave maintains a constant 21°C year-round and is entirely covered, making it an ideal rainy-day refuge. Don't miss the energetic live Super Eisa dance performances included with entry.",
-    "categories": ["Museum", "Scenery"]
+    "categories": [
+      "Museum",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_6",
@@ -167,8 +184,8 @@
     "price": "見学無料（飲食代実費）",
     "price_ja": "見学無料（飲食代実費）",
     "price_en": "Free entry (Pay per meal)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Makishi_Public_Market_2023.jpg/640px-Makishi_Public_Market_2023.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Makishi_Public_Market_2023.jpg/640px-Makishi_Public_Market_2023.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Naha_City_First_Makishi_Public_Market_new_building.JPG/330px-Naha_City_First_Makishi_Public_Market_new_building.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Naha_City_First_Makishi_Public_Market_new_building.JPG/330px-Naha_City_First_Makishi_Public_Market_new_building.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.2144,
@@ -183,7 +200,10 @@
     "tip": "💡 2023年に新築リニューアルされ清潔で快適。1階の魚屋で好みの魚やエビ介を選び、数百円の手数料で刺身・バター焼き・マース煮（塩煮）に調理してもらうランチが定番です。",
     "tip_ja": "💡 2023年に新築リニューアルされ清潔で快適。1階の魚屋で好みの魚やエビ介を選び、数百円の手数料で刺身・バター焼き・マース煮（塩煮）に調理してもらうランチが定番です。",
     "tip_en": "Newly renovated with modern facilities. Pick fresh seafood on the 1st floor and pay a small cooking fee (around ¥500) to have it served as sashimi or garlic butter roast upstairs.",
-    "categories": ["Shopping", "Café"]
+    "categories": [
+      "Shopping",
+      "Café"
+    ]
   },
   {
     "id": "oki_p_7",
@@ -198,8 +218,8 @@
     "price": "大人300円 / 小人150円",
     "price_ja": "大人300円 / 小人150円",
     "price_en": "Adult: ¥300 / Child: ¥150",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sefa_utaki02bs3200.jpg/640px-Sefa_utaki02bs3200.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sefa_utaki02bs3200.jpg/640px-Sefa_utaki02bs3200.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Sangui_%28Triangle_Rock%29_of_Sefa-Utaki.jpg/330px-Sangui_%28Triangle_Rock%29_of_Sefa-Utaki.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Sangui_%28Triangle_Rock%29_of_Sefa-Utaki.jpg/330px-Sangui_%28Triangle_Rock%29_of_Sefa-Utaki.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.1733,
@@ -214,7 +234,10 @@
     "tip": "💡 神聖な祈りの場であるため、露出の多い服装やヒールは避けてスニーカーで訪問を。チケットは現地ではなく手前の「南城市地域物産館」で購入して歩く必要があります。",
     "tip_ja": "💡 神聖な祈りの場であるため、露出の多い服装やヒールは避けてスニーカーで訪問を。チケットは現地ではなく手前の「南城市地域物産館」で購入して歩く必要があります。",
     "tip_en": "Wear comfortable walking shoes with good grip as the stone paths are slick. You must purchase tickets at the Nanjo City Regional Products Center before walking up to the entrance.",
-    "categories": ["Landmark", "Scenery"]
+    "categories": [
+      "Landmark",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_8",
@@ -229,8 +252,8 @@
     "price": "公園入場無料（資料館：大人300円）",
     "price_ja": "公園入場無料（資料館：大人300円）",
     "price_en": "Park free (Museum: ¥300)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Okinawa_Peace_Memorial_Park.jpg/640px-Okinawa_Peace_Memorial_Park.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Okinawa_Peace_Memorial_Park.jpg/640px-Okinawa_Peace_Memorial_Park.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Himeyuri_Monument-2.jpg/330px-Himeyuri_Monument-2.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Himeyuri_Monument-2.jpg/330px-Himeyuri_Monument-2.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.0961,
@@ -245,7 +268,9 @@
     "tip": "💡 崖上から太平洋を見渡す景色は圧巻で、園内は非常に広大です。移動には園内無料カートの利用が便利。平和祈念資料館の展示は心に深く刻まれます。",
     "tip_ja": "💡 崖上から太平洋を見渡す景色は圧巻で、園内は非常に広大です。移動には園内無料カートの利用が便利。平和祈念資料館の展示は心に深く刻まれます。",
     "tip_en": "The coastal cliff views over the Pacific Ocean are deeply moving. The grounds are extensive, so use the free shuttle carts available inside to reach the monuments.",
-    "categories": ["Landmark"]
+    "categories": [
+      "Landmark"
+    ]
   },
   {
     "id": "oki_p_9",
@@ -260,8 +285,8 @@
     "price": "散策自由",
     "price_ja": "散策自由",
     "price_en": "Free entry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mihama_American_Village_sunset_Chatan_Okinawa_Japan.jpg/640px-Mihama_American_Village_sunset_Chatan_Okinawa_Japan.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mihama_American_Village_sunset_Chatan_Okinawa_Japan.jpg/640px-Mihama_American_Village_sunset_Chatan_Okinawa_Japan.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Mihama_AV_D_Japan.jpg/330px-Mihama_AV_D_Japan.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Mihama_AV_D_Japan.jpg/330px-Mihama_AV_D_Japan.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.3164,
@@ -276,7 +301,11 @@
     "tip": "💡 夕暮れ時にサンセットビーチ側の遊歩道（デポアイランド・ボードウォーク）を歩くのが最高。金曜・土曜の夜には花火が打ち上げられることが多く、夜景の美しさは県内随一です。",
     "tip_ja": "💡 夕暮れ時にサンセットビーチ側の遊歩道（デポアイランド・ボードウォーク）を歩くのが最高。金曜・土曜の夜には花火が打ち上げられることが多く、夜景の美しさは県内随一です。",
     "tip_en": "Stroll the Depot Island Boardwalk at sunset for seaside dining. On Friday and Saturday nights, fireworks are frequently launched over the harbor, illuminating the colorful facades.",
-    "categories": ["Shopping", "Café", "Night"]
+    "categories": [
+      "Shopping",
+      "Café",
+      "Night"
+    ]
   },
   {
     "id": "oki_p_10",
@@ -291,11 +320,11 @@
     "price": "観覧料：100円",
     "price_ja": "観覧料：100円",
     "price_en": "Admission: ¥100",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Manzamo_Cape_Okinawa_Japan01bs.jpg/640px-Manzamo_Cape_Okinawa_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Manzamo_Cape_Okinawa_Japan01bs.jpg/640px-Manzamo_Cape_Okinawa_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Onna_Okinawa_Japan_Cape-Manzamo-01.jpg/330px-Onna_Okinawa_Japan_Cape-Manzamo-01.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Onna_Okinawa_Japan_Cape-Manzamo-01.jpg/330px-Onna_Okinawa_Japan_Cape-Manzamo-01.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
-    "lat": 26.5050,
+    "lat": 26.505,
     "lng": 127.8503,
     "rain": false,
     "kids": true,
@@ -307,7 +336,9 @@
     "tip": "💡 午前中は順光でエメラルドグリーンの海が最も透き通って見え、夕方は東シナ海に沈む夕日の名所となります。新設された万座毛周辺活性化施設には展望デッキやフードコートを完備。",
     "tip_ja": "💡 午前中は順光でエメラルドグリーンの海が最も透き通って見え、夕方は東シナ海に沈む夕日の名所となります。新設された万座毛周辺活性化施設には展望デッキやフードコートを完備。",
     "tip_en": "Morning sunlight illuminates the water with the clearest emerald clarity, while late afternoon offers dramatic sunset vistas over the East China Sea. Free parking is available at the visitor center.",
-    "categories": ["Scenery"]
+    "categories": [
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_11",
@@ -322,8 +353,8 @@
     "price": "散策無料（灯台登楼：大人300円）",
     "price_ja": "散策無料（灯台登楼：大人300円）",
     "price_en": "Free entry (Lighthouse climb: ¥300)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Cape_Zanpa_Lighthouse_Yomitan_Okinawa_pref_Japan01bs.jpg/640px-Cape_Zanpa_Lighthouse_Yomitan_Okinawa_pref_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Cape_Zanpa_Lighthouse_Yomitan_Okinawa_pref_Japan01bs.jpg/640px-Cape_Zanpa_Lighthouse_Yomitan_Okinawa_pref_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Cliff_of_Cape_Zampa.JPG/330px-Cliff_of_Cape_Zampa.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Cliff_of_Cape_Zampa.JPG/330px-Cliff_of_Cape_Zampa.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.4402,
@@ -338,7 +369,10 @@
     "tip": "💡 沖縄で唯一登ることができる参観灯台で、らせん階段を登った頂上からの360度パノラマはスリル満点。足場がゴツゴツした石灰岩なので歩きやすい靴で訪れてください。",
     "tip_ja": "💡 沖縄で唯一登ることができる参観灯台で、らせん階段を登った頂上からの360度パノラマはスリル満点。足場がゴツゴツした石灰岩なので歩きやすい靴で訪れてください。",
     "tip_en": "The only lighthouse in Okinawa you can climb up inside. The 360-degree observation gallery at the top provides thrilling wind and waves, but wear sturdy shoes for jagged rock trails.",
-    "categories": ["Scenery", "Landmark"]
+    "categories": [
+      "Scenery",
+      "Landmark"
+    ]
   },
   {
     "id": "oki_p_12",
@@ -353,8 +387,8 @@
     "price": "大人600円 / 小中学生400円",
     "price_ja": "大人600円 / 小中学生400円",
     "price_en": "Adult: ¥600 / Child: ¥400",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Katsuren_Castle_Uruma_Okinawa_pref_Japan01bs.jpg/640px-Katsuren_Castle_Uruma_Okinawa_pref_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Katsuren_Castle_Uruma_Okinawa_pref_Japan01bs.jpg/640px-Katsuren_Castle_Uruma_Okinawa_pref_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Katsuren_Castle_ruins.jpg/330px-Katsuren_Castle_ruins.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Katsuren_Castle_ruins.jpg/330px-Katsuren_Castle_ruins.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.3308,
@@ -369,7 +403,10 @@
     "tip": "💡 一の曲輪（頂上）からは金武湾や中城湾、海中道路の島々まで360度の紺碧の海が見渡せます。麓の「あまわりパーク」から城跡までは電動カート送迎があり楽に登れます。",
     "tip_ja": "💡 一の曲輪（頂上）からは金武湾や中城湾、海中道路の島々まで360度の紺碧の海が見渡せます。麓の「あまわりパーク」から城跡までは電動カート送迎があり楽に登れます。",
     "tip_en": "The highest tier offers sweeping 360° panoramas of the surrounding bays and offshore islands. Electric shuttle carts run from the visitor center at the base right up to the castle steps.",
-    "categories": ["Landmark", "Scenery"]
+    "categories": [
+      "Landmark",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_13",
@@ -384,8 +421,8 @@
     "price": "散策無料（シュノーケルツアー：約3,500円〜）",
     "price_ja": "散策無料（シュノーケルツアー：約3,500円〜）",
     "price_en": "Free entry to cape (Snorkel tours ~¥3,500+)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cape_Maeda_in_Onna_Okinawa_pref_Japan01bs.jpg/640px-Cape_Maeda_in_Onna_Okinawa_pref_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cape_Maeda_in_Onna_Okinawa_pref_Japan01bs.jpg/640px-Cape_Maeda_in_Onna_Okinawa_pref_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Cape_Maeda.jpg/330px-Cape_Maeda.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Cape_Maeda.jpg/330px-Cape_Maeda.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.4439,
@@ -400,7 +437,9 @@
     "tip": "💡 早朝7:00〜8:00の便を予約すると混雑を避けて透明度の高い洞窟を独占できます。雨でも海中は関係なく青く輝くため、天候不良時のアクティビティとしても優秀です。",
     "tip_ja": "💡 早朝7:00〜8:00の便を予約すると混雑を避けて透明度の高い洞窟を独占できます。雨でも海中は関係なく青く輝くため、天候不良時のアクティビティとしても優秀です。",
     "tip_en": "Book the earliest morning slot (7:00-8:00 AM) to beat the midday tour crowds. The cave shines just as brilliantly on cloudy or rainy days because underwater sunlight reflection is unaffected.",
-    "categories": ["Scenery"]
+    "categories": [
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_14",
@@ -415,8 +454,8 @@
     "price": "散策自由",
     "price_ja": "散策自由",
     "price_en": "Free to stroll",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Minatogawa_Stateside_Town_Urasoe_Okinawa.jpg/640px-Minatogawa_Stateside_Town_Urasoe_Okinawa.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Minatogawa_Stateside_Town_Urasoe_Okinawa.jpg/640px-Minatogawa_Stateside_Town_Urasoe_Okinawa.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Urasoe_Yodore2.JPG/330px-Urasoe_Yodore2.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Urasoe_Yodore2.JPG/330px-Urasoe_Yodore2.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.2625,
@@ -431,7 +470,10 @@
     "tip": "💡 各通りに「Texas」「Nevada」など米国の州名が付けられています。人気の黒糖カヌレ「ほうき星」やタルト専門店「oHacorté」は午前中の訪問が売り切れ前で安心です。",
     "tip_ja": "💡 各通りに「Texas」「Nevada」など米国の州名が付けられています。人気の黒糖カヌレ「ほうき星」やタルト専門店「oHacorté」は午前中の訪問が売り切れ前で安心です。",
     "tip_en": "Each alley is named after a US state (e.g. Nevada St, Texas St). Famous pastry shops like Houkiboshi (Okinawan brown sugar caneles) and oHacorte tarts sell out quickly in the afternoon.",
-    "categories": ["Café", "Shopping"]
+    "categories": [
+      "Café",
+      "Shopping"
+    ]
   },
   {
     "id": "oki_p_15",
@@ -446,8 +488,8 @@
     "price": "大人2,180円 / 高校生1,440円 / 小中学生710円",
     "price_ja": "大人2,180円 / 高校生1,440円 / 小中学生710円",
     "price_en": "Adult: ¥2,180 / Child: ¥710",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Churaumi_Aquarium.jpg/640px-Churaumi_Aquarium.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Churaumi_Aquarium.jpg/640px-Churaumi_Aquarium.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Okinawa_Churaumi_Aquarium_logo.svg/langja-330px-Okinawa_Churaumi_Aquarium_logo.svg.png?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Okinawa_Churaumi_Aquarium_logo.svg/langja-330px-Okinawa_Churaumi_Aquarium_logo.svg.png?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.6943,
@@ -462,7 +504,10 @@
     "tip": "💡 ジンベエザメの給餌時間は15:00と17:00で、巨体が垂直になって餌を吸い込む姿は迫力満点。大水槽の真横にあるカフェ「オーシャンブルー」の指定席は予約なしで当日順番待ちできます。",
     "tip_ja": "💡 ジンベエザメの給餌時間は15:00と17:00で、巨体が垂直になって餌を吸い込む姿は迫力満点。大水槽の真横にあるカフェ「オーシャンブルー」の指定席は予約なしで当日順番待ちできます。",
     "tip_en": "Whale shark feeding times are at 15:00 and 17:00, where they feed in a vertical stance. Cafe Ocean Blue right next to the giant glass acrylic wall offers front-row seats on a first-come queue.",
-    "categories": ["Museum", "Scenery"]
+    "categories": [
+      "Museum",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_16",
@@ -477,8 +522,8 @@
     "price": "散策自由（レンタサイクル約300円〜 / 水牛車あり）",
     "price_ja": "散策自由（レンタサイクル約300円〜 / 水牛車あり）",
     "price_en": "Free walking (Bicycle rental ~¥300)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bise_Fukugi_Tree_Lane_Motobu_Okinawa_Japan.jpg/640px-Bise_Fukugi_Tree_Lane_Motobu_Okinawa_Japan.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bise_Fukugi_Tree_Lane_Motobu_Okinawa_Japan.jpg/640px-Bise_Fukugi_Tree_Lane_Motobu_Okinawa_Japan.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Fukugi_trees_at_Bise_Village%2C_Okinawa.jpg/960px-Fukugi_trees_at_Bise_Village%2C_Okinawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Fukugi_trees_at_Bise_Village%2C_Okinawa.jpg/960px-Fukugi_trees_at_Bise_Village%2C_Okinawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.7061,
@@ -493,7 +538,9 @@
     "tip": "💡 徒歩だと往復1時間以上かかるため、入口付近でレンタサイクルを借りるのが快適。並木を抜けた先にある「備瀬崎」は干潮時に熱帯魚の群れを天然観察できる穴場シュノーケルポイントです。",
     "tip_ja": "💡 徒歩だと往復1時間以上かかるため、入口付近でレンタサイクルを借りるのが快適。並木を抜けた先にある「備瀬崎」は干潮時に熱帯魚の群れを天然観察できる穴場シュノーケルポイントです。",
     "tip_en": "Rent a cruiser bike near the entrance to glide easily through the 1km lane. At the very tip lies Bise-zaki, an incredible natural tide pool teeming with colorful reef fish at low tide.",
-    "categories": ["Scenery"]
+    "categories": [
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_17",
@@ -508,8 +555,8 @@
     "price": "通行無料",
     "price_ja": "通行無料",
     "price_en": "Free toll bridge",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kouri_Bridge_and_Kouri_Island.jpg/640px-Kouri_Bridge_and_Kouri_Island.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kouri_Bridge_and_Kouri_Island.jpg/640px-Kouri_Bridge_and_Kouri_Island.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/View_of_Kouri_Ohashi_from_road.JPG/330px-View_of_Kouri_Ohashi_from_road.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/View_of_Kouri_Ohashi_from_road.JPG/330px-View_of_Kouri_Ohashi_from_road.JPG?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.6972,
@@ -524,7 +571,9 @@
     "tip": "💡 橋を渡る手前の「南詰展望所」駐車場に車を停め、橋のたもとから歩道に出て写真を撮ると橋と海が一本線になった絶景を撮影できます。島北部のティーヌ浜にはハートロックもあります。",
     "tip_ja": "💡 橋を渡る手前の「南詰展望所」駐車場に車を停め、橋のたもとから歩道に出て写真を撮ると橋と海が一本線になった絶景を撮影できます。島北部のティーヌ浜にはハートロックもあります。",
     "tip_en": "Park at the southern lookout area just before crossing to walk onto the pedestrian sidewalk for spectacular straight-line bridge photos. Drive around to Tinu Beach on the island for the famous Heart Rock.",
-    "categories": ["Scenery"]
+    "categories": [
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_18",
@@ -539,8 +588,8 @@
     "price": "大人1,000円 / 中高生600円 / 小学生300円",
     "price_ja": "大人1,000円 / 中高生600円 / 小学生300円",
     "price_en": "Adult: ¥1,000 / Child: ¥300",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kouri_Ocean_Tower_2020.jpg/640px-Kouri_Ocean_Tower_2020.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kouri_Ocean_Tower_2020.jpg/640px-Kouri_Ocean_Tower_2020.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/JP_%E6%B2%96%E7%B9%A9_Okinawa_Nago_Kouri_island_Ocean_Tower_outdoor_carpark_January_2026_N13P_02.jpg/960px-JP_%E6%B2%96%E7%B9%A9_Okinawa_Nago_Kouri_island_Ocean_Tower_outdoor_carpark_January_2026_N13P_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/JP_%E6%B2%96%E7%B9%A9_Okinawa_Nago_Kouri_island_Ocean_Tower_outdoor_carpark_January_2026_N13P_02.jpg/960px-JP_%E6%B2%96%E7%B9%A9_Okinawa_Nago_Kouri_island_Ocean_Tower_outdoor_carpark_January_2026_N13P_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.7024,
@@ -555,7 +604,11 @@
     "tip": "💡 屋上の「幸せの鐘」から望むエメラルドグリーンのグラデーションは本島随一の美しさ。1階の世界1万点以上の貝殻ミュージアムや焼きたてナポリピッツァのテラスランチも好評です。",
     "tip_ja": "💡 屋上の「幸せの鐘」から望むエメラルドグリーンのグラデーションは本島随一の美しさ。1階の世界1万点以上の貝殻ミュージアムや焼きたてナポリピッツァのテラスランチも好評です。",
     "tip_en": "The open-air roof deck with its 'Bell of Happiness' offers the finest high-angle vista of Kouri Bridge cutting through turquoise waters. Enjoy wood-fired Neapolitan pizza on the garden terrace.",
-    "categories": ["Scenery", "Museum", "Café"]
+    "categories": [
+      "Scenery",
+      "Museum",
+      "Café"
+    ]
   },
   {
     "id": "oki_p_19",
@@ -570,8 +623,8 @@
     "price": "大人600円 / 中高生450円 / 小学生以下無料",
     "price_ja": "大人600円 / 中高生450円 / 小学生以下無料",
     "price_en": "Adult: ¥600 / Child: Free",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Nakijin_Castle_Okinawa_pref_Japan01bs.jpg/640px-Nakijin_Castle_Okinawa_pref_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Nakijin_Castle_Okinawa_pref_Japan01bs.jpg/640px-Nakijin_Castle_Okinawa_pref_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Nakijin_Okinawa_Japan_Nakikjin-Castle-01.jpg/330px-Nakijin_Okinawa_Japan_Nakikjin-Castle-01.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Nakijin_Okinawa_Japan_Nakikjin-Castle-01.jpg/330px-Nakijin_Okinawa_Japan_Nakikjin-Castle-01.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.6922,
@@ -586,7 +639,10 @@
     "tip": "💡 1月下旬〜2月上旬は日本一早く開花する寒緋桜（カンヒザクラ）の名所として濃いピンク色の桜並木が楽しめます。平朗門（へいろうもん）から見上げる城壁の曲線美は圧巻。",
     "tip_ja": "💡 1月下旬〜2月上旬は日本一早く開花する寒緋桜（カンヒザクラ）の名所として濃いピンク色の桜並木が楽しめます。平朗門（へいろうもん）から見上げる城壁の曲線美は圧巻。",
     "tip_en": "From late January to early February, it hosts Japan's earliest cherry blossom festival with deep-pink Ryukyu blossoms. The uphill stone stairway through Heiro-mon gate offers majestic historic vistas.",
-    "categories": ["Landmark", "Scenery"]
+    "categories": [
+      "Landmark",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_20",
@@ -601,8 +657,8 @@
     "price": "大人1,200円 / 小人600円",
     "price_ja": "大人1,200円 / 小人600円",
     "price_en": "Adult: ¥1,200 / Child: ¥600",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Nago_Pineapple_Park_Gate_2019.jpg/640px-Nago_Pineapple_Park_Gate_2019.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Nago_Pineapple_Park_Gate_2019.jpg/640px-Nago_Pineapple_Park_Gate_2019.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Cityscape_of_Nago_from_the_top_of_Mount_Nago_202007.jpg/330px-Cityscape_of_Nago_from_the_top_of_Mount_Nago_202007.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Cityscape_of_Nago_from_the_top_of_Mount_Nago_202007.jpg/330px-Cityscape_of_Nago_from_the_top_of_Mount_Nago_202007.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.6192,
@@ -617,7 +673,10 @@
     "tip": "💡 雨の日でも屋根付き通路や自動運転カートで快適に回れるファミリーの鉄板スポット。施設奥のワイナリーでは搾りたてパイナップルジュースやプレミアムパインカステラが人気です。",
     "tip_ja": "💡 雨の日でも屋根付き通路や自動運転カートで快適に回れるファミリーの鉄板スポット。施設奥のワイナリーでは搾りたてパイナップルジュースやプレミアムパインカステラが人気です。",
     "tip_en": "Covered walkways and automated carts make this a completely rain-proof attraction for families. Don't leave without tasting fresh pineapple soft-serve and sparkling pineapple wine at the winery.",
-    "categories": ["Museum", "Shopping"]
+    "categories": [
+      "Museum",
+      "Shopping"
+    ]
   },
   {
     "id": "oki_p_21",
@@ -632,8 +691,8 @@
     "price": "大人1,200円 / 小人550円",
     "price_ja": "大人1,200円 / 小人550円",
     "price_en": "Adult: ¥1,200 / Child: ¥550",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Daisekirinzan_Okinawa_Japan01bs.jpg/640px-Daisekirinzan_Okinawa_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Daisekirinzan_Okinawa_Japan01bs.jpg/640px-Daisekirinzan_Okinawa_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/AshimuiView.jpg/330px-AshimuiView.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/AshimuiView.jpg/330px-AshimuiView.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.8625,
@@ -648,7 +707,9 @@
     "tip": "💡 車椅子やベビーカーでも歩けるウッドデッキのバリアフリーコースが完備。頂上の美ら海展望台からは晴れた日に与論島まで望める大パノラマが広がります。",
     "tip_ja": "💡 車椅子やベビーカーでも歩けるウッドデッキのバリアフリーコースが完備。頂上の美ら海展望台からは晴れた日に与論島まで望める大パノラマが広がります。",
     "tip_en": "Well-maintained wooden boardwalk trails allow accessible walking for all fitness levels. The summit Churaumi lookout offers unobstructed views across the ocean all the way to Yoron Island on clear days.",
-    "categories": ["Scenery"]
+    "categories": [
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_22",
@@ -663,8 +724,8 @@
     "price": "入場無料",
     "price_ja": "入場無料",
     "price_en": "Free entry",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Zakimi_Castle_Yomitan_Okinawa_pref_Japan01bs.jpg/640px-Zakimi_Castle_Yomitan_Okinawa_pref_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Zakimi_Castle_Yomitan_Okinawa_pref_Japan01bs.jpg/640px-Zakimi_Castle_Yomitan_Okinawa_pref_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Zakimigusuku.jpg/330px-Zakimigusuku.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Zakimigusuku.jpg/330px-Zakimigusuku.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.4069,
@@ -679,7 +740,10 @@
     "tip": "💡 沖縄の世界遺産グスクの中で唯一、城壁の上に登ることが許可されている貴重な城跡。標高約125mの石垣の上から残波岬や東シナ海の夕日を静かに眺められます。",
     "tip_ja": "💡 沖縄の世界遺産グスクの中で唯一、城壁の上に登ることが許可されている貴重な城跡。標高約125mの石垣の上から残波岬や東シナ海の夕日を静かに眺められます。",
     "tip_en": "One of the rare castle ruins where visitors are actually permitted to walk directly atop the rampart walls. Sitting on the stones at 125m elevation provides quiet sunset views over Cape Zanpa.",
-    "categories": ["Landmark", "Scenery"]
+    "categories": [
+      "Landmark",
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_23",
@@ -694,8 +758,8 @@
     "price": "散策自由",
     "price_ja": "散策自由",
     "price_en": "Free to stroll",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Yachimun_no_Sato_Yomitan_Okinawa_Japan.jpg/640px-Yachimun_no_Sato_Yomitan_Okinawa_Japan.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Yachimun_no_Sato_Yomitan_Okinawa_Japan.jpg/640px-Yachimun_no_Sato_Yomitan_Okinawa_Japan.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Yomitan_Yachimun_no_Sato.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/4/49/Yomitan_Yachimun_no_Sato.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
     "hasWiki": true,
     "locationZone": "suburban",
     "lat": 26.4022,
@@ -710,7 +774,10 @@
     "tip": "💡 各工房ごとに器の風合いや絵付けが異なるため、時間をかけてギャラリー巡りをするのがおすすめ。作家直売のため那覇の店舗よりリーズナブルに一点物の器に出会えます。",
     "tip_ja": "💡 各工房ごとに器の風合いや絵付けが異なるため、時間をかけてギャラリー巡りをするのがおすすめ。作家直売のため那覇の店舗よりリーズナブルに一点物の器に出会えます。",
     "tip_en": "Each studio features distinctive clay glazes and bold cobalt brushstrokes. Buying directly from master ceramicists offers substantial savings compared to department stores in Naha.",
-    "categories": ["Shopping", "Museum"]
+    "categories": [
+      "Shopping",
+      "Museum"
+    ]
   },
   {
     "id": "oki_p_24",
@@ -725,8 +792,8 @@
     "price": "遊泳・入場無料（シャワー等有料）",
     "price_ja": "遊泳・入場無料（シャワー等有料）",
     "price_en": "Free entry (Showers fee-based)",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Naminoue_beach02s3200.jpg/640px-Naminoue_beach02s3200.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Naminoue_beach02s3200.jpg/640px-Naminoue_beach02s3200.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/2021-04-08_Beach_Naminoue%2CNaha%2COkinawa%28%E6%B3%A2%E3%81%AE%E4%B8%8A%E3%83%93%E3%83%BC%E3%83%81%29_DJI_Mini2-0005.jpg/330px-2021-04-08_Beach_Naminoue%2CNaha%2COkinawa%28%E6%B3%A2%E3%81%AE%E4%B8%8A%E3%83%93%E3%83%BC%E3%83%81%29_DJI_Mini2-0005.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/2021-04-08_Beach_Naminoue%2CNaha%2COkinawa%28%E6%B3%A2%E3%81%AE%E4%B8%8A%E3%83%93%E3%83%BC%E3%83%81%29_DJI_Mini2-0005.jpg/330px-2021-04-08_Beach_Naminoue%2CNaha%2COkinawa%28%E6%B3%A2%E3%81%AE%E4%B8%8A%E3%83%93%E3%83%BC%E3%83%81%29_DJI_Mini2-0005.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.2217,
@@ -741,7 +808,9 @@
     "tip": "💡 那覇市内に宿泊しながら気軽にエメラルドグリーンの海で泳ぎたい時に最適。波上宮参拝とセットで立ち寄るのがおすすめの散策ルートです。",
     "tip_ja": "💡 那覇市内に宿泊しながら気軽にエメラルドグリーンの海で泳ぎたい時に最適。波上宮参拝とセットで立ち寄るのがおすすめの散策ルートです。",
     "tip_en": "Ideal for a quick swim or sunset stroll without leaving central Naha. Perfectly paired with a visit to adjacent Naminoue Shrine before dinner in the city.",
-    "categories": ["Scenery"]
+    "categories": [
+      "Scenery"
+    ]
   },
   {
     "id": "oki_p_25",
@@ -756,8 +825,8 @@
     "price": "大人400円 / 小人200円",
     "price_ja": "大人400円 / 小人200円",
     "price_en": "Adult: ¥400 / Child: ¥200",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Shikina-en_Naha_Okinawa_pref_Japan01bs.jpg/640px-Shikina-en_Naha_Okinawa_pref_Japan01bs.jpg",
-    "wikiImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Shikina-en_Naha_Okinawa_pref_Japan01bs.jpg/640px-Shikina-en_Naha_Okinawa_pref_Japan01bs.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Naha_Shikinaen17n4272.jpg/330px-Naha_Shikinaen17n4272.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikiImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Naha_Shikinaen17n4272.jpg/330px-Naha_Shikinaen17n4272.jpg?utm_source=ja.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "hasWiki": true,
     "locationZone": "city",
     "lat": 26.2044,
@@ -772,6 +841,9 @@
     "tip": "💡 中国風の六角堂「勧耕台（かんこうだい）」や石橋、琉球赤瓦の御殿が見事に調和。那覇市街地にありながら静寂に包まれており、首里城と合わせた歴史巡りに最適です。",
     "tip_ja": "💡 中国風の六角堂「勧耕台（かんこうだい）」や石橋、琉球赤瓦の御殿が見事に調和。那覇市街地にありながら静寂に包まれており、首里城と合わせた歴史巡りに最適です。",
     "tip_en": "Features an exquisite blend of Japanese landscape architecture and Chinese-style arched bridges and hexagonal pavilions. Far quieter than Shuri Castle, making it a peaceful cultural oasis.",
-    "categories": ["Landmark", "Scenery"]
+    "categories": [
+      "Landmark",
+      "Scenery"
+    ]
   }
 ]
