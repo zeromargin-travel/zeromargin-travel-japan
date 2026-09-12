@@ -169,7 +169,7 @@ const I18nEngine = {
       "filter.catAll": "🌐 すべて",
       "filter.free": "🆓 入場無料",
       "filter.hiddenGems": "💎 穴場スポット",
-      "filter.kids": "🧸 ファミリー・子供連れ",
+      "filter.kids": "🧸 子ども向け",
       "filter.landmark": "🏛️ 史跡・名所",
       "filter.layer1": "エリア範囲:",
       "filter.layer2": "カテゴリー:",

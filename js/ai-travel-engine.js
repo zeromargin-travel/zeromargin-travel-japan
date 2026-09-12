@@ -66,7 +66,7 @@ const AITravelEngine = {
           isMuseum: c.includes('museum') || c.includes('art') || c.includes('ギャラリー') || c.includes('美術館') || c.includes('博物館') || c.includes('水族館') || c.includes('テーマパーク'),
           isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン') || c.includes('グルメ') || c.includes('沖縄そば'),
           isScenery: c.includes('scenery') || c.includes('walk') || c.includes('park') || c.includes('プロムナード') || c.includes('散策') || c.includes('ビーチ') || c.includes('岬') || c.includes('海') || c.includes('自然') || c.includes('景観'),
-          isKids: spot.kids === true || c.includes('kids') || c.includes('ファミリー'),
+          isKids: spot.kids === true,
           isShopping: spot.shopping === true || c.includes('shopping') || c.includes('market') || c.includes('市場') || c.includes('通り')
         };
         // Sync boolean flags for consistent UI rendering elsewhere
@@ -548,7 +548,7 @@ const AITravelEngine = {
     if (spot.tags.isMuseum) tags.push(lang === 'ja' ? '🎨 文化・体験' : '🎨 Culture');
     if (spot.tags.isCafe) tags.push(lang === 'ja' ? '☕ カフェ・グルメ' : '☕ Dining');
     if (spot.tags.isScenery) tags.push(lang === 'ja' ? '🌊 絶景・ビーチ' : '🌊 Scenery');
-    if (spot.tags.isKids) tags.push(lang === 'ja' ? '🧸 ファミリー' : '🧸 Kids');
+    if (spot.tags.isKids) tags.push(lang === 'ja' ? '🧸 子ども向け' : '🧸 Kids');
     if (spot.tags.isShopping) tags.push(lang === 'ja' ? '🛍️ 買物・市場' : '🛍️ Shopping');
     
     if (tags.length === 0) return lang === 'ja' ? '📍 名所' : '📍 Spot';
