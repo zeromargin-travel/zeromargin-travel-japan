@@ -72,7 +72,12 @@ const AITravelEngine = {
             c.includes('美術館') || c.includes('博物館') || c.includes('水族館') ||
             c.includes('テーマパーク') || c.includes('theme park') || c.includes('zoo')
           ) || (Array.isArray(spot.categories) && spot.categories.includes('Museum')),
-          isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン') || c.includes('グルメ') || c.includes('沖縄そば'),
+          // Strict Café Policy: Only true cafes, tea houses, coffee houses.
+          // Excludes general dining/restaurants, noodle shops, and markets.
+          isCafe: (Array.isArray(spot.categories) && spot.categories.includes('Café')) || (
+            (c.includes('café') || c.includes('cafe') || c.includes('カフェ') || c.includes('喫茶')) &&
+            !c.includes('market') && !c.includes('市場') && !c.includes('そば') && !c.includes('steak')
+          ),
           // Strict Scenery Policy: True natural landscape, beach, cape, coastal drive, or viewpoints (excludes artificial theme parks, zoos, and commercial malls)
           isScenery: (
             (c.includes('scenery') || c.includes('beach') || c.includes('ビーチ') || c.includes('岬') || c.includes('海岸') || c.includes('海中') || c.includes('絶景') || c.includes('自然') || (c.includes('park') && !c.includes('theme park') && !c.includes('パイナップル') && !c.includes('こどもの国'))) &&
@@ -515,7 +520,7 @@ const AITravelEngine = {
     const c = String(spot.category || '').toLowerCase();
     if (filterGroup === 'Landmark') return c.includes('landmark');
     if (filterGroup === 'Museum') return c.includes('museum') || c.includes('art');
-    if (filterGroup === 'Café') return c.includes('café') || c.includes('cafe') || c.includes('bakery') || c.includes('restaurant') || c.includes('bistro') || c.includes('dining');
+    if (filterGroup === 'Café') return (spot.tags && spot.tags.isCafe) || (Array.isArray(spot.categories) && spot.categories.includes('Café'));
     if (filterGroup === 'Scenery') return c.includes('scenery') || c.includes('park') || c.includes('market') || c.includes('shopping');
     return true;
   },
@@ -559,7 +564,7 @@ const AITravelEngine = {
     let tags = [];
     if (spot.tags.isLandmark) tags.push(lang === 'ja' ? '🏛️ 史跡・名所' : '🏛️ Landmark');
     if (spot.tags.isMuseum) tags.push(lang === 'ja' ? '🎨 文化・体験' : '🎨 Culture');
-    if (spot.tags.isCafe) tags.push(lang === 'ja' ? '☕ カフェ・グルメ' : '☕ Dining');
+    if (spot.tags.isCafe) tags.push(lang === 'ja' ? '☕ カフェ' : '☕ Café');
     if (spot.tags.isScenery) tags.push(lang === 'ja' ? '🌊 絶景・ビーチ' : '🌊 Scenery');
     if (spot.tags.isKids) tags.push(lang === 'ja' ? '🧸 子ども向け' : '🧸 Kids');
     if (spot.tags.isShopping) tags.push(lang === 'ja' ? '🛍️ 買物・市場' : '🛍️ Shopping');

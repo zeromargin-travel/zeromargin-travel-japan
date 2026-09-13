@@ -64,7 +64,6 @@
     "tip_en": "On Sundays from 12:00 to 18:00, the street turns into a pedestrian paradise with street performances. Duck into the arcade side-streets (Heiwa Dori) for retro vintage market vibes.",
     "categories": [
       "Shopping",
-      "Café",
       "Night"
     ]
   },
@@ -99,7 +98,6 @@
     "tip_en": "Perfect first or last stop due to its 15-minute drive from Naha Airport. Arrive an hour before sunset to grab a terrace table with local craft beer while watching planes land.",
     "categories": [
       "Scenery",
-      "Café",
       "Night",
       "Shopping"
     ]
@@ -200,8 +198,7 @@
     "tip_ja": "💡 2023年に新築リニューアルされ清潔で快適。1階の魚屋で好みの魚やエビ介を選び、数百円の手数料で刺身・バター焼き・マース煮（塩煮）に調理してもらうランチが定番です。",
     "tip_en": "Newly renovated with modern facilities. Pick fresh seafood on the 1st floor and pay a small cooking fee (around ¥500) to have it served as sashimi or garlic butter roast upstairs.",
     "categories": [
-      "Shopping",
-      "Café"
+      "Shopping"
     ]
   },
   {
@@ -302,7 +299,6 @@
     "tip_en": "Stroll the Depot Island Boardwalk at sunset for seaside dining. On Friday and Saturday nights, fireworks are frequently launched over the harbor, illuminating the colorful facades.",
     "categories": [
       "Shopping",
-      "Café",
       "Night"
     ]
   },
@@ -604,8 +600,7 @@
     "tip_en": "The open-air roof deck with its 'Bell of Happiness' offers the finest high-angle vista of Kouri Bridge cutting through turquoise waters. Enjoy wood-fired Neapolitan pizza on the garden terrace.",
     "categories": [
       "Scenery",
-      "Museum",
-      "Café"
+      "Museum"
     ]
   },
   {
@@ -983,7 +978,7 @@
     "name": "きしもと食堂 本店",
     "name_ja": "きしもと食堂 本店",
     "name_en": "Kishimoto Shokudo (Main Branch)",
-    "category": "Café & Dining",
+    "category": "Dining & Gourmet",
     "rating": "★4.6",
     "desc": "明治38年（1905年）創業の沖縄そばの老舗。ガジュマルの木灰を使った伝統の木灰そばと豚骨カツオ出汁を守り続ける伝説の名店。",
     "desc_ja": "明治38年（1905年）創業の沖縄そばの老舗。ガジュマルの木灰を使った伝統の木灰そばと豚骨カツオ出汁を守り続ける伝説の名店。",
@@ -1008,7 +1003,7 @@
     "tip_ja": "💡 数量限定の沖縄風炊き込みご飯「ジューシー」は昼過ぎには売り切れることが多いため、午前中（11:00開店直後）の訪問が安心です。",
     "tip_en": "Their handmade Jushi (savory seasoned rice) frequently sells out by early afternoon, so aim for an 11:00 AM arrival right when doors open.",
     "categories": [
-      "Café"
+      "Landmark"
     ]
   },
   {
@@ -1016,7 +1011,7 @@
     "name": "首里そば",
     "name_ja": "首里そば",
     "name_en": "Shuri Soba",
-    "category": "Café & Dining",
+    "category": "Dining & Gourmet",
     "rating": "★4.6",
     "desc": "首里城近くの閑静な住宅街にある行列必至の沖縄そば専門店。澄んだ黄金色の鰹出汁と硬めに手打ちされた縮れ麺の完成度が際立つ。",
     "desc_ja": "首里城近くの閑静な住宅街にある行列必至の沖縄そば専門店。澄んだ黄金色の鰹出汁と硬めに手打ちされた縮れ麺の完成度が際立つ。",
@@ -1041,7 +1036,7 @@
     "tip_ja": "💡 営業時間は11:30〜14:00頃（麺がなくなり次第終了）の約2時間半のみ。首里城見学の前後に立ち寄るのが王道の観光ルートです。",
     "tip_en": "Open strictly from 11:30 to around 14:00 until fresh noodle batches sell out. Pairs conveniently right before or after touring Shurijo Castle.",
     "categories": [
-      "Café"
+      "Landmark"
     ]
   },
   {
@@ -1049,7 +1044,7 @@
     "name": "ジャッキーステーキハウス",
     "name_ja": "ジャッキーステーキハウス",
     "name_en": "Jacks Steak House",
-    "category": "Café & Dining",
+    "category": "Dining & Steak",
     "rating": "★4.5",
     "desc": "1953年創業、アメリカ統治時代の面影をそのまま残す那覇屈指の老舗ステーキ店。熱々の鉄板で提供される赤身テンダーロインが名物。",
     "desc_ja": "1953年創業、アメリカ統治時代の面影をそのまま残す那覇屈指の老舗ステーキ店。熱々の鉄板で提供される赤身テンダーロインが名物。",
@@ -1074,7 +1069,6 @@
     "tip_ja": "💡 特製No.1ステーキソースに醤油を少し垂らして食べるのが地元ウチナーンチュ流。深夜まで営業しておりフライト前後の食事にも便利です。",
     "tip_en": "Local patrons blend the tangy No.1 Steak Sauce with a splash of soy sauce. Stays open late into the evening for post-arrival late dinners.",
     "categories": [
-      "Café",
       "Night"
     ]
   },
@@ -1083,7 +1077,7 @@
     "name": "ポーたま 牧志市場店",
     "name_ja": "ポーたま 牧志市場店",
     "name_en": "Potama Makishi Market",
-    "category": "Café & Dining",
+    "category": "Dining & Gourmet",
     "rating": "★4.5",
     "desc": "沖縄のソウルフード「ポークたまごおにぎり」の専門店。注文を受けてから握る熱々のスパムと厚焼き卵の出来立ておにぎりが大人気。",
     "desc_ja": "沖縄のソウルフード「ポークたまごおにぎり」の専門店。注文を受けてから握る熱々のスパムと厚焼き卵の出来立ておにぎりが大人気。",
@@ -1108,7 +1102,7 @@
     "tip_ja": "💡 朝7:00からオープンしているため那覇宿泊時の朝食に最適。「ゴーヤの天ぷら」や「油みそ」など沖縄ならではの具材トッピングが格別です。",
     "tip_en": "Opens early at 7:00 AM, making it the perfect morning breakfast stop before heading out on day road trips across the island.",
     "categories": [
-      "Café"
+      "Landmark"
     ]
   },
   {
@@ -1141,8 +1135,7 @@
     "tip_ja": "💡 1貫100円前後の握り寿司や生ウニ焼きをトレーに好きなだけ取って店外の屋根付きテラスで味わえます。那覇空港から車で20分とアクセス良好。",
     "tip_en": "Assemble your custom sashimi lunch from individual vendor stalls and enjoy outdoor dining under shaded covered benches. Only 20 minutes from Naha Airport.",
     "categories": [
-      "Shopping",
-      "Café"
+      "Shopping"
     ]
   },
   {
@@ -1788,11 +1781,11 @@
     "name": "ブルーシール アイスパーク",
     "name_ja": "ブルーシール アイスパーク",
     "name_en": "Blue Seal Ice Park",
-    "category": "Café & Culture",
+    "category": "Museum & Experience",
     "rating": "★4.5",
-    "desc": "浦添市牧港の本店隣に誕生したアイス体験ミュージアム。冷凍庫体験やブルーシールの歴史を学び、オリジナルアイスバー作り体験（要予約）ができる。",
-    "desc_ja": "浦添市牧港の本店隣に誕生したアイス体験ミュージアム。冷凍庫体験やブルーシールの歴史を学び、オリジナルアイスバー作り体験（要予約）ができる。",
-    "desc_en": "A colorful interactive ice cream museum next to the Makiminato flagship store, where guests design, coat, and decorate their own custom ice cream bars.",
+    "desc": "浦添市にあるブルーシールアイスの体験型ミュージアム。アイス作りのオリジナルバーデコレーション体験や歴史展示、レトロなアメリカンカフェ空間。",
+    "desc_ja": "浦添市にあるブルーシールアイスの体験型ミュージアム。アイス作りのオリジナルバーデコレーション体験や歴史展示、レトロなアメリカンカフェ空間。",
+    "desc_en": "An interactive ice cream attraction next to Blue Seal Makiminato flagship store with DIY popsicle crafting workshops and 1960s parlor nostalgia.",
     "price": "見学無料 / アイス作り体験：1人1,800円（要予約）",
     "price_ja": "見学無料 / アイス作り体験：1人1,800円（要予約）",
     "price_en": "Entry free / DIY bar workshop: ¥1,800",
@@ -1814,7 +1807,7 @@
     "tip_en": "Step into the minus-20-degree deep-freeze simulation chamber. Even without reservations, enjoy retro 1960s parlor booths at the flagship shop next door.",
     "categories": [
       "Kids",
-      "Café"
+      "Museum"
     ]
   },
   {
@@ -1856,7 +1849,7 @@
     "name": "奥武島（おうじま）",
     "name_ja": "奥武島（おうじま）",
     "name_en": "Ojima Island",
-    "category": "Café & Scenery",
+    "category": "Scenery & Food",
     "rating": "★4.6",
     "desc": "南城市にある周囲約1.7km、本島から短い橋で渡れる漁業の島。名物「中本鮮魚てんぷら店」「大城てんぷら店」の揚げたて沖縄天ぷら食べ歩きと猫たちが名物。",
     "desc_ja": "南城市にある周囲約1.7km、本島から短い橋で渡れる漁業の島。名物「中本鮮魚てんぷら店」「大城てんぷら店」の揚げたて沖縄天ぷら食べ歩きと猫たちが名物。",
@@ -1881,7 +1874,6 @@
     "tip_ja": "💡 橋を渡ってすぐ右手の中本鮮魚店、島の奥にある大城てんぷら店の食べ比べが定番。サクサク衣のもずく天ぷらは揚げたて熱々が絶品です。",
     "tip_en": "Compare Nakamoto Tempura right at the bridge crossing and Oshiro Tempura further inland. The crispy thick-battered mozuku seaweed fritter is best devoured hot on the sea wall.",
     "categories": [
-      "Café",
       "Scenery"
     ]
   },
@@ -2042,6 +2034,7 @@
     "rain": true,
     "kids": true,
     "shopping": false,
+    "free": false,
     "top7": true,
     "hiddenGem": false,
     "is_night_spot": false,
@@ -2051,6 +2044,39 @@
     "categories": [
       "Museum",
       "Kids"
+    ]
+  },
+  {
+    "id": "oki_p_62",
+    "name": "やちむん喫茶 シーサー園",
+    "name_ja": "やちむん喫茶 シーサー園",
+    "name_en": "Yachimun Kissa Shisa-en",
+    "category": "Café",
+    "rating": "★4.6",
+    "desc": "本部町のやんばるの森に佇む築数十年の琉球古民家カフェ。赤瓦屋根にずらりと並ぶ表情豊かなシーサーたちと、2階縁側から見渡す緑深い森林浴の絶景が有名。",
+    "desc_ja": "本部町のやんばるの森に佇む築数十年の琉球古民家カフェ。赤瓦屋根にずらりと並ぶ表情豊かなシーサーたちと、2階縁側から見渡す緑深い森林浴の絶景が有名。",
+    "desc_en": "An iconic traditional Okinawan wooden tea house tucked in the subtropical forest of Motobu, famous for whimsical ceramic Shisa statues lining red-tiled eaves and serene open-air porch seating.",
+    "price": "ヒラヤーチー：約600円 / 琉球野草茶：約500円",
+    "price_ja": "ヒラヤーチー：約600円 / 琉球野草茶：約500円",
+    "price_en": "Hirayachi ~¥600 / Tea ~¥500",
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800&auto=format&fit=crop&q=80",
+    "wikiImage": "",
+    "hasWiki": false,
+    "locationZone": "suburban",
+    "lat": 26.6346,
+    "lng": 127.9304,
+    "rain": true,
+    "kids": false,
+    "shopping": false,
+    "free": false,
+    "top7": false,
+    "hiddenGem": true,
+    "is_night_spot": false,
+    "tip": "💡 2階の縁側席が特等席。目の前に広がる赤瓦屋根のシーサーたちとやんばるの森を眺めながら、沖縄風お好み焼き「ヒラヤーチー」やチンピン、生みかんジュースを味わう時間が贅沢です。",
+    "tip_ja": "💡 2階の縁側席が特等席。目の前に広がる赤瓦屋根のシーサーたちとやんばるの森を眺めながら、沖縄風お好み焼き「ヒラヤーチー」やチンピン、生みかんジュースを味わう時間が贅沢です。",
+    "tip_en": "Head up to the 2nd-floor open veranda overlooking red clay roof tiles populated by handcrafted Shisa figures nestled in lush jungle greens. Enjoy traditional savory Hirayachi pancakes and fresh citrus juice.",
+    "categories": [
+      "Café"
     ]
   }
 ]
