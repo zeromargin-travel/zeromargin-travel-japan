@@ -124,7 +124,7 @@
     <div class="container" style="display:flex; flex-direction:column; align-items:center;">
       
       <!-- Character Mascot Companion Badge (Clickable Button) -->
-      <div class="mascot-hero-badge" style="display:inline-flex; align-items:center; gap:0.75rem; background:rgba(255,255,255,0.95); border:2px solid var(--border-ink); border-radius:50px; padding:0.4rem 1.2rem 0.4rem 0.6rem; box-shadow:0 4px 10px rgba(0,0,0,0.15); margin-bottom:1rem; cursor:pointer; transition:all 0.2s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';" onclick="document.getElementById('step1SpotsAnchor').scrollIntoView({behavior:'smooth'})">
+      <div class="mascot-hero-badge" style="display:inline-flex; align-items:center; gap:0.75rem; background:rgba(255,255,255,0.95); border:2px solid var(--border-ink); border-radius:50px; padding:0.4rem 1.2rem 0.4rem 0.6rem; box-shadow:0 4px 10px rgba(0,0,0,0.15); margin-bottom:1rem; cursor:pointer; transition:all 0.2s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';" onclick="document.getElementById('step1Anchor').scrollIntoView({behavior:'smooth'})">
         <img src="../assets/mascot.png" alt="Mascot Guide" style="width:48px; height:48px; object-fit:contain; animation:floatBounce 3s ease-in-out infinite;">
         <span data-i18n="hero.badge" style="font-size:0.95rem; font-weight:800; color:var(--primary-forest);">✨ 完全無料 • 観光リサーチの疲れゼロ • AIルート自動作成</span>
         <span style="font-size:1.2rem;">👇</span>
@@ -144,7 +144,7 @@
 
       <!-- Prominent Primary CTA Button -->
       <div class="hero-buttons">
-        <button class="btn btn-primary" data-i18n="hero.cta" onclick="document.getElementById('step1SpotsAnchor').scrollIntoView({behavior:'smooth'})">👇 行き先とスポットを選ぶ</button>
+        <button class="btn btn-primary" data-i18n="hero.cta" onclick="document.getElementById('step1Anchor').scrollIntoView({behavior:'smooth'})">👇 行き先とスポットを選ぶ</button>
       </div>
 
     </div>
@@ -157,17 +157,56 @@
       <div class="planner-outer-box" style="padding:0.5rem 0;">
         
         <div style="text-align:center; max-width:750px; margin:0 auto 1.5rem;">
-          <span class="paper-tape" style="background:rgba(30,41,59,0.95) !important; color:#FCD34D !important; border:1.5px solid #F59E0B !important; box-shadow:0 0 15px rgba(245,158,11,0.3) !important;">沖縄本島 ドライブ＆観光ルート作成</span>
-          <h2 style="font-size:2.2rem; margin-top:0.4rem; margin-bottom:0.5rem;" class="font-serif">かんたん2ステップで沖縄ドライブを作成</h2>
+          <span class="paper-tape" data-i18n="planner.tape" style="background:rgba(30,41,59,0.95) !important; color:#FCD34D !important; border:1.5px solid #F59E0B !important; box-shadow:0 0 15px rgba(245,158,11,0.3) !important;">インタラクティブ・ルートプランナー</span>
+          <h2 data-i18n="planner.title" style="font-size:2.2rem; margin-top:0.4rem; margin-bottom:0.5rem;" class="font-serif">かんたん3ステップで旅のルートを作成</h2>
           <p data-i18n="planner.subtitle" style="font-size:0.95rem; color:var(--text-secondary);">★4.5以上の厳選スポットからお気に入りをチェックするだけで、Googleマップの周遊ルートを1クリックで起動できます！</p>
         </div>
 
         <form id="aiPlannerForm" onsubmit="AITravelEngine.generateItinerary(event)">
           
-          <!-- HIDDEN PARAMETERS: Locked to Okinawa Main Island -->
-          <input type="hidden" id="aiPlanCountry" value="沖縄">
-          <input type="hidden" id="aiPlanDestination" value="Okinawa, Japan">
-          <input type="hidden" id="aiPlanAreaZone" value="ALL">
+          <!-- STEP 1: TRIP PARAMETERS -->
+          <div class="step1-container" id="step1Anchor" style="margin-bottom:1.5rem;">
+            <div style="font-size:1.15rem; font-weight:800; color:#FCD34D; margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; text-shadow:0 0 10px rgba(252,211,77,0.3);" class="font-serif">
+              <img src="../assets/mascot.png" alt="Mascot Guide" style="width:34px; height:34px; object-fit:contain; filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.12));">
+              <span data-i18n="step1.title">Step 1️⃣: 行き先を選ぶ — 広域エリアと主要都市を選択</span>
+            </div>
+
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
+              <div>
+                <label class="form-label" data-i18n="label.country">広域エリア:</label>
+                <select id="aiPlanCountry" class="form-control" onchange="AITravelEngine.onCountryChange()">
+                  <option value="沖縄" selected>🌺 沖縄</option>
+                  <option value="北海道エリア" disabled>🦀 北海道（準備中）</option>
+                  <option value="東北エリア" disabled>🍏 東北（準備中）</option>
+                  <option value="関東エリア" disabled>🗼 関東（準備中）</option>
+                  <option value="中部・北陸エリア" disabled>⛰️ 中部・北陸（準備中）</option>
+                  <option value="近畿・関西エリア" disabled>⛩️ 近畿・関西（準備中）</option>
+                  <option value="中国・四国エリア" disabled>🍋 中国・四国（準備中）</option>
+                  <option value="九州エリア" disabled>♨️ 九州（準備中）</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="form-label" data-i18n="label.city">主要都市・エリア:</label>
+                <select id="aiPlanDestination" class="form-control" onchange="AITravelEngine.onDestinationChange()">
+                  <option value="Okinawa, Japan" selected>🏝️ 沖縄本島（全域）</option>
+                  <option value="Okinawa_Naha, Japan" disabled>🏙️ 那覇・本島南部（準備中）</option>
+                  <option value="Okinawa_CentralNorth, Japan" disabled>🏖️ 本島中部・北部（準備中）</option>
+                  <option value="Miyakojima, Japan" disabled>🌊 宮古島（準備中）</option>
+                  <option value="Ishigaki, Japan" disabled>🌺 石垣島・八重山（準備中）</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="form-label" data-i18n="label.areaZone">周遊スタイル / 範囲:</label>
+                <select id="aiPlanAreaZone" class="form-control" onchange="AITravelEngine.renderCandidateSpots()">
+                  <option value="ALL" selected data-i18n="area.all">🌐 全域（おまかせ周遊ドライブ）</option>
+                  <option value="city" data-i18n="area.city">🏙️ 市街地・中心スポット中心（那覇・南部）</option>
+                  <option value="suburban" data-i18n="area.suburban">🚗 郊外・リゾート・自然中心（中部・北部）</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
           <!-- STEP 2: INTERACTIVE CANDIDATE SPOTS SELECTION -->
           <div class="step2-container" style="margin-bottom:1.5rem;">
@@ -175,7 +214,7 @@
               <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
                 <div style="font-size:1.15rem; font-weight:800; color:#FCD34D; display:flex; align-items:center; gap:0.5rem; text-shadow:0 0 10px rgba(252,211,77,0.3);" class="font-serif">
                   <img src="../assets/mascot.png" alt="Mascot Guide" style="width:34px; height:34px; object-fit:contain; filter:drop-shadow(1px 1px 2px rgba(0,0,0,0.12));">
-                  <span id="step1SpotsAnchor">Step 1️⃣: 行きたいスポットを選ぶ — ★4.5以上の厳選60名所からチェック</span>
+                  <span data-i18n="step2.title">Step 2️⃣: スポットを選ぶ — ★4.5以上の厳選名所からピックアップ</span>
                 </div>
                 <button type="button" onclick="openFeedbackModal()" style="background:rgba(245,158,11,0.2); color:#FCD34D; border:1px solid rgba(245,158,11,0.4); padding:0.35rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer;" data-i18n="btn.reportError">
                   💬 スポット情報の誤り・ご意見
@@ -210,7 +249,7 @@
           <div style="text-align:center; max-width:680px; margin:0 auto;" id="step3FixedContainer">
             <button type="submit" class="btn btn-emerald" style="padding:1.1rem 1.5rem; font-size:1.1rem; border-radius:16px; background:linear-gradient(135deg, #059669, #047857); color:#FFFFFF; font-weight:800; box-shadow:0 0 20px rgba(16,185,129,0.4); display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; flex-wrap:wrap; width:100%;">
               <img src="../assets/mascot.png" alt="Mascot" style="width:28px; height:28px; filter:drop-shadow(1px 2px 3px rgba(0,0,0,0.15));">
-              <span>Step 2️⃣: <span id="fixedCtaText" data-i18n="btn.generate">Googleマップの周遊ルートを作成 ↗</span></span>
+              <span>Step 3️⃣: <span id="fixedCtaText" data-i18n="btn.generate">Googleマップの周遊ルートを作成 ↗</span></span>
             </button>
           </div>
 
@@ -228,7 +267,7 @@
 
   <!-- Sticky Mobile Bottom Bar -->
   <div class="mobile-bottom-bar">
-    <button class="mobile-bottom-item" onclick="document.getElementById('step1SpotsAnchor').scrollIntoView({behavior:'smooth'})">
+    <button class="mobile-bottom-item" onclick="document.getElementById('aiPlanDestination').scrollIntoView({behavior:'smooth'})">
       <span style="font-size:1.25rem;">🗺️</span>
       <span data-i18n="mobile.planner">ルート作成</span>
     </button>
@@ -242,7 +281,7 @@
   <div id="floatingCtaBar" class="floating-cta-bar">
     <button type="button" class="btn btn-emerald" style="padding:1.1rem 1.5rem; font-size:1.1rem; border-radius:16px; background:linear-gradient(135deg, #059669, #047857); color:#FFFFFF; font-weight:800; box-shadow:0 0 20px rgba(16,185,129,0.4); display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; flex-wrap:wrap; width:100%; max-width:680px;" onclick="document.getElementById('aiPlannerForm').dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })); setTimeout(() => { document.getElementById('aiPlanResult').scrollIntoView({ behavior: 'smooth' }); }, 300);">
       <img src="../assets/mascot.png" alt="Mascot" style="width:28px; height:28px; filter:drop-shadow(1px 2px 3px rgba(0,0,0,0.15));">
-      <span>Step 2️⃣: <span id="floatingCtaText" data-i18n="btn.generate">Googleマップの周遊ルートを作成 ↗</span></span>
+      <span>Step 3️⃣: <span id="floatingCtaText" data-i18n="btn.generate">Googleマップの周遊ルートを作成 ↗</span></span>
     </button>
   </div>
 
