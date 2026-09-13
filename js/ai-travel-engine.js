@@ -54,7 +54,8 @@ const AITravelEngine = {
       
       const cleanCityName = cityId.split(',')[0].trim().toLowerCase().replace(/\s+/g, '_');
       const fileName = cleanCityName + '.json';
-      const response = await fetch('data/cities/' + fileName);
+      const basePath = window.API_BASE_PATH || '';
+      const response = await fetch(basePath + 'data/cities/' + fileName);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const spots = await response.json();
       
