@@ -64,7 +64,7 @@ const AITravelEngine = {
         const c = String(spot.category || '').toLowerCase();
         spot.tags = {
           isLandmark: c.includes('landmark') || c.includes('史跡') || c.includes('名所') || c.includes('城') || c.includes('寺') || c.includes('神社'),
-          isMuseum: c.includes('museum') || c.includes('art') || c.includes('ギャラリー') || c.includes('美術館') || c.includes('博物館') || c.includes('水族館') || c.includes('テーマパーク'),
+          isMuseum: c.includes('museum') || c.includes('art') || c.includes('ギャラリー') || c.includes('美術館') || c.includes('博物館') || c.includes('水族館') || c.includes('テーマパーク') || c.includes('theme park') || c.includes('zoo') || c.includes('culture'),
           isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン') || c.includes('グルメ') || c.includes('沖縄そば'),
           isScenery: c.includes('scenery') || c.includes('walk') || c.includes('park') || c.includes('プロムナード') || c.includes('散策') || c.includes('ビーチ') || c.includes('岬') || c.includes('海') || c.includes('自然') || c.includes('景観'),
           isKids: spot.kids === true,

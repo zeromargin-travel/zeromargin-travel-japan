@@ -1512,7 +1512,8 @@
     "tip_ja": "💡 かつて沖縄を走っていた軽便鉄道を実物の3/4スケールで再現した「沖縄軽便鉄道」に乗って園内を一周するトレインツアーが家族連れに大人気です。",
     "tip_en": "Board the replica vintage train (modeled on the historical pre-war Okinawa Railway) for an informative narrated loop through animal biomes.",
     "categories": [
-      "Kids"
+      "Kids",
+      "Museum"
     ]
   },
   {
@@ -1546,7 +1547,8 @@
     "tip_en": "Do not miss the vibrant daily parade featuring folk dancing and dynamic taiko drumming. The central covered pavilion ensures activities run even in rain.",
     "categories": [
       "Landmark",
-      "Kids"
+      "Kids",
+      "Museum"
     ]
   },
   {
@@ -2019,6 +2021,39 @@
     "tip_en": "An effortless scenic detour en route to Kouri Island. Winding country lanes lined with pineapple fields lead up to this crowd-free panoramic vista.",
     "categories": [
       "Scenery"
+    ]
+  },
+  {
+    "id": "oki_p_61",
+    "name": "JUNGLIA（ジャングリア）",
+    "name_ja": "JUNGLIA（ジャングリア）",
+    "name_en": "JUNGLIA Okinawa",
+    "category": "Theme Park & Nature",
+    "rating": "★4.8",
+    "desc": "名護市と今帰仁村にまたがる世界自然遺産やんばるの大自然に誕生した超大型テーマパーク。気球フライトや装甲車サファリ、ジャングルジップラインなど圧巻の体験が揃う。",
+    "desc_ja": "名護市と今帰仁村にまたがる世界自然遺産やんばるの大自然に誕生した超大型テーマパーク。気球フライトや装甲車サファリ、ジャングルジップラインなど圧巻の体験が揃う。",
+    "desc_en": "A massive adventure theme park nestled in the Yanbaru subtropical forest of northern Okinawa, featuring hot air balloon flights, safari expeditions, and canopy zip-lines.",
+    "price": "有料（1日パスポート制）",
+    "price_ja": "有料（1日パスポート制）",
+    "price_en": "Admission ticket required",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80",
+    "wikiImage": "",
+    "hasWiki": false,
+    "locationZone": "suburban",
+    "lat": 26.655,
+    "lng": 127.97,
+    "rain": true,
+    "kids": true,
+    "shopping": false,
+    "top7": true,
+    "hiddenGem": false,
+    "is_night_spot": false,
+    "tip": "💡 美ら海水族館や古宇利島と車で約20〜25分の至近距離。名護東道路を利用してアクセスするとスムーズです。混雑回避のため事前予約チケットの確保と午前中からの入場がおすすめ。",
+    "tip_ja": "💡 美ら海水族館や古宇利島と車で約20〜25分の至近距離。名護東道路を利用してアクセスするとスムーズです。混雑回避のため事前予約チケットの確保と午前中からの入場がおすすめ。",
+    "tip_en": "Conveniently located 20-25 minutes from Churaumi Aquarium and Kouri Island. Use the Nago East Toll Road for quickest access and book advance time-slot tickets online.",
+    "categories": [
+      "Museum",
+      "Kids"
     ]
   }
 ]
