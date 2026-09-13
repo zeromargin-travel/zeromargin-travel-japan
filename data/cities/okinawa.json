@@ -1216,7 +1216,7 @@
     "name": "浜比嘉島・シルミチュー",
     "name_ja": "浜比嘉島・シルミチュー",
     "name_en": "Hamahiga Island & Shirumichu",
-    "category": "Landmark & Culture",
+    "category": "Landmark & Nature",
     "rating": "★4.7",
     "desc": "海中道路の先にある神々の住まう島。琉球開闢の祖「アマミキヨ」「シネリキヨ」が暮らしたとされる静謐な洞窟の霊場。",
     "desc_ja": "海中道路の先にある神々の住まう島。琉球開闢の祖「アマミキヨ」「シネリキヨ」が暮らしたとされる静謐な洞窟の霊場。",
@@ -1381,7 +1381,7 @@
     "name": "ブセナ海中公園・海中展望塔",
     "name_ja": "ブセナ海中公園・海中展望塔",
     "name_en": "Busena Marine Park & Underwater Observatory",
-    "category": "Museum & Marine",
+    "category": "Scenery & Marine",
     "rating": "★4.5",
     "desc": "名護市部瀬名岬の沖合170mにある海中展望塔。服を着たままらせん階段を降りて水深4mの窓から熱帯魚やサンゴ礁を間近に観察できる。",
     "desc_ja": "名護市部瀬名岬の沖合170mにある海中展望塔。服を着たままらせん階段を降りて水深4mの窓から熱帯魚やサンゴ礁を間近に観察できる。",
@@ -1586,7 +1586,7 @@
     "name": "壺屋やちむん通り",
     "name_ja": "壺屋やちむん通り",
     "name_en": "Tsuboya Yachimun Pottery Street",
-    "category": "Shopping & Culture",
+    "category": "Shopping & Landmark",
     "rating": "★4.5",
     "desc": "那覇市の国際通りからすぐの石畳の通り。330年以上の伝統を誇る窯元や陶器ギャラリー、やちむんカフェが約400mにわたって並ぶ。",
     "desc_ja": "那覇市の国際通りからすぐの石畳の通り。330年以上の伝統を誇る窯元や陶器ギャラリー、やちむんカフェが約400mにわたって並ぶ。",
@@ -1856,7 +1856,7 @@
     "name": "奥武島（おうじま）",
     "name_ja": "奥武島（おうじま）",
     "name_en": "Ojima Island",
-    "category": "Shopping & Culture",
+    "category": "Café & Scenery",
     "rating": "★4.6",
     "desc": "南城市にある周囲約1.7km、本島から短い橋で渡れる漁業の島。名物「中本鮮魚てんぷら店」「大城てんぷら店」の揚げたて沖縄天ぷら食べ歩きと猫たちが名物。",
     "desc_ja": "南城市にある周囲約1.7km、本島から短い橋で渡れる漁業の島。名物「中本鮮魚てんぷら店」「大城てんぷら店」の揚げたて沖縄天ぷら食べ歩きと猫たちが名物。",
@@ -1881,7 +1881,8 @@
     "tip_ja": "💡 橋を渡ってすぐ右手の中本鮮魚店、島の奥にある大城てんぷら店の食べ比べが定番。サクサク衣のもずく天ぷらは揚げたて熱々が絶品です。",
     "tip_en": "Compare Nakamoto Tempura right at the bridge crossing and Oshiro Tempura further inland. The crispy thick-battered mozuku seaweed fritter is best devoured hot on the sea wall.",
     "categories": [
-      "Café"
+      "Café",
+      "Scenery"
     ]
   },
   {

@@ -64,7 +64,14 @@ const AITravelEngine = {
         const c = String(spot.category || '').toLowerCase();
         spot.tags = {
           isLandmark: c.includes('landmark') || c.includes('史跡') || c.includes('名所') || c.includes('城') || c.includes('寺') || c.includes('神社'),
-          isMuseum: c.includes('museum') || c.includes('art') || c.includes('ギャラリー') || c.includes('美術館') || c.includes('博物館') || c.includes('水族館') || c.includes('テーマパーク') || c.includes('theme park') || c.includes('zoo') || c.includes('culture'),
+          // Strict Museum/ThemePark Policy: Only explicit facility-type keywords. 'culture' is intentionally excluded
+          // because it describes cultural character (e.g. Landmark & Culture) and not a museum/theme park facility.
+          // Fallback: categories array 'Museum' tag is authoritative when category string is ambiguous.
+          isMuseum: (
+            c.includes('museum') || c.includes('art') || c.includes('ギャラリー') ||
+            c.includes('美術館') || c.includes('博物館') || c.includes('水族館') ||
+            c.includes('テーマパーク') || c.includes('theme park') || c.includes('zoo')
+          ) || (Array.isArray(spot.categories) && spot.categories.includes('Museum')),
           isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン') || c.includes('グルメ') || c.includes('沖縄そば'),
           // Strict Scenery Policy: True natural landscape, beach, cape, coastal drive, or viewpoints (excludes artificial theme parks, zoos, and commercial malls)
           isScenery: (
