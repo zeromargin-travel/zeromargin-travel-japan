@@ -73,7 +73,7 @@
     "name": "瀬長島ウミカジテラス",
     "name_ja": "瀬長島ウミカジテラス",
     "name_en": "Senagajima Umikaji Terrace",
-    "category": "Scenery & Dining",
+    "category": "Shopping & Dining",
     "rating": "★4.6",
     "desc": "那覇空港すぐ南の離島・瀬長島の傾斜地に白亜の店舗が並ぶリゾートモール。飛行機の離着陸と慶良間諸島の海を一望できる人気スポット。",
     "desc_ja": "那覇空港すぐ南の離島・瀬長島の傾斜地に白亜の店舗が並ぶリゾートモール。飛行機の離着陸と慶良間諸島の海を一望できる人気スポット。",
@@ -100,7 +100,8 @@
     "categories": [
       "Scenery",
       "Café",
-      "Night"
+      "Night",
+      "Shopping"
     ]
   },
   {
@@ -158,7 +159,7 @@
     "lng": 127.7503,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -496,7 +497,7 @@
     "lng": 127.8779,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": true,
     "hiddenGem": false,
@@ -596,7 +597,7 @@
     "lng": 128.0269,
     "rain": true,
     "kids": false,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -665,7 +666,7 @@
     "lng": 127.9692,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -674,8 +675,7 @@
     "tip_ja": "💡 雨の日でも屋根付き通路や自動運転カートで快適に回れるファミリーの鉄板スポット。施設奥のワイナリーでは搾りたてパイナップルジュースやプレミアムパインカステラが人気です。",
     "tip_en": "Covered walkways and automated carts make this a completely rain-proof attraction for families. Don't leave without tasting fresh pineapple soft-serve and sparkling pineapple wine at the winery.",
     "categories": [
-      "Museum",
-      "Shopping"
+      "Museum"
     ]
   },
   {
@@ -901,7 +901,7 @@
     "lng": 127.8176,
     "rain": false,
     "kids": false,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -1202,7 +1202,7 @@
     "lng": 127.9255,
     "rain": false,
     "kids": false,
-    "shopping": true,
+    "shopping": false,
     "free": true,
     "top7": true,
     "hiddenGem": false,
@@ -1301,7 +1301,7 @@
     "lng": 128.2589,
     "rain": false,
     "kids": false,
-    "shopping": true,
+    "shopping": false,
     "free": true,
     "top7": false,
     "hiddenGem": true,
@@ -1468,7 +1468,7 @@
     "lng": 127.8067,
     "rain": false,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -1503,7 +1503,7 @@
     "lng": 127.9944,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -1536,7 +1536,7 @@
     "lng": 127.7844,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -1671,7 +1671,7 @@
     "lng": 127.6931,
     "rain": true,
     "kids": false,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -1704,7 +1704,7 @@
     "lng": 127.6536,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": true,
     "hiddenGem": false,
@@ -1714,8 +1714,7 @@
     "tip_en": "Fully indoor and ideal for rainy days or final flight buffer hours. Connects directly to iias Okinawa Toyosaki shopping mall with rooftop attractions.",
     "categories": [
       "Museum",
-      "Kids",
-      "Shopping"
+      "Kids"
     ]
   },
   {
@@ -1807,7 +1806,7 @@
     "lng": 127.7197,
     "rain": true,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": false,
     "top7": false,
     "hiddenGem": false,
@@ -1875,7 +1874,7 @@
     "lng": 127.7725,
     "rain": false,
     "kids": true,
-    "shopping": true,
+    "shopping": false,
     "free": true,
     "top7": false,
     "hiddenGem": false,
@@ -1884,7 +1883,6 @@
     "tip_ja": "💡 橋を渡ってすぐ右手の中本鮮魚店、島の奥にある大城てんぷら店の食べ比べが定番。サクサク衣のもずく天ぷらは揚げたて熱々が絶品です。",
     "tip_en": "Compare Nakamoto Tempura right at the bridge crossing and Oshiro Tempura further inland. The crispy thick-battered mozuku seaweed fritter is best devoured hot on the sea wall.",
     "categories": [
-      "Shopping",
       "Café"
     ]
   },

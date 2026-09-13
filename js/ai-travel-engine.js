@@ -68,7 +68,8 @@ const AITravelEngine = {
           isCafe: c.includes('café') || c.includes('cafe') || c.includes('bistro') || c.includes('restaurant') || c.includes('dining') || c.includes('bakery') || c.includes('カフェ') || c.includes('レストラン') || c.includes('グルメ') || c.includes('沖縄そば'),
           isScenery: c.includes('scenery') || c.includes('walk') || c.includes('park') || c.includes('プロムナード') || c.includes('散策') || c.includes('ビーチ') || c.includes('岬') || c.includes('海') || c.includes('自然') || c.includes('景観'),
           isKids: spot.kids === true,
-          isShopping: spot.shopping === true || c.includes('shopping') || c.includes('market') || c.includes('市場') || c.includes('通り')
+          // Strict Shopping Policy: spot.shopping must be true, or primary category explicitly represents Market/Shopping (excluding broad street/scenery)
+          isShopping: spot.shopping === true || (c.includes('shopping') && !c.includes('scenery')) || c.includes('market') || c.includes('市場') || c.includes('商店街') || c.includes('アウトレット')
         };
         // Sync boolean flags for consistent UI rendering elsewhere
         spot.kids = spot.tags.isKids;

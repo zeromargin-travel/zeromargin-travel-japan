@@ -67,10 +67,17 @@ for cfile in city_files:
         if zone not in ('city', 'suburban'):
             violations.append((fname, sid, name_ja, f"Invalid locationZone: {zone}"))
 
+        # 6. Categorical Integrity Guard (Kids & Shopping must not over-flag non-shopping venues)
+        if s.get('shopping') is True:
+            cat = str(s.get('category', '')).lower()
+            # Natural landmarks, capes, beaches, bridges must not be shopping
+            if any(k in cat for k in ['nature', 'scenery', 'marine', 'park']) and not any(k in cat for k in ['shopping', 'market']):
+                violations.append((fname, sid, name_ja, f"Categorical conflict: Natural venue flagged as shopping=True"))
+
 if violations:
     print("\n❌ VALIDATION DEFECTS FOUND:")
     for v in violations:
         print(f"   [{v[0]}] {v[1]} ({v[2]}) -> {v[3]}")
     exit(1)
 else:
-    print(f"\n🛡️ 5-LAYER COMPLIANCE GUARD PASSED: All {total_spots} spots in Okinawa pass quality & integrity checks!")
+    print(f"\n🛡️ 6-LAYER COMPLIANCE GUARD PASSED: All {total_spots} spots in Okinawa pass quality & integrity checks!")
