@@ -74,6 +74,12 @@ for cfile in city_files:
             if any(k in cat for k in ['nature', 'scenery', 'marine', 'park']) and not any(k in cat for k in ['shopping', 'market']):
                 violations.append((fname, sid, name_ja, f"Categorical conflict: Natural venue flagged as shopping=True"))
 
+        # Scenery Guard: Pure artificial theme parks or indoor museums must not be Scenery
+        cat_lower = str(s.get('category', '')).lower()
+        cats_list = s.get('categories', [])
+        if any(k in cat_lower for k in ['theme park', 'zoo']) and 'Scenery' in cats_list:
+            violations.append((fname, sid, name_ja, f"Categorical conflict: Theme park/Zoo flagged with Scenery category"))
+
 if violations:
     print("\n❌ VALIDATION DEFECTS FOUND:")
     for v in violations:
