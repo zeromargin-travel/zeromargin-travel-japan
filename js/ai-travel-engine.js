@@ -1106,7 +1106,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
     if (count > 0) {
       const lang = window.I18nEngine ? window.I18nEngine.currentLang : 'en';
       const ctaMsgMap = {
-        'ja': `そのまま使えるGoogle MapsルートA＆Bを自動生成 (${count}/8件) ↗`,
+        'ja': `Google MapsルートA＆Bを自動生成 (${count}/8件) ↗`,
         'nl': `Genereer Direct Te Gebruiken Google Maps Routen (${count}/8) ↗`,
         'fr': `Générer les Itinéraires Google Maps Prêts à l'Emploi (${count}/8) ↗`,
         'de': `Einsatzbereite Google Maps Routen Generieren (${count}/8) ↗`,
