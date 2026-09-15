@@ -612,7 +612,7 @@ const AITravelEngine = {
         <span style="font-size:1.5rem;">${catIcon}</span>
         <div>
           <div style="font-weight:800; font-size:0.85rem; color:var(--primary-wood);">${escapeHtml(cleanCat)}</div>
-          <div style="font-size:0.72rem; color:var(--text-secondary);">Verified Google Maps Venue</div>
+          <div style="font-size:0.72rem; color:var(--text-secondary);">Googleマップ高評価スポット</div>
         </div>
       </div>
       <span style="font-size:0.75rem; font-weight:800; background:#FFF; color:#047857; padding:0.2rem 0.55rem; border-radius:6px; border:1px solid #047857;">${escapeHtml(cleanRating)}</span>
@@ -672,7 +672,7 @@ const AITravelEngine = {
                 <span style="font-size:1.6rem;">${getCategoryIcon(spot.category)}</span>
                 <div>
                   <div style="font-weight:800; font-size:0.9rem; color:var(--primary-wood);">${escapeHtml(activeCat)}</div>
-                  <div style="font-size:0.72rem; color:var(--text-secondary);">Verified Google Maps Venue</div>
+                  <div style="font-size:0.72rem; color:var(--text-secondary);">Googleマップ高評価スポット</div>
                 </div>
               </div>
               <span style="font-size:0.8rem; font-weight:800; background:#FFF; color:#047857; padding:0.2rem 0.55rem; border-radius:6px; border:1px solid #047857;">${cleanRating}</span>
@@ -685,7 +685,7 @@ const AITravelEngine = {
               ${activeZone}
             </span>
             ${spot.kids ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(244,114,182,0.2); color:#F472B6; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(244,114,182,0.4);">🧸 Kids</span>` : ''}
-            ${spot.rain ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(56,189,248,0.2); color:#38BDF8; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(56,189,248,0.4);">☔ Rain</span>` : ''}
+            ${spot.rain ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(56,189,248,0.2); color:#38BDF8; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(56,189,248,0.4);">☔ 雨天OK</span>` : ''}
             ${spot.shopping ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(251,191,36,0.2); color:#FBBF24; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(251,191,36,0.4);">🛍️ Shop</span>` : ''}
             ${spot.free ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(16,185,129,0.2); color:#34D399; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(16,185,129,0.4);">🆓 Free</span>` : ''}
           </div>
@@ -700,7 +700,7 @@ const AITravelEngine = {
 
           ${activeTip ? `
             <div style="background:#FFFBEB; border:1.5px solid #FCD34D; padding:0.65rem 0.85rem; border-radius:10px; font-size:0.82rem; color:#92400E; margin-bottom:1rem; line-height:1.45;">
-              <strong style="display:block; margin-bottom:0.2rem; color:#78350F;">${window.I18nEngine ? window.I18nEngine.getText('modal.insiderTip') : '💡 Insider Tip:'}</strong>
+              <strong style="display:block; margin-bottom:0.2rem; color:#78350F;">${window.I18nEngine ? window.I18nEngine.getText('modal.insiderTip') : '💡 攻略のコツ:'}</strong>
               ${escapeHtml(activeTip)}
             </div>
           ` : ''}
@@ -1024,7 +1024,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
                       <span style="font-size:1.5rem;">${getCategoryIcon(s.category)}</span>
                       <div>
                         <div style="font-weight:800; font-size:0.85rem; color:#FCD34D;">${escapeHtml(cardCat)}</div>
-                        <div style="font-size:0.72rem; color:#94A3B8;">Verified Google Maps Venue</div>
+                        <div style="font-size:0.72rem; color:#94A3B8;">Googleマップ高評価スポット</div>
                       </div>
                     </div>
                     <span style="font-size:0.75rem; font-weight:800; background:rgba(15,23,42,0.85); color:#34D399; padding:0.2rem 0.55rem; border-radius:6px; border:1px solid rgba(16,185,129,0.4);">${s.rating}</span>
@@ -1038,7 +1038,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
                       ${cardZone}
                     </span>
                     ${s.kids ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(244,114,182,0.2); color:#F472B6; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(244,114,182,0.4);">🧸 Kids</span>` : ''}
-                    ${s.rain ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(56,189,248,0.2); color:#38BDF8; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(56,189,248,0.4);">☔ Rain</span>` : ''}
+                    ${s.rain ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(56,189,248,0.2); color:#38BDF8; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(56,189,248,0.4);">☔ 雨天OK</span>` : ''}
                     ${s.shopping ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(251,191,36,0.2); color:#FBBF24; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(251,191,36,0.4);">🛍️ Shop</span>` : ''}
                     ${s.free ? `<span style="font-size:0.72rem; font-weight:800; background:rgba(16,185,129,0.2); color:#34D399; padding:0.15rem 0.45rem; border-radius:6px; border:1px solid rgba(16,185,129,0.4);">🆓 Free</span>` : ''}
                   </div>
@@ -1056,7 +1056,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
                 <span style="font-weight:700; color:var(--primary-wood);">${escapeHtml(cardPrice)}</span>
                 <div style="display:flex; align-items:center; gap:0.4rem;">
                   <button type="button" onclick="event.stopPropagation(); AITravelEngine.openSpotModal('${s.id}')" onpointerdown="event.stopPropagation(); AITravelEngine.openSpotModal('${s.id}')" style="display:inline-flex; align-items:center; justify-content:center; gap:0.25rem; background:#FFFBEB; color:#92400E; border:1.5px solid #FCD34D; padding:0.25rem 0.55rem; border-radius:6px; font-weight:700; font-size:0.8rem; cursor:pointer; white-space:nowrap; -webkit-tap-highlight-color:transparent;" title="View Insider Tip & Details">
-                    💡 Insider Tip
+                    💡 攻略のコツ
                   </button>
                   ${this.createMapsLink(s.name.split(' (')[0], city.split(',')[0])}
                 </div>
@@ -1462,13 +1462,13 @@ const viewModeBarHtml = categoryFilterBarHtml + `
       
       <!-- Bottom Share UI -->
       <div style="margin-top:2.5rem; padding:1.75rem 1.25rem; background:rgba(15, 23, 42, 0.95); border:1.5px solid #F59E0B; border-radius:20px; text-align:center; box-shadow:0 0 25px rgba(245, 158, 11, 0.25);">
-        <h4 style="font-size:1.15rem; color:#FFFFFF; font-weight:800; margin-bottom:0.4rem;" class="font-serif" data-i18n="share.routeTitle">Share this itinerary</h4>
-        <p style="font-size:0.88rem; color:#CBD5E1; margin-bottom:1.1rem;">Send this custom route directly to your travel partners</p>
+        <h4 style="font-size:1.15rem; color:#FFFFFF; font-weight:800; margin-bottom:0.4rem;" class="font-serif" data-i18n="share.routeTitle">この旅程をシェアする</h4>
+        <p style="font-size:0.88rem; color:#CBD5E1; margin-bottom:1.1rem;">作成した旅程を同行者にシェアできます</p>
         
         <div style="display:flex; gap:0.6rem; justify-content:center; align-items:center; flex-wrap:wrap;">
-          <!-- WhatsApp -->
-          <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('wa')" style="width:42px; height:42px; background:#25D366; color:#FFF;" title="WhatsApp">
-            <svg viewBox="0 0 24 24"><path d="M12.031 2c-5.456 0-9.88 4.424-9.88 9.88 0 1.74.452 3.435 1.311 4.935l-1.393 5.088 5.215-1.368c1.448.79 3.085 1.225 4.747 1.225 5.457 0 9.88-4.424 9.88-9.88s-4.423-9.88-9.88-9.88zm5.836 14.168c-.244.688-1.427 1.316-1.97 1.368-.501.047-1.144.072-3.32-.828-2.617-1.082-4.29-3.754-4.42-3.928-.13-.174-1.06-1.41-1.06-2.69 0-1.28.67-1.908.91-2.164.24-.256.526-.32.702-.32.176 0 .352.004.502.01.162.008.38-.061.594.453.22.527.75 1.83.816 1.96.066.13.11.283.022.455-.088.172-.132.28-.262.433-.13.153-.274.341-.392.458-.13.13-.266.27-.115.53.15.26.666 1.1 1.43 1.78.983.876 1.813 1.148 2.074 1.278.26.13.413.108.566-.065.153-.173.655-.764.83-1.025.174-.26.35-.217.587-.13.238.087 1.51.712 1.77.842.26.13.434.195.498.304.065.109.065.631-.179 1.319z"/></svg>
+          <!-- LINE -->
+          <button class="share-pill-btn" onclick="AITravelEngine.shareRoute('line')" style="background:#06C755 !important; color:#FFF !important; border:none !important; font-weight:bold;" title="LINEで旅程を送る">
+            <span>💬 LINEで旅程を送る</span>
           </button>
           <!-- Facebook -->
           <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('fb')" style="width:42px; height:42px; background:#1877F2; color:#FFF;" title="Facebook">
@@ -1478,20 +1478,12 @@ const viewModeBarHtml = categoryFilterBarHtml + `
           <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('x')" style="width:42px; height:42px; background:#000; color:#FFF;" title="X (Twitter)">
             <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </button>
-          <!-- LinkedIn -->
-          <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('li')" style="width:42px; height:42px; background:#0A66C2; color:#FFF;" title="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-          </button>
-          <!-- LINE -->
-          <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('line')" style="width:42px; height:42px; background:#06C755; color:#FFF;" title="LINE">
-            <svg viewBox="0 0 24 24"><path d="M19.34 10.04c0-3.83-3.92-6.95-8.74-6.95-4.82 0-8.74 3.12-8.74 6.95 0 3.43 3.1 6.3 7.3 6.84.28.06.67.19.77.43.09.22.06.56.03.78l-.13.79c-.04.24-.19.94.82.51 1.01-.43 5.46-3.22 7.45-5.51 1.05-1.17 1.24-2.34 1.24-3.84z"/></svg>
-          </button>
           <!-- Native Mobile Share Pill -->
           <button class="share-pill-btn" style="background:rgba(30,41,59,0.95) !important; color:#FFFFFF !important; border:1.5px solid #F59E0B !important;" onclick="AITravelEngine.shareRoute('native')">
-            <span>📱</span> <span data-i18n="share.nativeShare">More Apps...</span>
+            <span>📱</span> <span data-i18n="share.nativeShare">他のアプリ...</span>
           </button>
           <!-- Copy Link -->
-          <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('copy')" style="width:42px; height:42px; background:#FDE68A; color:#92400E;" title="Copy Link">
+          <button class="share-icon-btn" onclick="AITravelEngine.shareRoute('copy')" style="width:42px; height:42px; background:#FDE68A; color:#92400E;" title="URLをコピー">
             <svg viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.47a3.001 3.001 0 0 0 0-4.24 3.001 3.001 0 0 0-4.24 0l-3.53 3.53a3.001 3.001 0 0 0 0 4.24zm2.82-2.82c-.41-.39-.41-1.03 0-1.42.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.42l-.47.47a3.001 3.001 0 0 0 0 4.24 3.001 3.001 0 0 0 4.24 0l3.53-3.53a3.001 3.001 0 0 0 0-4.24z"/></svg>
           </button>
         </div>
