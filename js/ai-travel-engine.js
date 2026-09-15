@@ -700,7 +700,7 @@ const AITravelEngine = {
 
           ${activeTip ? `
             <div style="background:#FFFBEB; border:1.5px solid #FCD34D; padding:0.65rem 0.85rem; border-radius:10px; font-size:0.82rem; color:#92400E; margin-bottom:1rem; line-height:1.45;">
-              <strong style="display:block; margin-bottom:0.2rem; color:#78350F;">${window.I18nEngine ? window.I18nEngine.getText('modal.insiderTip') : '💡 攻略のコツ:'}</strong>
+              <strong style="display:block; margin-bottom:0.2rem; color:#78350F;">${window.I18nEngine ? window.I18nEngine.getText('modal.insiderTip') : '💡 現地情報!!:'}</strong>
               ${escapeHtml(activeTip)}
             </div>
           ` : ''}
@@ -1056,7 +1056,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
                 <span style="font-weight:700; color:var(--primary-wood);">${escapeHtml(cardPrice)}</span>
                 <div style="display:flex; align-items:center; gap:0.4rem;">
                   <button type="button" onclick="event.stopPropagation(); AITravelEngine.openSpotModal('${s.id}')" onpointerdown="event.stopPropagation(); AITravelEngine.openSpotModal('${s.id}')" style="display:inline-flex; align-items:center; justify-content:center; gap:0.25rem; background:#FFFBEB; color:#92400E; border:1.5px solid #FCD34D; padding:0.25rem 0.55rem; border-radius:6px; font-weight:700; font-size:0.8rem; cursor:pointer; white-space:nowrap; -webkit-tap-highlight-color:transparent;" title="View Insider Tip & Details">
-                    💡 攻略のコツ
+                    💡 現地情報!!
                   </button>
                   ${this.createMapsLink(s.name.split(' (')[0], city.split(',')[0])}
                 </div>

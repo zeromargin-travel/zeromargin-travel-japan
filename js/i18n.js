@@ -128,7 +128,7 @@ const I18nEngine = {
         "view.grid": "🖼️ カード表示",
         "badge.mustVisit": "選択中",
         "placeholder.hotel": "例: 那覇市内のホテル、那覇空港、宿泊先住所など（空欄でもOK）",
-        "modal.insiderTip": "💡 現地攻略のコツ・見学アドバイス:",
+        "modal.insiderTip": "💡 現地情報!!:",
         "route.tape": "一括Googleマップナビ",
         "route.title": "カスタム2ルート案内 - ルートA（選択スポットのみ）またはルートB（1日フルおすすめコース）",
         "route.sub": "自動生成されたベースルートです。順序入れ替え(▲/▼)や削除(✕)で自分好みにアレンジしてください！Googleマップ起動ボタンはリアルタイム更新されます。",
