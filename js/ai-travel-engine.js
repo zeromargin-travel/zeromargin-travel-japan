@@ -1168,102 +1168,44 @@ const viewModeBarHtml = categoryFilterBarHtml + `
   },
 
   // Optimize spot sequence combining Daily Travel Rhythm, Time-of-Day Slots & Geographical Proximity
-  optimizeRouteOrder(spots) {
+  optimizeRouteOrder(spots, startLat = null, startLng = null) {
     if (!spots || spots.length <= 1) return spots;
 
-    const list = spots.map(s => ({
-      ...s,
-      timeSlot: this.getCategoryTimeSlot(s)
-    }));
+    const unvisited = [...spots];
+    const sorted = [];
 
-    // Group spots into time-of-day buckets (1: Morning/Afternoon Sightseeing, 2: Cafe/Lunch, 3: Dinner, 4: Night Walk)
-    const slot1 = list.filter(s => s.timeSlot === 1);
-    const slot2 = list.filter(s => s.timeSlot === 2);
-    const slot3 = list.filter(s => s.timeSlot === 3);
-    const slot4 = list.filter(s => s.timeSlot === 4);
+    // If start coordinates are provided (e.g. valid Okinawa GPS), use them as the initial anchor.
+    // If not, default to Naha Airport coordinates (26.1958, 127.6525) to naturally sort South-to-North.
+    let currentLat = startLat !== null ? startLat : 26.1958;
+    let currentLng = startLng !== null ? startLng : 127.6525;
 
-    // Sub-sort each time bucket by nearest-neighbor geographical distance
-    const sortBucketByProximity = (bucket, lastSpot = null) => {
-      if (!bucket || bucket.length === 0) return [];
-      if (bucket.length === 1) return [...bucket];
+    while (unvisited.length > 0) {
+      let nearestIdx = 0;
+      let minDistance = Infinity;
+
+      unvisited.forEach((spot, idx) => {
+        const dist = this.calculateDistance(currentLat, currentLng, spot.lat, spot.lng);
+        if (dist < minDistance) {
+          minDistance = dist;
+          nearestIdx = idx;
+        }
+      });
+
+      const nextSpot = unvisited[nearestIdx];
+      sorted.push(nextSpot);
       
-      const unvisited = [...bucket];
-      const sorted = [];
-
-      let current = lastSpot;
-      if (!current) {
-        // Find westernmost spot in bucket as initial anchor
-        let minLng = Infinity;
-        let startIdx = 0;
-        unvisited.forEach((s, idx) => {
-          const lng = Number(s.lng || 0);
-          if (lng && lng < minLng) {
-            minLng = lng;
-            startIdx = idx;
-          }
-        });
-        current = unvisited[startIdx];
-        sorted.push(current);
-        unvisited.splice(startIdx, 1);
-      }
-
-      while (unvisited.length > 0) {
-        let nearestIdx = 0;
-        let minDistance = Infinity;
-
-        unvisited.forEach((spot, idx) => {
-          const dist = this.calculateDistance(current.lat, current.lng, spot.lat, spot.lng);
-          if (dist < minDistance) {
-            minDistance = dist;
-            nearestIdx = idx;
-          }
-        });
-
-        current = unvisited[nearestIdx];
-        sorted.push(current);
-        unvisited.splice(nearestIdx, 1);
-      }
-
-      return sorted;
-    };
-
-    // To prevent consecutive Cafe -> Dinner, split Sightseeing (slot1) into Morning and Afternoon groups!
-    let slot1_morning = [];
-    let slot1_afternoon = [];
-
-    if (slot1.length > 2 && slot2.length > 0) {
-      // Interleave Cafe in the middle of sightseeing (e.g. 2-3 morning sights, Cafe/Lunch, then 2-3 afternoon sights)
-      const midPoint = Math.ceil(slot1.length / 2);
-      slot1_morning = slot1.slice(0, midPoint);
-      slot1_afternoon = slot1.slice(midPoint);
-    } else {
-      slot1_morning = slot1;
+      // Update the anchor to the spot we just visited
+      currentLat = nextSpot.lat;
+      currentLng = nextSpot.lng;
+      
+      unvisited.splice(nearestIdx, 1);
     }
 
-    // 1. Morning Sightseeing (10:00–13:30)
-    const sorted1_m = sortBucketByProximity(slot1_morning);
-    const last1_m = sorted1_m.length > 0 ? sorted1_m[sorted1_m.length - 1] : null;
-
-    // 2. Mid-Day Cafe & Lunch Break (13:30–15:30)
-    const sorted2 = sortBucketByProximity(slot2, last1_m);
-    const last2 = sorted2.length > 0 ? sorted2[sorted2.length - 1] : (last1_m || null);
-
-    // 3. Late-Afternoon Sightseeing (15:30–18:00)
-    const sorted1_a = sortBucketByProximity(slot1_afternoon, last2);
-    const last1_a = sorted1_a.length > 0 ? sorted1_a[sorted1_a.length - 1] : (last2 || null);
-
-    // 4. Evening Dinner (18:30–20:30)
-    const sorted3 = sortBucketByProximity(slot3, last1_a);
-    const last3 = sorted3.length > 0 ? sorted3[sorted3.length - 1] : (last1_a || null);
-
-    // 5. Night Scenery / Evening Walk (20:00 onwards)
-    const sorted4 = sortBucketByProximity(slot4, last3);
-
-    return [...sorted1_m, ...sorted2, ...sorted1_a, ...sorted3, ...sorted4];
+    return sorted;
   },
 
-  // Step 3: Generate Custom Dual Routes with Geographical & Time-of-Day Flow Optimization
-  generateItinerary(event) {
+  // Step 3: Generate Custom Dual Routes with Geographical Flow Optimization
+  async generateItinerary(event) {
     if (event) event.preventDefault();
 
     const destElem = document.getElementById('aiPlanDestination');
@@ -1274,11 +1216,15 @@ const viewModeBarHtml = categoryFilterBarHtml + `
 
     const resultContainer = document.getElementById('aiPlanResult');
     if (!resultContainer) return;
+    
+    // Show loading state temporarily in case GPS takes a second
+    const t = (key) => window.I18nEngine ? window.I18nEngine.getText(key) : key;
+    resultContainer.style.display = 'block';
+    resultContainer.innerHTML = `<div style="padding:2rem; text-align:center; color:#F59E0B; font-weight:800; font-size:1.1rem; background:var(--bg-card-warm); border-radius:16px;">🔄 ルートを最適化中...</div>`;
 
-    // Look up spots for selected destination — never fall back silently
+    // Look up spots for selected destination
     let allSpots = candidateSpotsDatabase[destination];
     if (!allSpots || allSpots.length === 0) {
-      // Try fuzzy match
       const cleanDest = destination.split(',')[0].trim().toLowerCase();
       for (const k in candidateSpotsDatabase) {
         if (k.toLowerCase().includes(cleanDest)) {
@@ -1288,12 +1234,31 @@ const viewModeBarHtml = categoryFilterBarHtml + `
       }
     }
     if (!allSpots || allSpots.length === 0) {
-      if (resultContainer) {
-        const t = (key) => window.I18nEngine ? window.I18nEngine.getText(key) : key;
-        resultContainer.innerHTML = `<div style="padding:2rem; text-align:center; color:#F87171; font-weight:700; background:rgba(15,23,42,0.9); border:1.5px solid #F87171; border-radius:16px; margin-top:1rem;">⚠️ No spot data found for "${escapeHtml(destination)}". Please select a city from the dropdown above.</div>`;
-      }
+      resultContainer.innerHTML = `<div style="padding:2rem; text-align:center; color:#F87171; font-weight:700; background:rgba(15,23,42,0.9); border:1.5px solid #F87171; border-radius:16px; margin-top:1rem;">⚠️ No spot data found for "${escapeHtml(destination)}".</div>`;
       return;
     }
+
+    // Attempt to get user GPS if they are in Okinawa
+    let startLat = null;
+    let startLng = null;
+    if (destination.includes('Okinawa') || destination.includes('沖縄')) {
+      try {
+        const position = await new Promise((resolve, reject) => {
+          if (!navigator.geolocation) return reject('No geolocation');
+          navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 2000, maximumAge: 60000 });
+        });
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+        // Check if coordinates are roughly within Okinawa Main Island bounding box
+        if (lat >= 26.0 && lat <= 27.0 && lng >= 127.0 && lng <= 128.5) {
+          startLat = lat;
+          startLng = lng;
+        }
+      } catch (e) {
+        // Ignored: timed out, permission denied, or outside Okinawa. We will fallback to Naha Airport.
+      }
+    }
+
     const selectedIds = new Set(this.selectedMustVisitIds);
     
     // Extract checked must-visit spots
@@ -1303,8 +1268,8 @@ const viewModeBarHtml = categoryFilterBarHtml + `
       checkedSpots = allSpots.slice(0, 3);
     }
 
-    // 1. ROUTE A: Geographically & Time-of-Day optimized order for selected spots
-    const optimizedSpotsA = this.optimizeRouteOrder(checkedSpots);
+    // 1. ROUTE A: Geographically optimized order for selected spots
+    const optimizedSpotsA = this.optimizeRouteOrder(checkedSpots, startLat, startLng);
     this.routeA_spots = optimizedSpotsA.map(s => ({
       ...s,
       isMustVisit: true
@@ -1357,8 +1322,8 @@ const viewModeBarHtml = categoryFilterBarHtml + `
     // Combine checked spots + AI recommended spots
     const combinedSpotsB = [...checkedSpots, ...chosenExtras];
 
-    // Geographically & Time-of-Day optimize ALL spots together into a single continuous, seamless travel flow (導線)
-    const optimizedSpotsB = this.optimizeRouteOrder(combinedSpotsB);
+    // Geographically optimize ALL spots together into a single continuous, seamless travel flow (導線)
+    const optimizedSpotsB = this.optimizeRouteOrder(combinedSpotsB, startLat, startLng);
     this.routeB_spots = optimizedSpotsB.map(s => ({
       ...s,
       isMustVisit: selectedIds.has(s.id)
