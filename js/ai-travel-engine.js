@@ -172,8 +172,8 @@ const AITravelEngine = {
 
   shareGeneral(platform) {
     const t = (k) => window.I18nEngine ? window.I18nEngine.getText(k) : k;
-    const text = encodeURIComponent(t('share.generalText') || 'A free app that automatically plans optimal Europe travel routes. Very helpful! ✈️ #0MarginTravel');
-    const url = encodeURIComponent('https://zeromargin-travel.github.io/');
+    const text = encodeURIComponent(t('share.generalText') || 'A free app that automatically plans optimal travel routes. Very helpful! ✈️ #0MarginTravel');
+    const url = encodeURIComponent(window.location.origin + window.location.pathname);
     this.openShareLink(platform, text, url);
   },
 
@@ -185,7 +185,7 @@ const AITravelEngine = {
     
     const text = encodeURIComponent(baseText);
     const spotIds = Array.from(this.selectedMustVisitIds).join(',');
-    const routeUrl = `https://zeromargin-travel.github.io/?city=${encodeURIComponent(this.lastCity)}&spots=${spotIds}`;
+    const routeUrl = `${window.location.origin}${window.location.pathname}?city=${encodeURIComponent(this.lastCity)}&spots=${spotIds}`;
     this.openShareLink(platform, text, encodeURIComponent(routeUrl));
   },
 
