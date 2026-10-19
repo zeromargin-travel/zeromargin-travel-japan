@@ -145,29 +145,64 @@ const AITravelEngine = {
       if (destElem) targetCity = destElem.value || 'Okinawa, Japan';
     }
 
-    if (urlCity && urlSpots) {
-      const spotIds = urlSpots.split(',');
+    if (urlSpots) {
+      const spotIds = urlSpots.split(',').map(s => s.trim()).filter(Boolean);
       this.selectedMustVisitIds.clear();
-      spotIds.forEach(id => this.selectedMustVisitIds.add(id));
+      spotIds.slice(0, 8).forEach(id => this.selectedMustVisitIds.add(id));
     }
     
     this.lastCity = targetCity;
     await this.loadCityData(targetCity);
     
-    if (urlCity && urlSpots) {
-      setTimeout(() => {
+    if (urlSpots && this.selectedMustVisitIds.size > 0) {
+      setTimeout(async () => {
         this.renderCandidateSpots();
-        this.renderDualRouteManager(this.lastCity);
-        const routeContainer = document.getElementById('routeContainer');
-        if (routeContainer) {
-          routeContainer.scrollIntoView({ behavior: 'smooth' });
-        }
+        this.updateFloatingCtaBar();
+        await this.generateItinerary(null, { skipGps: true });
       }, 100);
     } else {
       setTimeout(() => {
         this.renderCandidateSpots();
+        this.updateFloatingCtaBar();
       }, 100);
     }
+  },
+
+  presetCourses: {
+    north_classic: ['oki_p_10', 'oki_p_15', 'oki_p_16', 'oki_p_17', 'oki_p_41', 'oki_p_9'],
+    rainy_day: ['oki_p_51', 'oki_p_5', 'oki_p_6', 'oki_p_54', 'oki_p_15'],
+    family_kids: ['oki_p_15', 'oki_p_20', 'oki_p_45', 'oki_p_52', 'oki_p_54'],
+    naha_halfday: ['oki_p_3', 'oki_p_4', 'oki_p_1', 'oki_p_48', 'oki_p_2'],
+    free_scenery: ['oki_p_35', 'oki_p_38', 'oki_p_36', 'oki_p_11', 'oki_p_17'],
+    ocean_cafe: ['oki_p_3', 'oki_p_26', 'oki_p_14', 'oki_p_57', 'oki_p_28']
+  },
+
+  async applyPresetCourse(courseKey) {
+    const spotIds = this.presetCourses[courseKey];
+    if (!spotIds || spotIds.length === 0) return;
+
+    const destElem = document.getElementById('aiPlanDestination');
+    const targetCity = destElem ? (destElem.value || 'Okinawa, Japan') : 'Okinawa, Japan';
+    this.lastCity = targetCity;
+
+    await this.loadCityData(targetCity);
+
+    this.activePreset = 'ALL';
+    this.activeGenre = 'ALL';
+    if (this.activeConditions) this.activeConditions.clear();
+
+    this.selectedMustVisitIds.clear();
+    spotIds.forEach(id => this.selectedMustVisitIds.add(id));
+
+    this.renderCandidateSpots();
+    this.updateFloatingCtaBar();
+
+    try {
+      const newUrl = `${window.location.pathname}?city=${encodeURIComponent(targetCity)}&spots=${spotIds.join(',')}`;
+      window.history.replaceState({ path: newUrl }, '', newUrl);
+    } catch (e) {}
+
+    await this.generateItinerary(null, { skipGps: true, presetCourse: courseKey });
   },
 
   shareGeneral(platform) {
@@ -828,7 +863,39 @@ const AITravelEngine = {
         return areaSpots.filter(s => this.isSpotMatchingFilter(s, preset, category, testConds)).length;
       };
 
-      const categoryFilterBarHtml = `
+      const presetCourseBarHtml = `
+        <div class="preset-course-box" style="grid-column:1 / -1; width:100%; margin-bottom:0.85rem; background:linear-gradient(135deg, rgba(15,23,42,0.96), rgba(30,41,59,0.96)); border:2px solid #F59E0B; padding:0.9rem 1rem; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.35);">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.4rem; margin-bottom:0.6rem;">
+            <span style="font-size:0.9rem; font-weight:800; color:#FCD34D; display:flex; align-items:center; gap:0.4rem;">
+              <span>⚡</span>
+              <span>迷ったらコレ！1タップで完成する沖縄定番モデルコース（押すと即ルート生成）</span>
+            </span>
+            <span style="font-size:0.75rem; color:#CBD5E1; font-weight:600;">※後から自由に追加・入れ替え可能</span>
+          </div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <button type="button" onclick="AITravelEngine.applyPresetCourse('north_classic')" style="background:#059669; color:#FFF; border:1.5px solid #34D399; padding:0.45rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+              🌺 王道・美ら海＆古宇利島絶景 (6選)
+            </button>
+            <button type="button" onclick="AITravelEngine.applyPresetCourse('rainy_day')" style="background:#0284C7; color:#FFF; border:1.5px solid #7DD3FC; padding:0.45rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+              ☔ 雨の日・屋内満喫レスキュー (5選)
+            </button>
+            <button type="button" onclick="AITravelEngine.applyPresetCourse('family_kids')" style="background:#DB2777; color:#FFF; border:1.5px solid #F9A8D4; padding:0.45rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+              👨‍👩‍👧 子連れ・ファミリー鉄板 (5選)
+            </button>
+            <button type="button" onclick="AITravelEngine.applyPresetCourse('naha_halfday')" style="background:#D97706; color:#FFF; border:1.5px solid #FDE68A; padding:0.45rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+              ✈️ 那覇空港着・南部サクッと半日 (5選)
+            </button>
+            <button type="button" onclick="AITravelEngine.applyPresetCourse('free_scenery')" style="background:#4F46E5; color:#FFF; border:1.5px solid #A5B4FC; padding:0.45rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+              🆓 入場料0円！絶景ドライブ縦断 (5選)
+            </button>
+            <button type="button" onclick="AITravelEngine.applyPresetCourse('ocean_cafe')" style="background:#7C3AED; color:#FFF; border:1.5px solid #DDD6FE; padding:0.45rem 0.85rem; border-radius:999px; font-size:0.82rem; font-weight:800; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+              ☕ 海カフェ＆おしゃれ街歩き (5選)
+            </button>
+          </div>
+        </div>
+      `;
+
+      const categoryFilterBarHtml = presetCourseBarHtml + `
         <div class="category-filter-box" style="grid-column:1 / -1; width:100%; display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.1rem; background:#FAF7F2; border:2px solid var(--border-ink, #292524); padding:0.85rem 1rem; border-radius:16px; box-shadow:3px 3px 0px var(--border-ink, #292524);">
           
           <!-- Layer 1: Scope (Exclusive Radio: ALL, Top 7, Hidden Gems, Night Spots) -->
@@ -1205,7 +1272,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
   },
 
   // Step 3: Generate Custom Dual Routes with Geographical Flow Optimization
-  async generateItinerary(event) {
+  async generateItinerary(event, options = {}) {
     if (event) event.preventDefault();
 
     const destElem = document.getElementById('aiPlanDestination');
@@ -1238,10 +1305,10 @@ const viewModeBarHtml = categoryFilterBarHtml + `
       return;
     }
 
-    // Attempt to get user GPS if they are in Okinawa
+    // Attempt to get user GPS if they are in Okinawa (skip when restoring from shared URL or preset course)
     let startLat = null;
     let startLng = null;
-    if (destination.includes('Okinawa') || destination.includes('沖縄')) {
+    if (!options.skipGps && (destination.includes('Okinawa') || destination.includes('沖縄'))) {
       try {
         const position = await new Promise((resolve, reject) => {
           if (!navigator.geolocation) return reject('No geolocation');
@@ -1267,6 +1334,15 @@ const viewModeBarHtml = categoryFilterBarHtml + `
     if (checkedSpots.length === 0) {
       checkedSpots = allSpots.slice(0, 3);
     }
+
+    // Update browser URL so the current route is immediately shareable/bookmarkable
+    try {
+      const activeIds = checkedSpots.map(s => s.id).filter(Boolean);
+      if (activeIds.length > 0) {
+        const newUrl = `${window.location.pathname}?city=${encodeURIComponent(destination)}&spots=${activeIds.join(',')}`;
+        window.history.replaceState({ path: newUrl }, '', newUrl);
+      }
+    } catch (e) {}
 
     // 1. ROUTE A: Geographically optimized order for selected spots
     const optimizedSpotsA = this.optimizeRouteOrder(checkedSpots, startLat, startLng);
@@ -1360,6 +1436,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
   renderDualRouteManager(destination, analytics = {}) {
     const resultContainer = document.getElementById('aiPlanResult');
     if (!resultContainer) return;
+    if (!Array.isArray(this.routeA_spots) || !Array.isArray(this.routeB_spots)) return;
 
     resultContainer.style.display = 'block';
 
@@ -1402,7 +1479,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
           <div style="background:#FFF; border:2px solid #047857; border-radius:18px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 4px 12px rgba(4,120,87,0.1);">
             <div>
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-                <span style="font-size:0.8rem; font-weight:800; background:#D1FAE5; color:#047857; padding:0.25rem 0.65rem; border-radius:999px; border:1px solid #059669;">
+                <span id="badge_count_RouteA" style="font-size:0.8rem; font-weight:800; background:#D1FAE5; color:#047857; padding:0.25rem 0.65rem; border-radius:999px; border:1px solid #059669;">
                   ${t('routeA.badge')} (${this.routeA_spots.length})
                 </span>
               </div>
@@ -1430,8 +1507,8 @@ const viewModeBarHtml = categoryFilterBarHtml + `
           <!-- ROUTE B CARD: Full 10-Spot Course -->
           <div style="background:#FFF; border:2px solid #B45309; border-radius:18px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 4px 12px rgba(180,83,9,0.1);">
             <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-                <span style="font-size:0.8rem; font-weight:800; background:#FEF3C7; color:#B45309; padding:0.25rem 0.65rem; border-radius:999px; border:1px solid #D97706;">
+              <div style="display:flex; justify-content:between; align-items:center; margin-bottom:0.75rem;">
+                <span id="badge_count_RouteB" style="font-size:0.8rem; font-weight:800; background:#FEF3C7; color:#B45309; padding:0.25rem 0.65rem; border-radius:999px; border:1px solid #D97706;">
                   ${t('routeB.badge')} (${this.routeB_spots.length})
                 </span>
               </div>
@@ -1458,12 +1535,34 @@ const viewModeBarHtml = categoryFilterBarHtml + `
 
         </div>
 
+        <!-- Contextual Travel Preparation Helper (Non-intrusive value-add links) -->
+        <div style="margin-top:1.5rem; padding:1.15rem 1.25rem; background:#FFFBEB; border:2px dashed #F59E0B; border-radius:16px; text-align:left;">
+          <div style="font-size:0.95rem; font-weight:800; color:#78350F; margin-bottom:0.65rem; display:flex; align-items:center; gap:0.4rem;">
+            <span>🌺</span>
+            <span>このドライブコースを快適に回るための事前チェック（外部サイト）</span>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:0.65rem;">
+            <a href="https://okinawa.tabirai.net/car/" target="_blank" rel="noopener noreferrer" onclick="AITravelEngine.trackEvent('outbound_partner_click', {type:'rental_car'})" style="display:flex; align-items:center; justify-content:space-between; background:#FFFFFF; color:#0F172A; border:1.5px solid #FCD34D; padding:0.6rem 0.85rem; border-radius:10px; font-size:0.84rem; font-weight:800; text-decoration:none; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+              <span>🚗 沖縄レンタカー最安比較</span>
+              <span style="color:#D97706;">↗</span>
+            </a>
+            <a href="https://www.asoview.com/area/okinawa/" target="_blank" rel="noopener noreferrer" onclick="AITravelEngine.trackEvent('outbound_partner_click', {type:'activity_ticket'})" style="display:flex; align-items:center; justify-content:space-between; background:#FFFFFF; color:#0F172A; border:1.5px solid #FCD34D; padding:0.6rem 0.85rem; border-radius:10px; font-size:0.84rem; font-weight:800; text-decoration:none; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+              <span>🎟️ 入場チケット・体験割引</span>
+              <span style="color:#D97706;">↗</span>
+            </a>
+            <a href="https://travel.rakuten.co.jp/okinawa/" target="_blank" rel="noopener noreferrer" onclick="AITravelEngine.trackEvent('outbound_partner_click', {type:'hotel_search'})" style="display:flex; align-items:center; justify-content:space-between; background:#FFFFFF; color:#0F172A; border:1.5px solid #FCD34D; padding:0.6rem 0.85rem; border-radius:10px; font-size:0.84rem; font-weight:800; text-decoration:none; box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+              <span>🏨 沖縄リゾートホテル空室検索</span>
+              <span style="color:#D97706;">↗</span>
+            </a>
+          </div>
+        </div>
+
       </div>
       
       <!-- Bottom Share UI -->
       <div style="margin-top:2.5rem; padding:1.75rem 1.25rem; background:rgba(15, 23, 42, 0.95); border:1.5px solid #F59E0B; border-radius:20px; text-align:center; box-shadow:0 0 25px rgba(245, 158, 11, 0.25);">
         <h4 style="font-size:1.15rem; color:#FFFFFF; font-weight:800; margin-bottom:0.4rem;" class="font-serif" data-i18n="share.routeTitle">この旅程をシェアする</h4>
-        <p style="font-size:0.88rem; color:#CBD5E1; margin-bottom:1.1rem;">作成した旅程を同行者にシェアできます</p>
+        <p style="font-size:0.88rem; color:#CBD5E1; margin-bottom:1.1rem;">作成した旅程を同行者にシェアできます（URLを開くとこのルートがそのまま再現されます）</p>
         
         <div style="display:flex; gap:0.6rem; justify-content:center; align-items:center; flex-wrap:wrap;">
           <!-- LINE -->
@@ -1527,7 +1626,7 @@ const viewModeBarHtml = categoryFilterBarHtml + `
 
   renderSpotItemsHtml(spotsArray, routeType, cityClean) {
     if (!spotsArray || spotsArray.length === 0) {
-      return '<div style="font-size:0.85rem; color:#9CA3AF; padding:0.75rem; text-align:center; border:1px dashed #E5E7EB; border-radius:8px;">No spots in this route. Add spots or re-select.</div>';
+      return '<div style="font-size:0.85rem; color:#9CA3AF; padding:0.75rem; text-align:center; border:1px dashed #E5E7EB; border-radius:8px;">スポットがありません。再度選択してください。</div>';
     }
 
     const t = (key) => window.I18nEngine ? window.I18nEngine.getText(key) : key;
@@ -1628,20 +1727,28 @@ const viewModeBarHtml = categoryFilterBarHtml + `
   refreshRouteCard(routeType) {
     const destination = document.getElementById('aiPlanDestination')?.value || this.lastCity || '';
     const cityClean = destination.split(',')[0].trim();
+    const t = (key) => window.I18nEngine ? window.I18nEngine.getText(key) : key;
 
     const listContainer = document.getElementById(routeType === 'A' ? 'routeA_itemList' : 'routeB_itemList');
     const mapsBtn = document.getElementById(routeType === 'A' ? 'btn_maps_RouteA' : 'btn_maps_RouteB');
+    const badgeElem = document.getElementById(routeType === 'A' ? 'badge_count_RouteA' : 'badge_count_RouteB');
     const spotsList = routeType === 'A' ? this.routeA_spots : this.routeB_spots;
 
     if (listContainer) {
       listContainer.innerHTML = this.renderSpotItemsHtml(spotsList, routeType, cityClean);
     }
 
+    if (badgeElem) {
+      const badgeKey = routeType === 'A' ? 'routeA.badge' : 'routeB.badge';
+      badgeElem.innerText = `${t(badgeKey)} (${spotsList.length})`;
+    }
+
     if (mapsBtn) {
       const names = spotsList.map(s => s.name);
       const mapsUrl = this.buildMasterGoogleMapsPath(names, destination);
       mapsBtn.href = mapsUrl;
-      mapsBtn.innerText = `🗺️ Open Route ${routeType} in Google Maps (${spotsList.length} Destinations) ↗`;
+      const btnKey = routeType === 'A' ? 'routeA.btn' : 'routeB.btn';
+      mapsBtn.innerText = `${t(btnKey)} (${spotsList.length}) ↗`;
     }
   },
 
@@ -1685,7 +1792,11 @@ window.AITravelEngine = AITravelEngine;
 
 function initAITravelEngine() {
   if (window.AITravelEngine && typeof window.AITravelEngine.renderCandidateSpots === 'function') {
-    window.AITravelEngine.renderCandidateSpots();
+    const destElem = document.getElementById('aiPlanDestination');
+    const city = destElem ? destElem.value : 'Okinawa, Japan';
+    if (candidateSpotsDatabase[city] && candidateSpotsDatabase[city].length > 0) {
+      window.AITravelEngine.renderCandidateSpots();
+    }
   }
 }
 
